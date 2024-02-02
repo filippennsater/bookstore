@@ -1,0 +1,252 @@
+.navbar {
+  background-color: none;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  opacity: 85%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 100%;
+}
+
+.navbar-logo {
+  color: #ffffff;
+  justify-self: start;
+  margin-left: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  
+}
+
+.fa-book {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 50px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.nav-links {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.nav-links:hover {
+  text-decoration-line: underline;
+  transition: all 0.6s ease-out;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: flex;
+    height: flex;
+    position: absolute;
+    justify-content: start;
+    top: 110px;
+    right: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: none;
+    right: 0;
+    opacity: 95%;
+    transition: all 0.5s ease;
+    z-index: 1;
+    
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    text-decoration-line: underline;
+    transition: all 0.6s ease-out;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+}
+
+
+.DMButtonDiv{
+margin-left: 75px;
+display: flex;
+flex-direction: column;
+
+  /*centers in x and y*/
+justify-content: center;
+
+align-items: center;
+}
+
+.DMButtonDiv p{
+  font-style: italic;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+
+
+.buttonDarkMode {
+  align-self: center;
+  justify-self: center;
+  
+  background-color: white;
+  border-style: none;
+  border-color: #000000;
+  border-width: 5px;
+  
+
+  /*makes the button rounded*/
+  border-radius: 100%;
+
+  width: 40px;
+  height: 40px;
+
+  color: white;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration-color: black;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-text-fill-color: black;
+  box-shadow: 0 3px #6b6b6b;
+}
+
+.buttonDarkMode:hover {
+  background-color: #bdbdbd;
+
+}
+
+.buttonDarkMode:active {
+  background-color: #bdbdbd;
+  box-shadow: 0 5px rgb(26, 23, 23);
+
+  /*makes button drop down towards shadow*/
+  transform: translateY(3px);
+}
+
+/*#lights {
+background: url('../../public/images/sun.gif') center center/cover no-repeat;
+background-color: white;
+color: #000000;
+}
+
+#darks {
+background: url('../../public/images/moon.gif') center center/cover no-repeat;
+
+background-color: rgb(0, 0, 0);
+color: #ffffff;
+}
+
+#darks p{
+color: #ffffff;
+}
+*/
+
+@media screen and (max-width: 820px) {
+
+
+
+.DMButtonDiv{
+  margin-left: 150px;
+  
+}
+
+
+}

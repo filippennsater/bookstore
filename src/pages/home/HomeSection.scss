@@ -1,0 +1,56 @@
+
+.hero-container {
+    /*background: url('../../public/images/img-home.jpg') center center/cover no-repeat;*/
+    background-color: black;
+    margin-top: -110px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+    /*centers in x and y*/
+    justify-content: center;
+
+    align-items: center;
+    object-fit: contain;
+}
+
+.hero-container>h1 {
+    color: white;
+    font-size: calc(20px + 2vw);
+    margin-top: -300px;
+}
+
+.hero-container>p {
+    margin-top: 8px;
+    color: white;
+    font-size: calc(12px + 1vw);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.intro-container{
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+.previewContainer{
+    align-self: center;
+    justify-self: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.share-list{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style: none;
+}
+
+h7{
+color: white;
+font-size: 50;
+}
+
+p7{
+color: white;
+font-size: 12;
+}
