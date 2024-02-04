@@ -1,18 +1,27 @@
-
+.super-container{
+    background: url('../../../public/images/streetView-scaled.jpg') center center/cover no-repeat;
+    z-index: 20;
+}
 .hero-container {
-    /*background: url('../../public/images/img-home.jpg') center center/cover no-repeat;*/
-    background-color: black;
-    margin-top: -110px;
+    background-color: #572D87;
     width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
+    opacity: 95%;
     
-
-    /*centers in x and y*/
-    justify-content: center;
-
     align-items: center;
     object-fit: contain;
+    z-index: 21;
+}
+
+.logo-container {
+    background: url('../../../public/images/loggyBig.png') center center/cover no-repeat;
+    margin-top: 50px;
+    width: 500px;
+    min-height: 166px;
+    
+    z-index: 22;
 }
 
 .hero-container>h1 {
@@ -39,11 +48,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-.share-list{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    list-style: none;
-}
+
 
 h7{
 color: white;

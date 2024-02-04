@@ -1,58 +1,28 @@
 import React from 'react';
 import '../../App.css';
 import './HomeSection.scss';
-import Shares from '../../components/sharesETC/Shares';
 
 
 function HomeSection() {
 
 
     return (
-
+    <div className='super-container'>
         <div className='hero-container'>
+        <div className='logo-container'/>
 
             <div className='intro-container'>
-                <h7>Home</h7>
+                <h7>A modern bookstore and publisher</h7>
             </div>
 
             
 
             <div className='previewContainer'>
 
-                <ul className='share-list'>
-
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-                <Shares src='images/img-.png' text='Magic' label='Small project' path='' />
-               
-                
-                
-               
-
-                </ul>
-
             </div>
 
         </div>
-
+    </div>
     )
 }
 
