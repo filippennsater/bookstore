@@ -46,7 +46,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        <h7>MarketTracker</h7>&nbsp;<i class="fa-solid fa-coins"></i>
+                    <div className='navbar-logo'/>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

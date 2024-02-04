@@ -19,12 +19,14 @@
 }
 
 .navbar-logo {
+  background: url('../../../public/images/logoWhite.png') center center/cover no-repeat;
   color: #ffffff;
   justify-self: start;
   margin-left: 0px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  height: 81px;
+  width: 246px;
   display: flex;
   align-items: center;
   
