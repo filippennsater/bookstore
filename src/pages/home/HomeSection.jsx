@@ -12,7 +12,7 @@ function HomeSection() {
             <div className='logo-container'/>
 
             <div className='intro-container'>
-                <h7>A modern bookstore and publisher</h7>
+                <h20>A MODERN BOOKSTORE WITH THE BEST PRICES!</h20>
             </div>
         </div>
     </div>

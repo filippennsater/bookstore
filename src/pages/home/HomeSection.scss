@@ -1,5 +1,6 @@
 .super-container{
     background: url('../../../public/images/streetView-scaled.jpg') center center/cover no-repeat;
+    background-attachment:  fixed;
     z-index: 20;
 }
 .hero-container {
@@ -23,6 +24,12 @@
     z-index: 22;
 }
 
+h20{
+    color: white;
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .hero-container>h1 {
     color: white;
     font-size: calc(20px + 2vw);
@@ -37,8 +44,9 @@
 }
 
 .intro-container{
-    margin-top: 8%;
+    margin-top: 35px;
     margin-bottom: 3%;
+    justify-content: top;
 }
 
 .previewContainer{

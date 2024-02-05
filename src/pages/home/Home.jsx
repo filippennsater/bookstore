@@ -4,6 +4,7 @@ import HomeSection from './HomeSection';
 import HomeButtonSection from './HomeButtonSection';
 import HomeTransitionSection from './HomeTransitionSection';
 import FlowerSection from './FlowerSection';
+import PearSection from './PearSection';
 import Footer from '../../components/footer/Footer';
 
 function Home (){
@@ -13,6 +14,7 @@ function Home (){
       <HomeButtonSection/>
       <HomeTransitionSection/>
       <FlowerSection/>
+      <PearSection/>
       <Footer/>
     </>
     );

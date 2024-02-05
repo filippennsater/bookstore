@@ -57,7 +57,7 @@ function Footer() {
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
                         <Link to='/' className='social-logo'>
-                        <h7>MarketTracker</h7>&nbsp;<i class="fa-solid fa-coins"></i>
+                        <h7>Bookstore</h7>&nbsp;<i class="fa-solid fa-coins"></i>
                         </Link>
                     </div>
                     <small className='website-rights'>© 2023</small>
