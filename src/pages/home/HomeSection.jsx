@@ -13,6 +13,10 @@ function HomeSection() {
 
             <div className='intro-container'>
                 <h20>A MODERN BOOKSTORE WITH THE BEST PRICES!</h20>
+                <div className='first-button'>
+                    <buttontext>More about us &gt;&gt;</buttontext>
+                </div>
+
             </div>
         </div>
     </div>
