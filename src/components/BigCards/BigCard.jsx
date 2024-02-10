@@ -5,8 +5,12 @@ import "./BigCard.scss";
 function BigCard(props){
     return(
         <>
-            <Link>
-            
+            <Link className="card">
+                <img
+                src={props.src}
+                alt="bigboi"
+                className="card-image"
+                />
             </Link>
         
         </>
