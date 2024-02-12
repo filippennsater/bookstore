@@ -11,7 +11,7 @@
   }
 
 .card{
-    background-color: white;
+    background-color: none;
     width: 30%;
     height: 90%;
     margin: 30px;
@@ -20,6 +20,7 @@
 
 .card:hover {
   background-color: #9FCE9A;
+  transition: 700ms;
 }
 
 .card-image-wrap{
@@ -41,4 +42,12 @@
     max-height: 100%;
     object-fit: cover;
     transition: all 0.2s linear;
+}
+
+.big-card-header{
+
+}
+
+.big-card-text{
+
 }
