@@ -6,11 +6,13 @@ function BigCard(props){
     return(
         <>
             <Link className="card">
-                <img
-                src={props.src}
-                alt="bigboi"
-                className="card-image"
-                />
+                <div className="card-image-wrap">
+                    <img
+                    src={props.src}
+                    alt="bigboi"
+                    className="card-image"
+                    />
+                </div>
             </Link>
         
         </>

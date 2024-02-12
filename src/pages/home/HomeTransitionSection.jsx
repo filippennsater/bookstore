@@ -14,8 +14,8 @@ function HomeTransitionSection() {
 
         <div className='cards-container'>
 
-        <BigCard src='images/exampleImage.png' header='Last months winner!' text='Bigger Project' path='/' />
-        <BigCard src='images/exampleImage.png' header='Last months winner!' text='Bigger Project' path='/' />
+        <BigCard src='images/ex1.jpg' header='Last months winner!' text='Bigger Project' path='/' />
+        <BigCard src='images/ex2.jpg' header='Last months winner!' text='Bigger Project' path='/' />
         
         </div>
             
