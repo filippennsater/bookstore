@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+a{
+  text-decoration: none;
+  /*makes so no links have any styling*/
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
