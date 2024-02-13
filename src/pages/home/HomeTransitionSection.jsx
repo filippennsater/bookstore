@@ -23,7 +23,7 @@ function HomeTransitionSection() {
 
         <BigCard 
             src='images/ex2.jpg' 
-            header="Poetry contest winner 2024" 
+            header="Poetry contest winner 2023" 
             text='Elsa Vinterdal, with her beautiful sonnet "Shadows of Euphoria" enchanted the judges and clinched the first place. In second place followed Viktor Månsdotter with his gripping poetry cycle "Hovering Melancholy", while the profound Nils Björnsson took third place with his lyrical ode "The Day That Sings". A heartfelt congratulations to all three for their impressive contributions to the art of poetry!' 
             path='/' 
         />
