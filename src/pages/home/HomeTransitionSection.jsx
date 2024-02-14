@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../App.css';
 import './HomeTransitionSection.scss';
-import BigCard from '../../components/BigCards/BigCard';
-import '../../components/BigCards/BigCard.scss';
+import BigCard from '../../components/BigCard/BigCard';
+import '../../components/BigCard/BigCard.scss';
 
 
 function HomeTransitionSection() {
@@ -12,7 +12,7 @@ function HomeTransitionSection() {
 
     <div className='transition-container'>
 
-        <div className='cards-container'>
+        <div className='big-cards-container'>
 
         <BigCard 
             src='images/ex1.jpg' 

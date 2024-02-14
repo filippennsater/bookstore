@@ -5,12 +5,12 @@ import "./BigCard.scss";
 function BigCard(props){
     return(
         <>
-            <Link className="card" to={props.path}>
-                <div className="card-image-wrap">
+            <Link className="big-card" to={props.path}>
+                <div className="big-card-image-wrap">
                     <img
                     src={props.src}
                     alt="bigboi"
-                    className="card-image"
+                    className="big-card-image"
                     />
                     <div className="big-card-header">
                         {props.header}

@@ -1,5 +1,5 @@
 
-.cards-container {
+.big-cards-container {
     background-color: none;
     display: flex;
     flex-flow: row;
@@ -10,7 +10,7 @@
     margin: 40px auto;
   }
 
-.card{
+.big-card{
     background-color: none;
     width: 30%;
     height: 90%;
@@ -18,18 +18,18 @@
     overflow: hidden;
 }
 
-.card:hover {
+.big-card:hover {
   background-color: #9FCE9A;
   transition: 700ms;
 }
 
-.card-image-wrap{
+.big-card-image-wrap{
     background-color: none;
     height: 60%;
     margin: 10px;
 }
 
-.card-image{
+.big-card-image{
     background-color: green;
     top: 0;
     right: 0;
