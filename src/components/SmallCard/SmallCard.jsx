@@ -5,12 +5,12 @@ import "./SmallCard.scss";
 function SmallCard(props){
     return(
         <>
-            <Link className="card" to={props.path}>
-                <div className="card-image-wrap">
+            <Link className="small-card" to={props.path}>
+                <div className="small-card-image-wrap">
                     <img
                     src={props.src}
                     alt="smallboi"
-                    className="card-image"
+                    className="small-card-image"
                     />
                     <div className="small-card-header">
                         {props.header}
