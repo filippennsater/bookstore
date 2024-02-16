@@ -21,29 +21,29 @@ function GreenSection() {
                     <div className='small-white-cards-container'>
 
                         <SmallWhiteCard 
-                            src='images/book(1).jpg' 
-                            header='Explore Beatrice Fitzwilliams new book "What If?"' 
-                            text="Intriguing questions about alternate realities and choice" 
-                            path='/Market' 
-                        />
-
-                        <SmallWhiteCard 
-                            src='images/book(2).jpg' 
-                            header="Enchanting enigmas and captivating adventures" 
-                            text='' 
-                            path='/' 
-                        />
-
-                        <SmallWhiteCard 
-                            src='images/book(3).jpg' 
-                            header='Discover the secrets of craft beer from brewing to tasting!' 
+                            src='images/audiobook(1).jpg' 
+                            header='Vincent' 
                             text="" 
                             path='/Market' 
                         />
 
                         <SmallWhiteCard 
-                            src='images/book(4).jpg' 
-                            header="A beautifully illustrated tale about transformation and self-discovery" 
+                            src='images/audiobook(2).jpg' 
+                            header="Reflections by the Moonlit Pond" 
+                            text='' 
+                            path='/' 
+                        />
+
+                        <SmallWhiteCard 
+                            src='images/audiobook(3).jpg' 
+                            header='A Summer Saga' 
+                            text="" 
+                            path='/Market' 
+                        />
+
+                        <SmallWhiteCard 
+                            src='images/audiobook(4).jpg' 
+                            header="DR. Raven" 
                             text='' 
                             path='/' 
                         />
