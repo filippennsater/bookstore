@@ -8,6 +8,7 @@ import PearSection from './PearSection';
 import GreenSection from './GreenSection';
 import WhiteSection from './WhiteSection';
 import PurpleSection from './PurpleSection';
+import EndSection from './EndSection';
 import Footer from '../../components/footer/Footer';
 
 function Home (){
@@ -21,6 +22,7 @@ function Home (){
       <GreenSection/>
       <WhiteSection/>
       <PurpleSection/>
+      <EndSection/>
       <Footer/>
     </>
     );
