@@ -16,11 +16,15 @@
     height: 90%;
     margin: 30px;
     overflow: hidden;
+    filter: saturate(40%);
+    color: #555555;
 }
 
 .big-card:hover {
   background-color: #9FCE9A;
   transition: 700ms;
+  filter: saturate(100%);
+  color: #572D87;
 }
 
 .big-card-image-wrap{
@@ -46,18 +50,19 @@
 
 .big-card-header{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #555555;
+  //color: #555555;
+  //color: #572D87;
   font-size: 35px;
   margin-top: 5px;
 }
 
 .big-card-text{
   font-family: "Old Standard TT";
-  color: #555555;
+  //color: #555555;
+  //color: #572D87;
   font-size: 18px;
   font-weight: 600;
   margin-top: 15px;
   line-height: 25px;
-
   text-decoration: inherit;
 }
