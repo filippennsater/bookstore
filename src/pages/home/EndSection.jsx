@@ -17,27 +17,27 @@ function EndSection() {
                 <div className='ec-container'>
                     <div className='ec-line'/>
                     <div className='ec-hb-container'>
-                        <fcheader>NEW ARRIVALS</fcheader>
+                        <fcheader>PODCAST: The Literary Voyage</fcheader>
                     </div>
 
                     <div className='small-cards-container'>
 
                         <SmallCard 
-                            src='images/book(1).jpg' 
+                            src='images/pod(1).jpg' 
                             header='Explore Beatrice Fitzwilliams new book "What If?"' 
                             text="" 
                             path='/Market' 
                         />
 
                         <SmallCard 
-                            src='images/book(2).jpg' 
+                            src='images/pod(2).jpg' 
                             header="Enchanting enigmas and captivating adventures" 
                             text='' 
                             path='/' 
                         />
 
                         <SmallCard 
-                            src='images/book(3).jpg' 
+                            src='images/pod(3).jpg' 
                             header='Discover the secrets of craft beer from brewing to tasting!' 
                             text="" 
                             path='/Market' 
