@@ -1,24 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./SmallWhiteCard.scss";
+import "./StaticCard.scss";
 
-function SmallWhiteCard(props){
+function StaticCard(props){
     return(
         <>
-            <Link className="small-white-card" to={props.path}>
-                <div className="small-white-card-image-wrap">
+            <Link className="static-card" to={props.path}>
+                <div className="static-card-image-wrap">
                     <img
                     src={props.src}
                     alt="smallWboi"
-                    className="small-white-card-image"
+                    className="static-card-image"
                     />
                 </div>
 
-                    <div className="small-white-card-header">
+                    <div className="static-card-header">
                         {props.header}
                     </div>
 
-                    <div className="small-white-card-text">
+                    <div className="static-card-text">
                         {props.text}
                     </div>
                 
@@ -28,4 +28,4 @@ function SmallWhiteCard(props){
     );
 }
 
-export default SmallWhiteCard;
+export default StaticCard;

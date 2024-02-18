@@ -1,5 +1,5 @@
 
-.small-white-cards-container {
+.static-cards-container {
     background-color: none;
     display: flex;
     flex-flow: row;
@@ -10,25 +10,25 @@
     margin-top: 0px;
   }
   
-  .small-white-card{
+  .static-card{
     background-color: none;
     width: 350px;
+    height: 400px;
     margin: 15px;
     overflow: hidden;
   }
   
-  .small-white-card:hover {
-  background-color: #316d2b;
-  transition: 700ms;
+  .static-card:hover {
+  background-color: #9FCE9A;
   }
   
-  .small-white-card-image-wrap{
+  .static-card-image-wrap{
     background-color: none;
-    height: 60%;
+    height: 80%;
     margin: 10px;
   }
   
-  .small-white-card-image{
+  .static-card-image{
     background-color: green;
     top: 0;
     right: 0;
@@ -43,21 +43,20 @@
     transition: all 0.2s linear;
   }
   
-  .small-white-card-header{
+  .static-card-header{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #ffffff;
+  color: #000000;
   font-size: 25px;
   margin-top: 5px;
   margin-left: 15px;
   }
   
-  .small-white-card-text{
+  .static-card-text{
   font-family: "Old Standard TT";
-  color: #ffffff;
+  color: #000000;
   font-size: 15px;
   font-weight: 600;
   margin-top: 5px;
   line-height: 15px;
-  
   text-decoration: inherit;
   }

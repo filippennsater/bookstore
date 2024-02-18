@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../App.css';
 import './EndSection.scss';
-import SmallCard from '../../components/SmallCard/SmallCard';
-import '../../components/SmallCard/SmallCard.scss';
+import StaticCard from '../../components/StaticCard/StaticCard';
+import '../../components/StaticCard/StaticCard.scss';
 
 
 function EndSection() {
@@ -17,28 +17,28 @@ function EndSection() {
                 <div className='ec-container'>
                     <div className='ec-line'/>
                     <div className='ec-hb-container'>
-                        <fcheader>PODCAST: The Literary Voyage</fcheader>
+                        <echeader>PODCAST: The Literary Voyage</echeader>
                     </div>
 
-                    <div className='small-cards-container'>
+                    <div className='static-cards-container'>
 
-                        <SmallCard 
+                        <StaticCard 
                             src='images/pod(1).jpg' 
-                            header='Explore Beatrice Fitzwilliams new book "What If?"' 
+                            header='The Literary Voyage: #35&nbsp;William Torstensson'
                             text="" 
                             path='/Market' 
                         />
 
-                        <SmallCard 
+                        <StaticCard 
                             src='images/pod(2).jpg' 
-                            header="Enchanting enigmas and captivating adventures" 
+                            header="The Literary Voyage: #34&nbsp;Sofia Ullman" 
                             text='' 
                             path='/' 
                         />
 
-                        <SmallCard 
+                        <StaticCard 
                             src='images/pod(3).jpg' 
-                            header='Discover the secrets of craft beer from brewing to tasting!' 
+                            header='The Literary Voyage: #33&nbsp;Karl Hoffmann' 
                             text="" 
                             path='/Market' 
                         />
