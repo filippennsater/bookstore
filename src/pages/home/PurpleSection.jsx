@@ -19,8 +19,8 @@ function PurpleSection() {
 
                     <div className='purpc-hb-container'>
 
-                    <div className='purpc-hb-header-wrap'>
-                            <purpcheader>Book Inventory Suggestions</purpcheader>
+                        <div className='purpc-hb-header-wrap'>
+                            <purpcheader>BOOK INVENTORY SUGGESTIONS</purpcheader>
                         </div>
 
                         <div className='purpc-hb-button-wrap'>
@@ -34,6 +34,21 @@ function PurpleSection() {
                         </div>
 
                     </div>
+
+                    <div className='purp-bottom-container'>
+
+                        <div className='purp-circle-container'>
+                            <div className='purp-outer-circle'>
+                                <div className='purp-circle'/>
+                            </div>
+                        </div>
+
+                        <div className='purp-text-container'>
+                            <purpctext>Your input matters! We value your recommendations to enhance our store's inventory and cater to your preferences. Ready to share your favorite reads? Click the button to the right and let's make our shelves even better together!</purpctext>
+                        </div>
+
+                    </div>
+
             </div>
             
     </div>
