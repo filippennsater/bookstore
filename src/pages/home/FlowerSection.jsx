@@ -28,6 +28,7 @@ function FlowerSection() {
                             <RoundedButton
                             text='See more'
                             color='#42752F'
+                            colorAfter='white'
                             backAfter='#42752F'
                             path='/Market'
                             />

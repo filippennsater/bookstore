@@ -33,9 +33,25 @@
 }
 
 .purpc-hb-container{
+    display: flex;
     width: 900px;
     height: 50px;
     margin-top: 50px;
+}
+
+.purpc-hb-header-wrap{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.purpc-hb-button-wrap{
+    display: flex;
+    justify-content: right;     //sets button to the right
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
 }
 
 purpcheader{

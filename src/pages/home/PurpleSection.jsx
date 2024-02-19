@@ -1,6 +1,9 @@
 import React from 'react';
 import '../../App.css';
 import './PurpleSection.scss';
+import RoundedButton from '../../components/RoundedButton/RoundedButton';
+import '../../components/RoundedButton/RoundedButton.scss';
+
 
 
 function PurpleSection() {
@@ -16,7 +19,19 @@ function PurpleSection() {
 
                     <div className='purpc-hb-container'>
 
-                        <purpcheader>BOOK INVENTORY SUGGESTIONS</purpcheader>
+                    <div className='purpc-hb-header-wrap'>
+                            <purpcheader>NEW ARRIVALS</purpcheader>
+                        </div>
+
+                        <div className='purpc-hb-button-wrap'>
+                            <RoundedButton
+                            text='See more'
+                            color='white'
+                            colorAfter='#5A2677'
+                            backAfter='white'
+                            path='/Market'
+                            />
+                        </div>
 
                     </div>
             </div>

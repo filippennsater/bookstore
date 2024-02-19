@@ -15,7 +15,7 @@ function RoundedButton(props){
         
             <Link className="rounded-button" to={props.path} style={{ 
                 borderColor: props.color,
-                color: hovered ? 'white' : props.color,
+                color: hovered ? props.colorAfter : props.color,
                 backgroundColor: hovered ? props.backAfter : 'initial', // Change background color on hover
                 transition: 'background-color 0.3s' // Add smooth transition for hover effect
 
