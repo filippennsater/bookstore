@@ -3,6 +3,8 @@ import '../../App.css';
 import './FlowerSection.scss';
 import SmallCard from '../../components/SmallCard/SmallCard';
 import '../../components/SmallCard/SmallCard.scss';
+import RoundedButton from '../../components/RoundedButton/RoundedButton';
+import '../../components/RoundedButton/RoundedButton.scss';
 
 
 function FlowerSection() {
@@ -17,7 +19,20 @@ function FlowerSection() {
                 <div className='fc-container'>
                     <div className='fc-line'/>
                     <div className='fc-hb-container'>
-                        <fcheader>NEW ARRIVALS</fcheader>
+
+                        <div className='fc-hb-header-wrap'>
+                            <fcheader>NEW ARRIVALS</fcheader>
+                        </div>
+
+                        <div className='fc-hb-button-wrap'>
+                            <RoundedButton
+                            text='See more'
+                            color='#42752F'
+                            backAfter='#42752F'
+                            path='/Market'
+                            />
+                        </div>
+
                     </div>
 
                     <div className='small-cards-container'>

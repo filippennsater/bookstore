@@ -10,3 +10,36 @@
     object-fit: contain;
     z-index: 21;
 }
+
+.purpc-container{
+    //Have to be rgba with opacity at the end or the other child elements inside fc-container will also be affected by the opacity!
+    background-color: none;
+    width: 1000px;
+    height: 600px;
+
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+}
+
+.purpc-line{
+    width: 900px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+.purpc-hb-container{
+    width: 900px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+purpcheader{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+  }
