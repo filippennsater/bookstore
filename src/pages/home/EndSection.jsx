@@ -3,6 +3,8 @@ import '../../App.css';
 import './EndSection.scss';
 import StaticCard from '../../components/StaticCard/StaticCard';
 import '../../components/StaticCard/StaticCard.scss';
+import RoundedButton from '../../components/RoundedButton/RoundedButton';
+import '../../components/RoundedButton/RoundedButton.scss';
 
 
 function EndSection() {
@@ -17,7 +19,21 @@ function EndSection() {
                 <div className='ec-container'>
                     <div className='ec-line'/>
                     <div className='ec-hb-container'>
-                        <echeader>PODCAST: The Literary Voyage</echeader>
+
+                        <div className='ec-hb-header-wrap'>
+                            <echeader>PODCAST: The Literary Voyage</echeader>
+                        </div>
+
+                        <div className='ec-hb-button-wrap'>
+                            <RoundedButton
+                            text='See more'
+                            color='black'
+                            colorAfter='white'
+                            backAfter='black'
+                            path='/Market'
+                            />
+                        </div>
+
                     </div>
 
                     <div className='static-cards-container'>

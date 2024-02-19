@@ -20,7 +20,7 @@ function PurpleSection() {
                     <div className='purpc-hb-container'>
 
                     <div className='purpc-hb-header-wrap'>
-                            <purpcheader>NEW ARRIVALS</purpcheader>
+                            <purpcheader>Book Inventory Suggestions</purpcheader>
                         </div>
 
                         <div className='purpc-hb-button-wrap'>
