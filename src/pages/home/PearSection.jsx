@@ -3,6 +3,8 @@ import '../../App.css';
 import './PearSection.scss';
 import MediumCard from '../../components/MediumCard/MediumCard';
 import '../../components/MediumCard/MediumCard.scss';
+import RoundedButton from '../../components/RoundedButton/RoundedButton';
+import '../../components/RoundedButton/RoundedButton.scss';
 
 
 function PearSection() {
@@ -17,7 +19,21 @@ function PearSection() {
                 <div className='pc-container'>
                     <div className='pc-line'/>
                     <div className='pc-hb-container'>
-                        <pcheader>POPULAR</pcheader>
+                        
+                        <div className='pc-hb-header-wrap'>
+                            <pcheader>POPULAR</pcheader>
+                        </div>
+
+                        <div className='pc-hb-button-wrap'>
+                            <RoundedButton
+                            text='See more'
+                            color='#93CF9C'
+                            colorAfter='white'
+                            backAfter='#93CF9C'
+                            path='/Market'
+                            />
+                        </div>
+
                     </div>
 
                     <div className='medium-cards-container'>
