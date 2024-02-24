@@ -5,6 +5,8 @@ import './WhiteSection.scss';
 import MediumCard from '../../components/MediumCard/MediumCard';
 import '../../components/MediumCard/MediumCard.scss';
 
+import Carousel from 'react-bootstrap/Carousel';
+
 
 function WhiteSection() {
 
@@ -13,13 +15,14 @@ function WhiteSection() {
 
     <div className='white-container'>
 
+        <Carousel>
 
 
 
 
 
 
-
+        </Carousel>
             
     </div>
 
