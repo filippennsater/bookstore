@@ -6,7 +6,7 @@ import MediumCard from '../../components/MediumCard/MediumCard';
 import '../../components/MediumCard/MediumCard.scss';
 
 import Carousel from 'react-bootstrap/Carousel';
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 
 function WhiteSection() {
@@ -50,6 +50,8 @@ function WhiteSection() {
 
 
       </Carousel.Item>
+
+      
 
 
 
