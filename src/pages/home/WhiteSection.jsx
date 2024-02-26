@@ -8,6 +8,7 @@ import '../../components/MediumCard/MediumCard.scss';
 import Carousel from 'react-bootstrap/Carousel';
 
 
+
 function WhiteSection() {
 
 
@@ -20,6 +21,34 @@ function WhiteSection() {
 
         <Carousel.Item>
         
+        <div className='medium-cards-container'>
+
+<MediumCard 
+    src='images/book(5).jpg' 
+    header='Elderly Globetrotters' 
+    text="Jasper Wilde" 
+    path='/Market' 
+/>
+
+<MediumCard 
+    src='images/book(6).jpg' 
+    header="Wings" 
+    text="Linnea Berggren"
+    path='/' 
+/>
+
+<MediumCard 
+    src='images/book(7).jpg' 
+    header='Damsel' 
+    text="Clara Müller" 
+    path='/Market' 
+/>
+
+
+
+</div>
+
+
       </Carousel.Item>
 
 
