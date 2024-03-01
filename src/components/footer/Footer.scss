@@ -249,3 +249,17 @@
     font-weight: bolder;
     font-family: 'Dancing Script', cursive;
 }
+
+.footer-logo {
+  background: url('../../../public/images/logo-PandP.png') center center/cover no-repeat;
+  color: #ffffff;
+  justify-self: start;
+  margin-left: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  height: 51px;
+  width: 156px;
+  display: flex;
+  align-items: center;
+  
+}
