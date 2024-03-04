@@ -39,12 +39,13 @@
 
 .nav-menu {
   display: grid;
+  background-color: none;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 50px;
+  grid-gap: 25px;
   list-style: none;
   text-align: center;
-  width: 60vw;
-  justify-content: end;
+  width: 26vw;
+  justify-content: center;
   margin-right: 2rem;
 }
 
@@ -54,6 +55,8 @@
 
 .nav-links {
   color: #ffffff;
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
   text-decoration: none;
