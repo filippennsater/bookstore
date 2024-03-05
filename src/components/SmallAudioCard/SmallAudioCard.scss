@@ -1,5 +1,5 @@
 
-.small-white-cards-container {
+.small-audio-cards-container {
     background-color: none;
     display: flex;
     flex-flow: row;
@@ -10,25 +10,35 @@
     margin-top: 0px;
   }
   
-  .small-white-card{
+  .small-audio-card{
     background-color: none;
     width: 350px;
     margin: 15px;
     overflow: hidden;
   }
   
-  .small-white-card:hover {
+  .small-audio-card:hover {
   background-color: #316d2b;
   transition: 700ms;
   }
   
-  .small-white-card-image-wrap{
+  .small-audio-card-image-wrap{
+    position: relative;
     background-color: none;
     height: 60%;
     margin: 10px;
   }
+  .audio-logo{
+    position:absolute;
+    background-color: rgb(54, 54, 148);
+    background: url('../../../public/images/audiologo.png') bottom left/cover no-repeat;
+    background-size: 30%;
+    height: 100%;
+    width: 100%;
+    margin-top: -80%;
+  }
   
-  .small-white-card-image{
+  .small-audio-card-image{
     background-color: green;
     top: 0;
     right: 0;
@@ -43,7 +53,7 @@
     transition: all 0.2s linear;
   }
   
-  .small-white-card-header{
+  .small-audio-card-header{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #ffffff;
   font-size: 25px;
@@ -51,7 +61,7 @@
   margin-left: 15px;
   }
   
-  .small-white-card-text{
+  .small-audio-card-text{
   font-family: "Old Standard TT";
   color: #ffffff;
   font-size: 15px;

@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../App.css';
 import './GreenSection.scss';
-import SmallWhiteCard from '../../components/SmallWhiteCard/SmallWhiteCard';
-import '../../components/SmallWhiteCard/SmallWhiteCard.scss';
+import SmallAudioCard from '../../components/SmallAudioCard/SmallAudioCard';
+import '../../components/SmallAudioCard/SmallAudioCard.scss';
 import RoundedButton from '../../components/RoundedButton/RoundedButton';
 import '../../components/RoundedButton/RoundedButton.scss';
 
@@ -33,30 +33,30 @@ function GreenSection() {
                         </div>
                     </div>
 
-                    <div className='small-white-cards-container'>
+                    <div className='small-audio-cards-container'>
 
-                        <SmallWhiteCard 
+                        <SmallAudioCard 
                             src='images/audiobook(1).jpg' 
                             header='Vincent' 
                             text="" 
                             path='/Market' 
                         />
 
-                        <SmallWhiteCard 
+                        <SmallAudioCard 
                             src='images/audiobook(2).jpg' 
                             header="Reflections by the Moonlit Pond" 
                             text='' 
                             path='/' 
                         />
 
-                        <SmallWhiteCard 
+                        <SmallAudioCard 
                             src='images/audiobook(3).jpg' 
                             header='A Summer Saga' 
                             text="" 
                             path='/Market' 
                         />
 
-                        <SmallWhiteCard 
+                        <SmallAudioCard 
                             src='images/audiobook(4).jpg' 
                             header="DR. Raven" 
                             text='' 
