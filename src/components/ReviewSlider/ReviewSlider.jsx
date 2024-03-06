@@ -42,30 +42,35 @@ function ReviewSlider(){
 
 const data = [
     {
-      name: `John Morgan`,
-      img: `/images/reviews/John_Morgan.jpg`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+      name: `Daniel Larsson`,
+      img: `/images/reviews/Daniel_Larsson.jpg`,
+      review: `Impressive selection of books across various genres, ensuring there's something for everyone.`
     },
     {
       name: `Ellie Anderson`,
-      img: `/images/reviews/Ellie_Anderson.jpg`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+      img: `/images/reviews/Ellie_Andersson.jpg`,
+      review: `Fantastic customer service that's responsive and helpful whenever I have questions or concerns.`
     },
     {
-      name: `Rigo Louie`,
-      img: `/images/reviews/Rigo_Louie.jpg`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+      name: `Maria Lindberg`,
+      img: `/images/reviews/Maria_Lindberg.jpg`,
+      review: `Great prices and frequent discounts make it easy to indulge in my reading passion without breaking the bank.`
     },
     {
-      name: `Nia Adebayo`,
-      img: `/images/reviews/Nia_Adebayo.jpg`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+      name: `Elin Zheng`,
+      img: `/images/reviews/Elin_Zheng.jpg`,
+      review: `The online store's user-friendly interface makes browsing and purchasing books a breeze!`
     },
     {
-      name: `Mia Williams`,
-      img: `/images/reviews/Mia_Williams.jpg`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
-    },
+        name: `Johan Bergström`,
+        img: `/images/reviews/Johan_Bergstrom.jpg`,
+        review: `I love the competitive prices and regular promotions that make shopping for books here a bargain hunter's dream.`
+      },
+    {
+        name: `Andreas Adebayo`,
+        img: `/images/reviews/Andreas_Adebayo.jpg`,
+        review: `The vast selection of titles means I always find what I'm looking for, and often discover new favorites too!`
+      },
     
   ];
 
