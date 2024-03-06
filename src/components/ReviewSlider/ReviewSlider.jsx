@@ -21,7 +21,7 @@ function ReviewSlider(){
             <div className="mt-20">
                 <Slider {...settings}>
                 {data.map((d) => (
-                    <div key={d.name} className="bg-white h-[450px] text-black rounded-xl">
+                    <div key={d.name} className="bg-white h-[530px] text-black rounded-xl">
                     <div className='h-56 bg-violet-900 flex justify-center items-center rounded-t-xl'>
                         <img src={d.img} alt="" className="h-44 w-44 rounded-full"/>
                     </div>
@@ -52,13 +52,13 @@ const data = [
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
-      name: `Nia Adebayo`,
-      img: `/images/reviews/Nia_Adebayo.jpg`,
+      name: `Rigo Louie`,
+      img: `/images/reviews/Rigo_Louie.jpg`,
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {
-      name: `Rigo Louie`,
-      img: `/images/reviews/Rigo_Louie.jpg`,
+      name: `Nia Adebayo`,
+      img: `/images/reviews/Nia_Adebayo.jpg`,
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
     },
     {

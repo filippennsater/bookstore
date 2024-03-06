@@ -1,4 +1,4 @@
-@tailwind base;
+/*@tailwind base; removed this because it's fkn up the settings in a lot of scss and text*/
 @tailwind components;
 @tailwind utilities;
 
