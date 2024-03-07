@@ -29,7 +29,7 @@ function ReviewSlider(){
                     <div className="flex flex-col items-center justify-center gap-4 p-4">
                         <p className="text-xl font-semibold">{d.name}</p>
                         <p className="text-center">{d.review}</p>
-                        <button className='bg-violet-900 text-white text-lg px-6 py-1 rounded-xl'>Read More</button>
+                        <button className='bg-violet-900 text-white text-lg px-6 py-1 rounded-xl cursor-pointer'>Read More</button>
                     </div>
                     </div>
                 ))}
@@ -47,7 +47,7 @@ const data = [
       review: `Impressive selection of books across various genres, ensuring there's something for everyone.`
     },
     {
-      name: `Ellie Anderson`,
+      name: `Ellie Andersson`,
       img: `/images/reviews/Ellie_Andersson.jpg`,
       review: `Fantastic customer service that's responsive and helpful whenever I have questions or concerns.`
     },
