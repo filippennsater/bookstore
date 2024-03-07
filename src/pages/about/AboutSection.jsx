@@ -5,7 +5,7 @@ import './AboutSection.scss';
 function AboutSection() {
     return (
 
-        <div className='hero-container'>
+        <div className='about-container'>
             
             <p>About</p>
 

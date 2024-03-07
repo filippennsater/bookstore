@@ -9,12 +9,7 @@ export const ThemeContext = createContext(null);
 
 function Navbar() {
 
-
-
-
-
-
-
+ 
     const [click, setClick] = useState(false);
     // const [button, setButton] = useState(true);
 
@@ -38,6 +33,7 @@ function Navbar() {
     window.addEventListener('resize', showButton);
 
 
+  
 
 
     return (
@@ -85,8 +81,10 @@ function Navbar() {
                 </div>
 
             </nav>
+            
         </>
     );
+    
 }
 
 export default Navbar;
