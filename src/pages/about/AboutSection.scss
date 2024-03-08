@@ -1,11 +1,22 @@
 .about-container{
+    background: url('../../../public/images/back-eng.jpg') center center/cover no-repeat;
+    //background-attachment:  fixed;
     background-color: black;
-    height: 1000px;
+    height: 850px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    filter: saturate(0%);
     
     align-items: center;
+    justify-items: center;
     object-fit: contain;
     z-index: 21;
+}
+
+.bl-text-container{
+    height: 400px;
+    width: 900px;
+    background-color: black;
+    opacity: 50%;
 }

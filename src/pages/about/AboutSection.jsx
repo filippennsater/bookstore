@@ -7,7 +7,11 @@ function AboutSection() {
 
         <div className='about-container'>
             
-            <p>About</p>
+            <div className='bl-text-container'>
+
+                
+
+            </div>
 
         </div>
 
