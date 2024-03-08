@@ -14,30 +14,20 @@ function ValueSection() {
 
             <div className='valc-container'>
 
-                    <div className='valc-line'/>
-
-                    <div className='valc-hb-container'>
-
-                        <div className='valc-hb-header-wrap'>
-                            <valcheader>Our values</valcheader>
-                        </div>
-
-                        
-
-                    </div>
+                    <div className='valc-hb-container'/>
 
                     <div className='val-bottom-container'>
+
+                        <div className='val-text-container'>
+                            <valctext>At Philip & Pen, we are committed to sustainable practices in every aspect of our online bookstore. We prioritize environmentally friendly packaging materials, opting for recycled and biodegradable options wherever possible to minimize our ecological footprint. Additionally, we partner with publishers who share our values, selecting books printed on sustainably sourced paper and utilizing digital distribution methods whenever feasible. We actively encourage customers to consider digital formats for their reading enjoyment, reducing the need for physical materials. Through these efforts, we strive to contribute positively to the environment while providing exceptional literary experiences to our valued patrons!</valctext>
+                        </div>
 
                         <div className='val-circle-container'>
                             <div className='val-outer-circle'>
                                 <div className='val-circle'/>
                             </div>
                         </div>
-
-                        <div className='val-text-container'>
-                            <valctext>Your input matters! We value your recommendations to enhance our store's inventory and cater to your preferences. Ready to share your favorite reads? Click the button to the right and let's make our shelves even better together!</valctext>
-                        </div>
-
+                        
                     </div>
 
             </div>
