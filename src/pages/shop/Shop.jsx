@@ -1,15 +1,15 @@
 import React from 'react'
 import '../../App.css'
-import MarketSection from './MarketSection'
+import BooksSection from './BooksSection'
 import Footer from '../../components/footer/Footer';
 
-function Market (){
+function Shop (){
     return (
     <>
-      <MarketSection/>
+      <BooksSection/>
       <Footer/>
     </>
     );
 }
 
-export default Market;
+export default Shop;

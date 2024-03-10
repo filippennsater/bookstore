@@ -1,17 +1,17 @@
 import React from 'react';
 import '../../App.css';
-import './MarketSection.scss';
+import './BooksSection.scss';
 
-function MarketSection() {
+function BooksSection() {
     return (
 
         <div className='hero-container'>
             
-            <p>Market</p>
+            <p>Books</p>
 
         </div>
 
     )
 }
 
-export default MarketSection
+export default BooksSection

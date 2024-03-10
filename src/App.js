@@ -5,7 +5,7 @@ import Navbar from './components/navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home/Home';
-import Market from './pages/market/Market';
+import Shop from './pages/shop/Shop';
 import Favorites from './pages/favorites/Favorites';
 import About from './pages/about/About';
 
@@ -17,7 +17,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" exact Component={Home} />
-          <Route path="/market" exact Component={Market} />
+          <Route path="/shop" exact Component={Shop} />
           <Route path="/favorites" exact Component={Favorites} />
           <Route path="/about" exact Component={About} />
         </Routes>
