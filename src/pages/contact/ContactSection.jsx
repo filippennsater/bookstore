@@ -5,7 +5,7 @@ import './ContactSection.scss';
 function ContactSection() {
     return (
 
-        <div className='hero-container'>
+        <div className='contact-container'>
             
             <p>Contact</p>
 
