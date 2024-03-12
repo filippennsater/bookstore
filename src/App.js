@@ -7,7 +7,7 @@ import ScrollToTop from './ScrollToTop';
 
 import Home from './pages/home/Home';
 import Shop from './pages/shop/Shop';
-import Favorites from './pages/favorites/Favorites';
+import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" exact Component={Home} />
           <Route path="/shop" exact Component={Shop} />
-          <Route path="/favorites" exact Component={Favorites} />
+          <Route path="/contact" exact Component={Contact} />
           <Route path="/about" exact Component={About} />
         </Routes>
       </Router>

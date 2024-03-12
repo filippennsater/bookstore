@@ -1,17 +1,17 @@
 import React from 'react';
 import '../../App.css';
-import './FavoriteSection.scss';
+import './ContactSection.scss';
 
-function FavoriteSection() {
+function ContactSection() {
     return (
 
         <div className='hero-container'>
             
-            <p>Favorites</p>
+            <p>Contact</p>
 
         </div>
 
     )
 }
 
-export default FavoriteSection
+export default ContactSection
