@@ -1,15 +1,15 @@
 import React from 'react'
 import '../../App.css'
-import FavoriteSection from './FavoriteSection'
+import ContactSection from './ContactSection'
 import Footer from '../../components/footer/Footer';
 
-function Favorites (){
+function Contact (){
     return (
     <>
-      <FavoriteSection/>
+      <ContactSection/>
       <Footer/>
     </>
     );
 }
 
-export default Favorites;
+export default Contact;
