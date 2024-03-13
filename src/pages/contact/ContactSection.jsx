@@ -6,8 +6,12 @@ function ContactSection() {
     return (
 
         <div className='contact-container'>
+
+            <div className='contact-info-wrap'>
+
+                 <div className='logo-black-container'/>
             
-            <p>Contact</p>
+            </div>
 
         </div>
 

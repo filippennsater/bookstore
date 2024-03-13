@@ -3,14 +3,35 @@
     width: 100%;
     height: 1200px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
     align-items: center;
+    justify-content: center;
     object-fit: contain;
     z-index: 21;
 }
 
+.contact-info-wrap{
+    background-color: #9b2d2d;
+    width: 70%;
+    height: 1200px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: top;
+    justify-content: center;
+    object-fit: contain;
+    z-index: 21;
+
+}
+
 .logo-black-container{
-    background: url('../../../public/images/logo-black.png') right center no-repeat;
-    background-size: 50%;
+    background: url('../../../public/images/logo-black.png') center center no-repeat;
+    background-size: 100%;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    z-index: 30;
+    justify-content: center;
+    align-items: center;
 }
