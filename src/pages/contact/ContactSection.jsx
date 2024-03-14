@@ -9,7 +9,15 @@ function ContactSection() {
 
             <div className='contact-info-wrap'>
 
-                 <div className='logo-black-container'/>
+                <div className='left-container'>
+
+                    <div className='logo-black-container'/>
+
+                </div>
+                <div className='right-container'>
+
+
+                </div>
             
             </div>
 

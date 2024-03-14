@@ -28,6 +28,7 @@
 .logo-black-container{
     background: url('../../../public/images/logo-black.png') center center no-repeat;
     background-size: 100%;
+    background-color: purple;
     width: 350px;
     height: 350px;
     display: flex;
@@ -39,18 +40,18 @@
 .left-container{
     background-color: green;
     width: 350px;
-    height: 350px;
+    height: 100%;
     display: flex;
     z-index: 30;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
 .right-container{
     background-color: blue;
     width: 350px;
-    height: 350px;
+    height: 100%;
     display: flex;
     z-index: 30;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
