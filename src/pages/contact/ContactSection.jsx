@@ -16,36 +16,47 @@ function ContactSection() {
                 </div>
                 <div className='right-container'>
 
-                    <cInfoHeader>
-                        Phone<br/>
-                    </cInfoHeader>
-                    <cInfoText>
-                        000-XXX XX XX
-                    </cInfoText>
+                    <h30>
+                        Phone
+                    </h30>
+                    
+                    <p30>
+                        000-XXX XX XX<br/>
+                        Our phone hours are between 9:00 AM and 5:00 PM, Monday through Friday.
+                    </p30>
 
 
-                    <cInfoHeader>
-                        
-                    </cInfoHeader>
-                    <cInfoText>
-                        
-                    </cInfoText>
+
+                    <h30>
+                        Adress
+                    </h30>
+                    
+                    <p30>
+                        PHILIP & PEN<br/>
+                        Make-Believe Lane 00<br/>
+                        000 00 LUND
+                    </p30>
+                    
 
 
-                    <cInfoHeader>
-                        
-                    </cInfoHeader>
-                    <cInfoText>
-                        
-                    </cInfoText>
+                    <h30>
+                        Socials
+                    </h30>
+                    
+                    <p30>
+                        Follow us on our <a href="https://www.instagram.com/kira.and.minou/" target="blank">social media!</a>
+                    </p30>
 
 
-                    <cInfoHeader>
-                        
-                    </cInfoHeader>
-                    <cInfoText>
-                        
-                    </cInfoText>
+
+                    <h30>
+                        Poetry competition 2024!
+                    </h30>
+                    
+                    <p30>
+                        Here, you can submit your entries for our poetry competition.<br/>By participating, you agree that we reserve the right to publish your texts on our website.
+                    </p30>
+
 
                     
 
