@@ -16,25 +16,38 @@ function ContactSection() {
                 </div>
                 <div className='right-container'>
 
-                    <div className='c-info-header'>
-                    </div>
-                    <div className='c-info-text'>
-                    </div>
+                    <cInfoHeader>
+                        Phone<br/>
+                    </cInfoHeader>
+                    <cInfoText>
+                        000-XXX XX XX
+                    </cInfoText>
 
-                    <div className='c-info-header'>
-                    </div>
-                    <div className='c-info-text'>
-                    </div>
 
-                    <div className='c-info-header'>
-                    </div>
-                    <div className='c-info-text'>
-                    </div>
+                    <cInfoHeader>
+                        
+                    </cInfoHeader>
+                    <cInfoText>
+                        
+                    </cInfoText>
 
-                    <div className='c-info-header'>
-                    </div>
-                    <div className='c-info-text'>
-                    </div>
+
+                    <cInfoHeader>
+                        
+                    </cInfoHeader>
+                    <cInfoText>
+                        
+                    </cInfoText>
+
+
+                    <cInfoHeader>
+                        
+                    </cInfoHeader>
+                    <cInfoText>
+                        
+                    </cInfoText>
+
+                    
 
                 </div>
             
