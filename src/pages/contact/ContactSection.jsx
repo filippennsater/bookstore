@@ -3,6 +3,13 @@ import '../../App.css';
 import './ContactSection.scss';
 
 function ContactSection() {
+
+    file.onload = function() {
+        setPreview(file.result);
+      }
+
+    const [preview, setPreview] = useState<string | ArrayBuffer | null>(null);
+
     return (
 
         <div className='contact-container'>
@@ -58,7 +65,42 @@ function ContactSection() {
                     </p30>
 
 
-                    
+                    <form className="max-w-md border border-gray-200 rounded p-6 mx-auto" onSubmit={handleOnSubmit}>
+                        <FormRow className="mb-5">
+                            <FormLabel htmlFor="name">Name</FormLabel>
+                            <InputText id="name" name="name" type="text" />
+                        </FormRow>
+
+                        <FormRow className="mb-5">
+                            <FormLabel htmlFor="email">Email</FormLabel>
+                            <InputText id="email" name="email" type="email" />
+                        </FormRow>
+                        
+                        <FormRow className="mb-5">
+                            <FormLabel htmlFor="message">Message</FormLabel>
+                            <InputText id="message" name="message" type="text" />
+                        </FormRow>
+
+                        <FormRow className="mb-5">
+                            <FormLabel htmlFor="image">Image</FormLabel>
+                            <div {...getRootProps()}>
+                            <input {...getInputProps()} />
+                            {
+                                isDragActive ?
+                                <p>Drop the files here ...</p> :
+                                <p>Drag 'n' drop some files here, or click to select files</p>
+                            }
+                            </div>
+                        </FormRow>
+
+                        {preview && (
+                            <p className="mb-5">
+                            <img src={preview as string} alt="Upload preview" />
+                            </p>
+                        )}
+
+                        <Button>Submit</Button>
+                    </form>
 
                 </div>
             
