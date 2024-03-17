@@ -18,7 +18,7 @@ function ContactSection() {
                 <div className='right-container'>
 
                     <h30>
-                        Phone
+                    <br />Phone
                     </h30>
 
                     <p30>
@@ -55,21 +55,21 @@ function ContactSection() {
                     </h30>
 
                     <p30>
-                        Here, you can submit your entries for our poetry competition.<br />By participating, you agree that we reserve the right to publish your texts on our website.
+                        Here, you can submit your entries for our poetry competition.<br />By participating, you agree that we reserve the right to publish your texts on our website.<br /><br />
                     </p30>
 
                     <form>
                         <label>
-                            Name:<br />
-                            <input type="text" name="name" /><br />
+                            Name<br />
+                            <input className='input-competition' type="text" name="name" /><br />
                         </label>
                         <label>
-                            Email:<br />
-                            <input type="text" name="name" /><br />
+                            Email<br />
+                            <input className='input-competition' type="text" name="name" /><br />
                         </label>
                         <label>
-                            Phonenumber:<br />
-                            <input type="text" name="name" /><br /><br />
+                            Phonenumber<br />
+                            <input className='input-competition' type="text" name="name" /><br /><br />
                         </label>
                         
                         <input type="file" />

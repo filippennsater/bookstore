@@ -63,7 +63,7 @@ h30{
     //color: #555555;
     //color: #572D87;
     font-size: 25px;
-    margin-top: 60px;
+    margin-top: 40px;
     letter-spacing: 2px;
   }
   
@@ -76,4 +76,11 @@ p30{
     margin-top: 30px;
     line-height: 35px;
     text-decoration: inherit;
+  }
+
+  .input-competition{
+    margin-bottom: 10px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(0, 0, 0)
   }
