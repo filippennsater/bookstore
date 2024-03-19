@@ -12,8 +12,8 @@
 
 .button-container{
     background-color: #9FCE9A;
-    width: 1000px;
-    height: 150px;
+    width: calc(220px + 30vw);
+    height: calc(100px + 2vw);
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
