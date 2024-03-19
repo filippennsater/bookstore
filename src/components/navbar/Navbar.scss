@@ -26,8 +26,8 @@
   margin-left: 0px;
   cursor: pointer;
   text-decoration: none;
-  height: 81px;
-  width: 246px;
+  height: calc(40px + 3.2vw);
+  width: calc(130px + 3.2vw);
   display: flex;
   align-items: center;
   
@@ -84,7 +84,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1700px) {
   .NavbarItems {
     position: relative;
   }
