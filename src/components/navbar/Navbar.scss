@@ -1,7 +1,8 @@
 .navbar {
   background-color: #9FCE9A;
-  height: 180px;
+  height: flex;
   display: flex;
+  padding: 2%;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
@@ -126,9 +127,10 @@
 
   .navbar-logo {
     position: absolute;
-    top: 0;
+    //top: 0;
+    align-self: center;
     left: 0;
-    transform: translate(25%, 50%);
+    //transform: translate(25%, 50%);
   }
 
   .menu-icon {
