@@ -19,15 +19,15 @@
 .logo-container {
     background: url('../../../public/images/logo-PandP-green.png') center center/cover no-repeat;
     margin-top: 50px;
-    width: 507px;
-    min-height: 167px;
+    width: calc(210px + 7vw);
+    height: calc(60px + 7vw);
     
     z-index: 22;
 }
 
 h20{
     color: white;
-    font-size: 35px;
+    font-size: calc(12px + 0.9vw);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
