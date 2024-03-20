@@ -5,16 +5,16 @@
     flex-flow: row;
     align-items: center;
     justify-content: center;
-    width: 60%;
-    height: 900px;
-    margin: 40px auto;
+    width: calc(600px + 35vw);
+    height: calc(300px + 35vw);
+    margin-top: 40px;
   }
 
 .big-card{
     background-color: none;
     width: 30%;
     height: 90%;
-    margin: 30px;
+    margin: calc(2.2vw - 5px);
     overflow: hidden;
     filter: saturate(40%);
     color: #555555;
@@ -52,7 +52,7 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   //color: #555555;
   //color: #572D87;
-  font-size: 35px;
+  font-size: calc(10px + 0.9vw);
   margin-top: 5px;
 }
 
@@ -60,9 +60,9 @@
   font-family: "Old Standard TT";
   //color: #555555;
   //color: #572D87;
-  font-size: 18px;
+  font-size: calc(8px + 0.38vw);
   font-weight: 600;
   margin-top: 15px;
-  line-height: 25px;
+  line-height: calc(10px + 0.6vw);
   text-decoration: inherit;
 }
