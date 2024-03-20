@@ -3,17 +3,18 @@
     background-color: none;
     display: flex;
     flex-flow: row;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     width: calc(600px + 35vw);
-    height: calc(300px + 35vw);
+    height: calc(350px + 35vw);
     margin-top: 40px;
+    object-fit: contain;
   }
 
 .big-card{
     background-color: none;
-    width: 30%;
-    height: 90%;
+    width: calc(33% - 50px);
+    height: calc(350px + 14vw);
     margin: calc(2.2vw - 5px);
     overflow: hidden;
     filter: saturate(40%);
@@ -60,9 +61,10 @@
   font-family: "Old Standard TT";
   //color: #555555;
   //color: #572D87;
-  font-size: calc(8px + 0.38vw);
+  font-size: calc(6px + 0.46vw);
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: calc(5px + 0.4vw);
   line-height: calc(10px + 0.6vw);
   text-decoration: inherit;
+  object-fit: contain;
 }
