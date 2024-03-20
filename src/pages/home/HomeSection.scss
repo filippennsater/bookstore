@@ -19,8 +19,8 @@
 .logo-container {
     background: url('../../../public/images/logo-PandP-green.png') center center/cover no-repeat;
     margin-top: 50px;
-    width: calc(210px + 7vw);
-    height: calc(60px + 7vw);
+    width: calc(210px + 7.5vw);
+    height: calc(60px + 7.5vw);
     
     z-index: 22;
 }
@@ -45,7 +45,7 @@ h20{
 }
 
 .intro-container{
-    margin-top: 35px;
+    margin-top: 20px;
     margin-bottom: 3%;
     justify-content: top;
 
@@ -62,7 +62,7 @@ h20{
 }
 
 .first-button{
-    margin-top: 40px;
+    margin-top: 45px;
     align-items: center;
     object-fit: contain;
     display: flex;
