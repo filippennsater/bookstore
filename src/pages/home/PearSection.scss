@@ -3,13 +3,14 @@
     justify-self: center;
     background-color: #f1f1f1;
     width: 100%;
-    height: 600px;
+    height: calc(250px + 14vw);
     z-index: 24;
 }
 
 .pear-container {
     background: url('../../../public/images/pear.png') bottom left no-repeat;
-    background-position: 0% 160%;
+    background-position: 0% calc(450px - 3vw);
+    background-size: calc(300px + 30vw);
     width: 100%;
     height: 100%;
     display: flex;
@@ -21,8 +22,8 @@
 
 .pc-container{
     background-color: none;
-    width: 1000px;
-    height: 600px;
+    width: calc(250px + 30vw);
+    height: calc(150px + 18vw);
 
     justify-self: center;
 
@@ -34,16 +35,17 @@
 
 .pc-line{
     width: 100%;
-    height: 2px;
+    height: calc(1px + 0.06vw);
     background-color: #93CF9C;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 .pc-hb-container{
     display: flex;
     width: 100%;
-    height: 50px;
-    margin-top: 50px;
+    height: flex;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 .pc-hb-header-wrap{
@@ -64,5 +66,5 @@
 pcheader{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #000000;
-    font-size: 30px;
+    font-size: calc(8px + 0.9vw);
   }

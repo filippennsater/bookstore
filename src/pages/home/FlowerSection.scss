@@ -3,7 +3,7 @@
     justify-self: center;
     background-color: #42752F;
     width: 100%;
-    height: calc(400px + 12vw);
+    height: calc(250px + 19vw);
     z-index: 24;
 }
 
@@ -34,7 +34,7 @@
 .fc-container{
     //Have to be rgba with opacity at the end or the other child elements inside fc-container will also be affected by the opacity!
     background-color: rgba(255, 255, 255, 0.8);
-    width: calc(200px + 32vw);
+    width: calc(250px + 30vw);
     height: calc(150px + 18vw);
 
     justify-self: center;
