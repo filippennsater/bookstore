@@ -1,7 +1,7 @@
 .green-container {
     background-color: #93CF9C;
     width: 100%;
-    height: 500px;
+    height: calc(150px + 14vw);
     display: flex;
     flex-direction: column;
     
@@ -13,8 +13,8 @@
 .gc-container{
     //Have to be rgba with opacity at the end or the other child elements inside fc-container will also be affected by the opacity!
     background-color: none;
-    width: 1000px;
-    height: 600px;
+    width: calc(250px + 30vw);
+    height: 100%;
 
     justify-self: center;
 
@@ -26,17 +26,17 @@
 
 .gc-line{
     width: 100%;
-    height: 2px;
+    height: calc(1px + 0.06vw);
     background-color: #ffffff;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 .gc-hb-container{
     display: flex;
     width: 100%;
-    height: 50px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    height: flex;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
 .gc-hb-header-wrap{
@@ -58,5 +58,5 @@
 gcheader{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ffffff;
-    font-size: 30px;
+    font-size: calc(8px + 0.9vw);
   }
