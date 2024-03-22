@@ -1,6 +1,6 @@
 .navbar {
   background-color: #9FCE9A;
-  height: flex;
+  height: calc(60px + 0.8vw);
   display: flex;
   padding: 2%;
   justify-content: center;
@@ -93,11 +93,11 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
-    width: flex;
-    height: flex;
+    width: 100%;
+    height: fit-content;
     position: absolute;
     justify-content: start;
-    top: 161px;
+    top: calc(60px + 0.8vw);
     right: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -115,8 +115,9 @@
 
   .nav-links {
     text-align: center;
-    padding: 2rem;
-    width: 50%;
+    justify-content: center;
+    padding: 5%;
+    width: 100%;
     display: table;
   }
 
