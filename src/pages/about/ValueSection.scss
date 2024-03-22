@@ -2,7 +2,7 @@
     //background-color: #703A7D;
     background: linear-gradient(60deg, rgb(1, 128, 22) 0%, rgb(7, 77, 5) 35%, rgb(0, 66, 10) 100%);
     width: 100%;
-    height: 500px;
+    height: calc(150px + 14vw);
     display: flex;
     flex-direction: column;
     
@@ -14,7 +14,7 @@
 .valc-container{
     //Have to be rgba with opacity at the end or the other child elements inside fc-container will also be affected by the opacity!
     background-color: none;
-    width: 1000px;
+    width: calc(250px + 30vw);
     height: 100%;
 
     justify-self: center;
@@ -27,16 +27,17 @@
 
 .valc-line{
     width: 100%;
-    height: 2px;
+    height: calc(1px + 0.06vw);
     background-color: #ffffff;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 .valc-hb-container{
     display: flex;
     width: 100%;
-    height: 50px;
-    margin-top: 50px;
+    height: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .valc-hb-header-wrap{
@@ -57,23 +58,23 @@
 valcheader{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ffffff;
-    font-size: 30px;
+    font-size: calc(8px + 0.9vw);
 }
 
 .val-bottom-container{
+    background-color: none;
     display: flex;
     width: 100%;
-    height: 200px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    height: flex;
+    align-items: center;
     
 }
 
 .val-circle-container{
 
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: calc(25px + 7vw);
+    height: calc(25px + 7vw);
     justify-content: center;
     align-content: center;
     
@@ -89,7 +90,7 @@ valcheader{
 }
 .val-outer-circle{
     display: flex;
-    border-width: 3px;
+    border-width: calc(1px + 0.06vw);
     border-color: white;
     border-style: solid;
     border-radius: 100%;
@@ -103,7 +104,7 @@ valcheader{
 
 .val-text-container{
     display: flex;
-    width: 700px;
+    width: 70%;
     margin-left: 5%;
     margin-right: 5%;
     justify-content: center;
@@ -114,9 +115,9 @@ valcheader{
 valctext{
     font-family: "Old Standard TT";
     color: #ffffff;
-    font-size: 25px;
+    font-size: calc(8px + 0.7vw);
     font-weight: 600;
-    line-height: 35px;
+    line-height: calc(10px + 0.8vw);
 
     text-decoration: inherit;
 }
