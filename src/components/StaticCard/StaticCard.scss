@@ -6,15 +6,15 @@
     align-items: top;
     justify-content: center;
     width: 100%;
-    height: flex;
-    margin-top: 50px;
+    height: 60%;
+    margin-top: 5%;
   }
   
   .static-card{
     background-color: none;
-    width: 350px;
-    height: 400px;
-    margin: 15px;
+    width: 40%;
+    height: flex;
+    margin: 1%;
     overflow: hidden;
   }
   
@@ -25,7 +25,7 @@
   .static-card-image-wrap{
     background-color: none;
     height: 80%;
-    margin: 10px;
+    margin: 3%;
   }
   
   .static-card-image{
@@ -46,16 +46,16 @@
   .static-card-header{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #000000;
-  font-size: 25px;
+  font-size: calc(6px + 0.75vw);
   margin-top: 5px;
-  margin-left: 15px;
+  margin-left: 5%;
   height: flex;
   }
   
   .static-card-text{
   font-family: "Old Standard TT";
   color: #000000;
-  font-size: 15px;
+  font-size: calc(4px + 0.6vw);
   font-weight: 600;
   margin-top: 5px;
   line-height: 15px;
