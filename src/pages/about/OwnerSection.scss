@@ -1,0 +1,123 @@
+.own-container {
+    //background-color: #703A7D;
+    background: linear-gradient(60deg, rgb(103, 1, 128) 0%, rgb(155, 21, 148) 35%, rgb(102, 12, 114) 100%);
+    width: 100%;
+    height: calc(150px + 14vw);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    object-fit: contain;
+    z-index: 21;
+}
+
+.ownc-container{
+    //Have to be rgba with opacity at the end or the other child elements inside fc-container will also be affected by the opacity!
+    background-color: none;
+    width: calc(250px + 30vw);
+    height: 100%;
+
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+}
+
+.ownc-line{
+    width: 100%;
+    height: calc(1px + 0.06vw);
+    background-color: #ffffff;
+    margin-top: 5%;
+}
+
+.ownc-hb-container{
+    display: flex;
+    width: 100%;
+    height: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.ownc-hb-header-wrap{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ownc-hb-button-wrap{
+    display: flex;
+    justify-content: right;     //sets button to the right
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+owncheader{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    font-size: calc(8px + 0.9vw);
+}
+
+.own-bottom-container{
+    background-color: none;
+    display: flex;
+    width: 100%;
+    height: flex;
+    align-items: center;
+    
+}
+
+.own-circle-container{
+
+    display: flex;
+    width: calc(25px + 7vw);
+    height: calc(25px + 7vw);
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.own-circle{
+    background: url('../../../public/images/owner.jpg') center center/cover no-repeat;
+    width: 93%;
+    height: 93%;
+    margin: 3px;
+    border-radius: 100%;
+    justify-self: center;
+}
+.own-outer-circle{
+    display: flex;
+    border-width: calc(1px + 0.06vw);
+    border-color: white;
+    border-style: solid;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.own-text-container{
+    display: flex;
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ownctext{
+    font-family: "Old Standard TT";
+    color: #ffffff;
+    font-size: calc(8px + 0.7vw);
+    font-weight: 600;
+    line-height: calc(10px + 0.8vw);
+
+    text-decoration: inherit;
+}

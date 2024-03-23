@@ -2,6 +2,7 @@ import React from 'react'
 import '../../App.css'
 import AboutSection from './AboutSection';
 import ValueSection from './ValueSection';
+import OwnerSection from './OwnerSection';
 import Footer from '../../components/footer/Footer';
 
 function About (){
@@ -9,6 +10,7 @@ function About (){
     <>
       <AboutSection/>
       <ValueSection/>
+      <OwnerSection/>
       <Footer/>
     </>
     );
