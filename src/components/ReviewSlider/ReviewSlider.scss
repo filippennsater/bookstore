@@ -32,8 +32,18 @@
     color: rgb(0, 0, 0);
   }
 
+
+  reviewheader{
+    color: #000000;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(12px + 0.3vw);
+    margin-bottom: 10%;
+  }
+
   reviewtext{
     color: #000000;
     text-align: center;
-    font-size: calc(8px + 0.4vw) !important;
+    font-size: calc(8px + 0.3vw);
+    margin-bottom: 10%;
   }
