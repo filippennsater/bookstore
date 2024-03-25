@@ -21,7 +21,7 @@ function ReviewSlider(){
             <div className="mt-20">
                 <Slider {...settings}>
                 {data.map((d) => (
-                    <div key={d.name} className="bg-white h-[530px] text-black rounded-xl">
+                    <div key={d.name} className="">
                     <div className='h-56 bg-violet-900 flex justify-center items-center rounded-t-xl'>
                         <img src={d.img} alt="" className="h-44 w-44 rounded-full"/>
                     </div>
