@@ -27,8 +27,8 @@ function ReviewSlider() {
               </div>
 
               <div className="revInfoContainer">
-                <reviewheader>{d.name}</reviewheader>
-                <reviewtext>{d.review}</reviewtext>
+                <div className="reviewHeader">{d.name}</div>
+                <div className="reviewText">{d.review}</div>
               </div>
                 
                 <button className='revButton cursor-pointer'>Read More</button>
