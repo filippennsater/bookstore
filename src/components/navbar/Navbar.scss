@@ -49,6 +49,7 @@
   width: 26vw;
   justify-content: center;
   margin-right: 0rem;
+  margin-left: 2vw;
 }
 
 .nav-item {
@@ -98,9 +99,9 @@
     width: 100%;
     height: flex;
     position: absolute;
-    justify-content: start;
+    justify-content: center;
     margin-top: calc(80px + 4vw);
-    right: -100%;
+    left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
   }
@@ -109,18 +110,26 @@
     background: none;
     background-color: black;
     width: 100%;
-    right: 0;
+    left: 0;
     opacity: 85%;
     transition: all 0.5s ease;
     z-index: 1;
     
+    display: flex;
+    grid-gap: 0px;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .nav-links {
     //background-color: green;
     text-align: center;
     justify-content: center;
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     width: 90%;
     display: table;
   }
