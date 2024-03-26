@@ -1,8 +1,8 @@
 .transition-container {
-    background: url('../../../public/images/transition.png') center center/cover no-repeat;
+    background: url('../../../public/images/transition.png') top center/calc(900px + 67vw) calc(250px + 14vw) no-repeat;
     background-color: #ffffff;
     width: 100%;
-    height: calc(250px + 15vw);
+    height: calc(450px + 20vw);
     display: flex;
     flex-direction: column;
     
@@ -11,6 +11,6 @@
     z-index: 21;
 
     //for extra whitespace under backgroundimage
-    margin-bottom: calc(200px + 5vw);
+    //margin-bottom: calc(200px + 5vw);
     overflow: hidden;
 }
