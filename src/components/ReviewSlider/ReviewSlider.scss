@@ -32,6 +32,22 @@
     color: rgb(0, 0, 0);
   }
 
+  .revImage{
+    width: calc(50px + 5vw);;
+    height: calc(50px + 5vw);;
+    border-radius: 100%;
+
+  }
+
+  .revButton{
+    background-color: #4C1D95;
+    width: calc(100px + 1.5vw);
+    height: calc(30px + 0.4vw);
+    color: white;
+    font-size: calc(10px + 0.3vw);
+    border-radius: 15px;
+  }
+
 
   reviewheader{
     color: #000000;
