@@ -8,12 +8,13 @@
     align-items: center;
     object-fit: contain;
     z-index: 21;
+    overflow: hidden;
 }
 
 .whitec-container{
     //Have to be rgba with opacity at the end or the other child elements inside fc-container will also be affected by the opacity!
     background-color: none;
-    width: 1500px;
+    width: calc(350px + 45vw);
     height: 100%;
 
     justify-self: center;
@@ -22,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     object-fit: contain;
+    overflow: hidden !important;
 }
 
 .whitec-line{

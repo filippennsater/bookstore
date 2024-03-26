@@ -5,6 +5,7 @@
     width: 100%;
     height: calc(250px + 19vw);
     z-index: 24;
+    //overflow: hidden; with it the animation won't work
 }
 
 .flower-container {

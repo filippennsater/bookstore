@@ -9,6 +9,25 @@
 }
 
 
+/*
+.slick-slide{
+  width: 5% !important;
+}
+.slick-track{
+  width: 1000% !important;
+  overflow: hidden!important;
+}
+
+.mt-20{
+  overflow: hidden!important;
+  //width: 50%;
+}
+
+#et-main-area {
+  
+}
+*/
+
 
 
 
@@ -32,20 +51,52 @@
     color: rgb(0, 0, 0);
   }
 
-  .revImage{
+
+  .revCardContainer{
+    background-color: white;
+    display: flex !important;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .revImageContainer{
+    background-color: #4C1D95;
+    display: flex;
+    height: 45%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .revImage{
     width: calc(50px + 5vw);;
     height: calc(50px + 5vw);;
     border-radius: 100%;
 
   }
 
+  .revInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100px + 2vw);
+    padding: 4%;
+  }
+
   .revButton{
+    //display: inline-block;
     background-color: #4C1D95;
     width: calc(100px + 1.5vw);
     height: calc(30px + 0.4vw);
     color: white;
     font-size: calc(10px + 0.3vw);
     border-radius: 15px;
+    margin-top: 10%;
   }
 
 
@@ -54,12 +105,12 @@
     text-align: center;
     font-weight: 600;
     font-size: calc(12px + 0.3vw);
-    margin-bottom: 10%;
+    margin-top: 10%;
   }
 
   reviewtext{
     color: #000000;
     text-align: center;
     font-size: calc(8px + 0.3vw);
-    margin-bottom: 10%;
+    margin-top: 15%;
   }
