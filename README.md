@@ -1,3 +1,7 @@
+# Project info from author
+
+The website is hosted and can be accessed here: https://philipandpen-46cf9.web.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
