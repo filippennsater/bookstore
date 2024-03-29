@@ -79,7 +79,7 @@ function Navbar() {
 
                         {
                             <Dropdown>
-                                <Dropdown.Toggle variant="" id="dropdown-basic">
+                                <Dropdown.Toggle variant="dropdown-basic-button" id="dropdown-basic">
                                 <i className='fab fa-linkedin' />
                                 </Dropdown.Toggle>
 
