@@ -79,8 +79,8 @@ function Navbar() {
 
                         {
                             <Dropdown>
-                                <Dropdown.Toggle variant="dropdown-basic-button" id="dropdown-basic">
-                                <i className='fab fa-linkedin' />
+                                <Dropdown.Toggle className='nav-links bg-black border-none cursor-pointer w-2/4'>
+                                    <i className='fa-solid fa-user' />
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
