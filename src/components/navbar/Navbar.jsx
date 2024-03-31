@@ -77,20 +77,46 @@ function Navbar() {
                             </Link>
                         </li>
 
-                        {
-                            <Dropdown>
-                                <Dropdown.Toggle className='nav-links bg-black border-none cursor-pointer w-2/4'>
-                                    <i className='fa-solid fa-user' />
-                                </Dropdown.Toggle>
+                        <button class="dropdown-btn">Träningspass
+                            <i class="fa fa-caret-down"></i>
+                        </button>
 
-                                <Dropdown.Menu>
-                                    <Dropdown.Item href="/login">Login</Dropdown.Item>
-                                    <Dropdown.Item href="/signup">Signup</Dropdown.Item>
-                                    <Dropdown.Item href="/user/accountsettings">Profile</Dropdown.Item>
-                                    <Dropdown.Item href="#">Logout</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        }
+                        <div class="dropdown-container">
+
+
+                            <li className='nav-item-2'>
+                                <Link to='/chest' className='nav-links' onClick={closeMobileMenu}>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bröst
+                                </Link>
+                            </li>
+
+                            <li className='nav-item-2'>
+                                <Link to='/back' className='nav-links' onClick={closeMobileMenu}>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rygg
+                                </Link>
+                            </li>
+
+                            <li className='nav-item-2'>
+                                <Link to='/shoulders' className='nav-links' onClick={closeMobileMenu}>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Axlar
+                                </Link>
+                            </li>
+
+                            <li className='nav-item-2'>
+                                <Link to='/arms' className='nav-links' onClick={closeMobileMenu}>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Armar
+                                </Link>
+                            </li>
+
+                            <li className='nav-item-2'>
+                                <Link to='/legs' className='nav-links' onClick={closeMobileMenu}>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ben
+                                </Link>
+                            </li>
+
+                        { /* yes I know "&nbsp;" is an incredibly ugly fix*/}
+
+                        </div>
                     </div>
 
 
