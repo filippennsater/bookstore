@@ -74,7 +74,7 @@ function Navbar() {
                         </li>
 
                         <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/profile' className='nav-links' onClick={closeMobileMenu}>
                                 <i class="fa-solid fa-user"></i>
                             </Link>
                         </li>
