@@ -10,7 +10,10 @@ import Shop from './pages/shop/Shop';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 
+import Profile from './pages/user/profile/Profile';
 import Login from './pages/user/login/Login';
+import Logout from './pages/user/logout/Logout';
+import Signup from './pages/user/signup/Signup';
 
 function App() {
   return (
@@ -24,6 +27,10 @@ function App() {
           <Route path="/shop" exact Component={Shop} />
           <Route path="/contact" exact Component={Contact} />
           <Route path="/about" exact Component={About} />
+          <Route path="/profile" exact Component={Profile} />
+          <Route path="/login" exact Component={Login} />
+          <Route path="/logout" exact Component={Logout} />
+          <Route path="/signup" exact Component={Signup} />
         </Routes>
       </Router>
     </>
