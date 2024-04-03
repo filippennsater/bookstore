@@ -10,6 +10,8 @@ import Shop from './pages/shop/Shop';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 
+import Login from './pages/user/login/Login';
+
 function App() {
   return (
     
