@@ -3,12 +3,12 @@ import '../../../App.css'
 import LoginSection from './LoginSection'
 import Footer from '../../../components/footer/Footer';
 
-function Login (){
+function Login() {
     return (
-    <>
-      <LoginSection/>
-      <Footer/>
-    </>
+        <>
+            <LoginSection />
+            <Footer />
+        </>
     );
 }
 
