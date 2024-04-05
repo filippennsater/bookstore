@@ -73,13 +73,13 @@ function Navbar() {
                             </Link>
                         </li>
 
-                        
+
 
                     </div>
 
-                    <       Link to='/profile' className='prof-icon' onClick={closeMobileMenu}>
-                                <i class="fa-solid fa-user"></i>
-                            </Link>
+                    <div className='prof-icon' onClick={closeMobileMenu}>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
 
 
 
