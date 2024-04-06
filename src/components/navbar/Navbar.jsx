@@ -25,6 +25,28 @@ function Navbar() {
         }
     };
 
+    //so the button doesn' appear when you refresh page
+    useEffect(() => {
+        showButton();
+    }, []);
+
+    window.addEventListener('resize', showButton);
+
+
+
+    const [clock, setClock] = useState(false);
+    // const [button, setButton] = useState(true);
+
+    const handleClock = () => setClick(!clock);
+    const closeProfMenu = () => setClick(false);
+
+    const showProfButton = () => {
+        if (window.innerWidth <= 960) {
+            // setButton(false)
+        } else {
+            // setButton(true)
+        }
+    };
 
     //so the button doesn' appear when you refresh page
     useEffect(() => {
