@@ -37,23 +37,10 @@ function Navbar() {
     const [clock, setClock] = useState(false);
     // const [button, setButton] = useState(true);
 
-    const handleClock = () => setClick(!clock);
-    const closeProfMenu = () => setClick(false);
+    const handleClock = () => setClock(!clock);
+    const closeProfMenu = () => setClock(false);
 
-    const showProfButton = () => {
-        if (window.innerWidth <= 960) {
-            // setButton(false)
-        } else {
-            // setButton(true)
-        }
-    };
-
-    //so the button doesn' appear when you refresh page
-    useEffect(() => {
-        showButton();
-    }, []);
-
-    window.addEventListener('resize', showButton);
+    
 
 
 
@@ -99,8 +86,8 @@ function Navbar() {
 
                     </div>
 
-                    <div className='prof-icon' onClick={closeMobileMenu}>
-                        <i class="fa-solid fa-user"></i>
+                    <div className='prof-icon' onClick={handleClock}>
+                        <i class={clock ?  "fa-regular fa-user" : "fa-solid fa-user"}></i>
                     </div>
 
 
