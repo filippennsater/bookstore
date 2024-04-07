@@ -27,6 +27,7 @@ function App() {
           <Route path="/shop" exact Component={Shop} />
           <Route path="/contact" exact Component={Contact} />
           <Route path="/about" exact Component={About} />
+          
           <Route path="/profile" exact Component={Profile} />
           <Route path="/login" exact Component={Login} />
           <Route path="/logout" exact Component={Logout} />

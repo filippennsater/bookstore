@@ -40,7 +40,7 @@ function Navbar() {
     const handleClock = () => setClock(!clock);
     const closeProfMenu = () => setClock(false);
 
-    
+
 
 
 
@@ -49,9 +49,9 @@ function Navbar() {
         <>
             <nav className="navbar">
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu} />
+                    <Link to='/' className='navbar-logo' onClick={() => { closeMobileMenu(); closeProfMenu(); }} />
 
-                    <div className='menu-icon' onClick={handleClick}>
+                    <div className='menu-icon' onClick={() => { handleClick(); closeProfMenu(); }}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
                     <div className={click ? 'nav-menu active' : 'nav-menu'}>
@@ -86,9 +86,44 @@ function Navbar() {
 
                     </div>
 
-                    <div className='prof-icon' onClick={handleClock}>
-                        <i class={clock ?  "fa-regular fa-user" : "fa-solid fa-user"}></i>
+                    <div className='prof-icon' onClick={() => { handleClock(); closeMobileMenu(); }}>
+                        <i class={clock ? "fa-regular fa-user" : "fa-solid fa-user"}></i>
                     </div>
+
+                    <div className={clock ? 'prof-menu active' : 'prof-menu'}>
+
+                        <li className='nav-item'>
+                            <Link to='/profile' className='nav-links' onClick={closeProfMenu}>
+                                Profile
+                            </Link>
+                        </li>
+
+                        <li className='nav-item'>
+                            <Link to='/login' className='nav-links' onClick={closeProfMenu}>
+                                Log in
+                            </Link>
+                        </li>
+
+
+                        <li className='nav-item'>
+                            <Link to='/logout' className='nav-links' onClick={closeProfMenu}>
+                                Log out
+                            </Link>
+                        </li>
+
+
+                        <li className='nav-item'>
+                            <Link to='/signup' className='nav-links' onClick={closeProfMenu}>
+                                Sign up
+                            </Link>
+                        </li>
+
+
+
+                    </div>
+
+
+
 
 
 
