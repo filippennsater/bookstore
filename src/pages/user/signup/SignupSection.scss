@@ -1,0 +1,12 @@
+.signup-container {
+    background-color: white;
+    width: 100%;
+    height: calc(225px + 20vw);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+}

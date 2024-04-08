@@ -48,35 +48,83 @@
 }
 
 .prof-menu {
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  grid-gap: 0px;
-  width: 100%;
-  height: flex;
-  position: absolute;
-  justify-content: center;
-  top: -100%;
-  opacity: 1;
-  transition: all 0.5s ease;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0px;
+    width: 100%;
+    height: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: calc(80px + 4vw);
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    list-style: none;
 }
 
 .prof-menu.active {
-  background: none;
-  background-color: black;
+    background: none;
+    background-color: #9FCE9A;
+    width: 100%;
+    left: 0;
+    opacity: 85%;
+    transition: all 0.5s ease;
+    z-index: 1;
+    
+    display: flex;
+    grid-gap: 0px;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.prof-item {
+  height: flex;
+}
+
+.prof-links {
+  color: #572D87;
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 100%;
-  margin-top: calc(80px + 4vw);
-  opacity: 85%;
-  transition: all 0.5s ease;
-  z-index: 1;
-  
-  display: flex;
-  grid-gap: 0px;
-  list-style: none;
+  display: table;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  //height: 100%;
+  //border-radius: 100%;
   text-align: center;
   justify-content: center;
-  margin-right: 0;
-  margin-left: 0;
+}
+
+.prof-links:hover {
+  text-decoration-line: underline;
+  transition: all 0.6s ease-out;
+  color: #000000;
+}
+
+@media screen and (min-width: 1700px) {
+
+  .prof-links {
+    color: #572D87;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: table;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    //height: 100%;
+    //border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
 }
 
 .fa-book {

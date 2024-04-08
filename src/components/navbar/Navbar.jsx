@@ -92,28 +92,28 @@ function Navbar() {
 
                     <div className={clock ? 'prof-menu active' : 'prof-menu'}>
 
-                        <li className='nav-item'>
-                            <Link to='/profile' className='nav-links' onClick={closeProfMenu}>
+                        <li className='prof-item'>
+                            <Link to='/profile' className='prof-links' onClick={closeProfMenu}>
                                 Profile
                             </Link>
                         </li>
 
-                        <li className='nav-item'>
-                            <Link to='/login' className='nav-links' onClick={closeProfMenu}>
+                        <li className='prof-item'>
+                            <Link to='/login' className='prof-links' onClick={closeProfMenu}>
                                 Log in
                             </Link>
                         </li>
 
 
-                        <li className='nav-item'>
-                            <Link to='/logout' className='nav-links' onClick={closeProfMenu}>
+                        <li className='prof-item'>
+                            <Link to='/logout' className='prof-links' onClick={closeProfMenu}>
                                 Log out
                             </Link>
                         </li>
 
 
-                        <li className='nav-item'>
-                            <Link to='/signup' className='nav-links' onClick={closeProfMenu}>
+                        <li className='prof-item'>
+                            <Link to='/signup' className='prof-links' onClick={closeProfMenu}>
                                 Sign up
                             </Link>
                         </li>

@@ -5,7 +5,7 @@ import './BooksSection.scss';
 function BooksSection() {
     return (
 
-        <div className='book-container'>
+        <div className='books-container'>
             
             <p>Books</p>
 
