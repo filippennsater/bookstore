@@ -10,3 +10,20 @@
     z-index: 21;
     overflow: hidden;
 }
+
+.login-form-container{
+    background-color: #9FCE9A;
+    width: calc(250px + 20vw);
+    height: calc(400px + 10vw);
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(50px + 5vw);
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px black;
+
+    
+    align-items: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+}
