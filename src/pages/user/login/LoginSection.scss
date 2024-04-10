@@ -21,9 +21,15 @@
     border-radius: 20px;
     box-shadow: 3px 3px 20px black;
 
-    
     align-items: center;
     object-fit: contain;
     z-index: 21;
     overflow: hidden;
+}
+
+profileFormHeader{
+    color: #572D87;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: calc(10px + 1.1vw);
 }
