@@ -15,6 +15,8 @@ import Login from './pages/user/login/Login';
 import Logout from './pages/user/logout/Logout';
 import Signup from './pages/user/signup/Signup';
 
+import Cart from './pages/cart/Cart';
+
 function App() {
   return (
     
@@ -32,6 +34,8 @@ function App() {
           <Route path="/login" exact Component={Login} />
           <Route path="/logout" exact Component={Logout} />
           <Route path="/signup" exact Component={Signup} />
+
+          <Route path="/cart" exact Component={Cart} />
         </Routes>
       </Router>
     </>

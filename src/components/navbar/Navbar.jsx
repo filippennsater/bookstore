@@ -121,7 +121,7 @@ function Navbar() {
                     </div>
 
 
-                    <Link to='/signup' className='cart-icon' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
+                    <Link to='/cart' className='cart-icon' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
                         <i class="fa-solid fa-cart-shopping"></i>
                     </Link>
 
