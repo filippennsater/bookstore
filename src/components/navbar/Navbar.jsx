@@ -57,27 +57,27 @@ function Navbar() {
                     <div className={click ? 'nav-menu active' : 'nav-menu'}>
 
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/' className='nav-links' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
                                 Home
                             </Link>
                         </li>
 
                         <li className='nav-item'>
-                            <Link to='/shop' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/shop' className='nav-links' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
                                 Books & more
                             </Link>
                         </li>
 
 
                         <li className='nav-item'>
-                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/contact' className='nav-links' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
                                 Contact
                             </Link>
                         </li>
 
 
                         <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/about' className='nav-links' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
                                 About
                             </Link>
                         </li>
@@ -121,7 +121,7 @@ function Navbar() {
                     </div>
 
 
-                    <Link to='/signup' className='cart-icon' onClick={closeProfMenu}>
+                    <Link to='/signup' className='cart-icon' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
                         <i class="fa-solid fa-cart-shopping"></i>
                     </Link>
 
