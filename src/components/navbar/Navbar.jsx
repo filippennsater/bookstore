@@ -118,13 +118,12 @@ function Navbar() {
                             </Link>
                         </li>
 
-
-
                     </div>
 
 
-
-
+                    <Link to='/signup' className='cart-icon' onClick={closeProfMenu}>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </Link>
 
 
                 </div>

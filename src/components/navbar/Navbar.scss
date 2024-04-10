@@ -34,7 +34,7 @@
   
 }
 
-.prof-icon {
+.cart-icon {
   display: flex;
   color: #ffffff;
   justify-self: end;
@@ -45,6 +45,19 @@
   display: flex;
   align-items: center;
   //margin-right: 10px;
+}
+
+.prof-icon {
+  display: flex;
+  color: #ffffff;
+  justify-self: end;
+  //margin-left: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
 }
 
 .prof-menu {
@@ -141,8 +154,8 @@
   text-align: center;
   width: 26vw;
   justify-content: center;
-  margin-right: 1vw;
-  margin-left: 1vw;
+  margin-right: 0.9vw;
+  margin-left: 0.9vw;
 }
 
 .nav-item {
@@ -156,7 +169,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   height: 100%;
   //border-radius: 100%;
 }
@@ -253,14 +266,25 @@
     font-size: 2rem;
   }
 
+  .cart-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-190%, 70%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
   .prof-icon {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-300%, 70%);
+    transform: translate(-400%, 70%);
     font-size: 1.8rem;
     cursor: pointer;
+    margin-right: 0px;
   }
 
   .nav-links-mobile {
