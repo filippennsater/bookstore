@@ -26,6 +26,10 @@ function CartSection() {
                     <div className='cart-line' />
 
                 </div>
+
+
+
+
                 <div className='summary-container'>
 
                     <div className='cart-hb-container'>
@@ -37,23 +41,43 @@ function CartSection() {
                     </div>
                     <div className='cart-line' />
 
+                    <div className='small-header-container'>
+                        <div className='head-left'>
+                            <smallsumheader>Items X</smallsumheader>
+                        </div>
+                        <div className='head-right'>
+                            <smallsumheader>X kr</smallsumheader>
+                        </div>
+                    </div>
+
+                    <div className='small-header-container'>
+                        <div className='head-left'>
+                            <smallsumheader>Shipping</smallsumheader>
+                        </div>
+                        <div className='head-right'>
+                            <smallsumheader></smallsumheader>
+                        </div>
+                    </div>
+
+                    <select className='form-select' id="shipping" name="shipping">
+                        <option value="Budbee" selected>Budbee - free</option>
+                        <option value="Postnord">Postnord - 15 kr</option>
+                        <option value="DHL">DHL - 25 kr</option>
+                    </select>
+
+                    <div className='cart-line' />
+
+                    <div className='small-header-container'>
+                        <div className='head-left'>
+                            <smallsumheader>Total Cost</smallsumheader>
+                        </div>
+                        <div className='head-right'>
+                            <smallsumheader>X kr</smallsumheader>
+                        </div>
+                    </div>
 
                     <form>
-                        <label>
-                            Name<br />
-                            <input className='input-competition' type="text" name="name" /><br />
-                        </label>
-                        <label>
-                            Email<br />
-                            <input className='input-competition' type="text" name="name" /><br />
-                        </label>
-                        <label>
-                            Phonenumber<br />
-                            <input className='input-competition' type="text" name="name" /><br /><br />
-                        </label>
-
-                        <input type="file" />
-                        <input type="submit" value="Submit" />
+                        <input className='checkout-button cursor-pointer' type="submit" value="Checkout" />
                     </form>
 
                 </div>
