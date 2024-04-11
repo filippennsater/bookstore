@@ -25,6 +25,21 @@ function CartSection() {
                     </div>
                     <div className='cart-line' />
 
+                    <div className='basket-item-wrap'>
+                        <div className='basket-left-head'>
+                            <basketheader>Product Details</basketheader>
+                        </div>
+                        <div className='basket-other-head'>
+                            <basketheader>Quantity</basketheader>
+                        </div>
+                        <div className='basket-other-head'>
+                            <basketheader>Price</basketheader>
+                        </div>
+                        <div className='basket-other-head'>
+                            <basketheader>Total</basketheader>
+                        </div>
+                    </div>
+
                 </div>
 
 

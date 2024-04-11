@@ -39,6 +39,30 @@
     padding: 60px 40px 60px 40px;
 }
 
+.basket-item-wrap{
+    //background-color: green;
+    display: flex;
+    width: 100%;
+    height: flex;
+    margin-top: calc(15px + 0.8vw);
+}
+
+.basket-left-head{
+    display: flex;
+    width: 40%;
+    height: flex;
+    object-fit: contain;
+    justify-content: left;
+}
+.basket-other-head{
+    display: flex;
+    width: 20%;
+    height: flex;
+    object-fit: contain;
+    justify-content: center;
+}
+
+
 .summary-container{
     background-color: rgb(231, 231, 231);
     width: 450px;
@@ -55,7 +79,7 @@
     width: 100%;
     height: calc(1px + 0.06vw);
     background-color: #cacaca;
-    margin-top: 5%;
+    margin-top: calc(15px + 0.8vw);
 }
 
 .cart-hb-container{
@@ -86,7 +110,7 @@
     width: 100%;
     height: flex;
     object-fit: contain;
-    margin-top: 5%;
+    margin-top: calc(15px + 0.8vw);
 }
 
 .head-left{
@@ -108,7 +132,7 @@
 .form-select{
     width: 100%;
     padding: calc(5px + 0.1vw);
-    margin-top: 5%;
+    margin-top: calc(15px + 0.8vw);
     border-style: none;
 }
 
@@ -117,14 +141,20 @@
     background-color: #572D87;
     width: 100%;
     padding: calc(5px + 0.1vw);
-    margin-top: 5%;
+    margin-top: calc(15px + 0.8vw);
+}
+
+basketheader{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #858585;
+    font-size: calc(10px + 0.2vw);
 }
 
 
 smallsumheader{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #000000;
-    font-size: calc(10px + 0.3vw);
+    font-size: calc(12px + 0.2vw);
 }
 
 
@@ -136,14 +166,15 @@ cartheader{
 
 
 
+
   @media screen and (min-width: 1700px) {
     .basket-container{
         width: 700px;
-        min-height: 500px;
+        min-height: 450px;
     }
     
     .summary-container{
         width: 300px;
-        min-height: 500px;
+        min-height: 450px;
     }
   }
