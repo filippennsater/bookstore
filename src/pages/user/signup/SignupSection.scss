@@ -1,7 +1,7 @@
 .signup-container {
-    background-color: white;
+    background-color: #572D87;
     width: 100%;
-    height: calc(225px + 20vw);
+    height: calc(800px + 15vw);
     display: flex;
     flex-direction: column;
     
@@ -9,4 +9,29 @@
     object-fit: contain;
     z-index: 21;
     overflow: hidden;
+}
+
+.signup-form-container{
+    background-color: #9FCE9A;
+    width: calc(250px + 20vw);
+    height: calc(400px + 10vw);
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(50px + 5vw);
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px black;
+
+    align-items: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+    padding: calc(15px + 1vw);
+}
+
+.profile-form-header{
+    color: #572D87;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: calc(15px + 1.1vw);
+    width: 100%;
 }
