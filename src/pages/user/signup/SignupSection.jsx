@@ -13,22 +13,71 @@ function SignupSection() {
                     Signup
                 </div>
 
-                <form>
-                    <label>
-                        Name<br />
-                        <input className='input-signup' type="text" name="name" /><br />
-                    </label>
-                    <label>
-                        Email<br />
-                        <input className='input-signup' type="text" name="name" /><br />
-                    </label>
-                    <label>
-                        Password<br />
-                        <input className='input-signup' type="text" name="name" /><br /><br />
-                    </label>
+                <form className='form-signup'>
+                    <div className='input-wrap'>
+                        <div className='input-splitter-left'>
+                            <div className='small-header-wrap-signup'>
+                                First Name
+                            </div>
+                        </div>
+                        <div className='input-splitter-right'>
+                            <div className='small-header-wrap-signup'>
+                                Last Name
+                            </div>
+                        </div>
+                    </div>
 
-                    <input type="submit" value="Signup" />
+                    <div className='input-wrap'>
+                        <div className='input-splitter-left'>
+
+                            <input className='input-signup' type="text" name="firstname" />
+
+                        </div>
+
+                        <div className='input-splitter-right'>
+                            <input className='input-signup' type="text" name="lastname" />
+                        </div>
+                    </div>
+
+                    <div className='small-header-wrap-signup'>
+                        Email
+                    </div>
+                    <div className='input-wrap'>
+                        <input className='input-signup' type="text" name="email" />
+                    </div>
+
+                    <div className='input-wrap'>
+                        <div className='input-splitter-left'>
+                            <div className='small-header-wrap-signup'>
+                                Password
+                            </div>
+                        </div>
+                        <div className='input-splitter-right'>
+                            <div className='small-header-wrap-signup'>
+                                Confirm Password
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='input-wrap'>
+                        <div className='input-splitter-left'>
+
+                            <input className='input-signup' type="text" name="password" />
+
+                        </div>
+
+                        <div className='input-splitter-right'>
+                            <input className='input-signup' type="text" name="confpassword" />
+                        </div>
+                    </div>
+
+
+                    <input className='signup-button cursor-pointer' type="submit" value="Signup" />
                 </form>
+
+                <div className='signup-info-text'>
+                    Please note: The form is not functional, this is only a demo!
+                </div>
 
             </div>
 
