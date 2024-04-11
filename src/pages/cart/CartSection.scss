@@ -1,7 +1,7 @@
 .cart-container {
     background-color: white;
     width: 100%;
-    height: calc(225px + 20vw);
+    min-height: calc(225px + 20vw);
     display: flex;
     flex-direction: column;
     
@@ -10,3 +10,78 @@
     z-index: 21;
     overflow: hidden;
 }
+
+.cart-wrap{
+    background-color: #9b2d2d;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: center;
+    object-fit: contain;
+    flex-wrap: wrap;
+    z-index: 21;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.basket-container{
+    background-color: green;
+    width: 450px;
+    height: flex;
+    display: flex;
+    z-index: 30;
+    justify-content: center;
+    align-items: top;
+    flex-direction: column;
+    padding: 60px 40px 60px 40px;
+}
+
+.summary-container{
+    background-color: blue;
+    width: 450px;
+    height: flex;
+    display: flex;
+    z-index: 30;
+    justify-content: center;
+    align-items: top;
+    flex-direction: column;
+    padding: 60px 40px 60px 40px;
+}
+
+.cart-line{
+    width: 100%;
+    height: calc(1px + 0.06vw);
+    background-color: #93CF9C;
+    margin-top: 5%;
+}
+
+.cart-hb-container{
+    display: flex;
+    width: 100%;
+    height: flex;
+    
+}
+
+.cart-hb-header-wrap{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cart-hb-button-wrap{
+    display: flex;
+    justify-content: right;     //sets button to the right
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+cartheader{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    font-size: calc(15px + 0.5vw);
+  }
