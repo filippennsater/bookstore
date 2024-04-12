@@ -9,12 +9,12 @@ function SignupSection() {
 
             <div className='signup-form-container'>
 
-                <div className='profile-form-header'>
+                <div className='signup-form-header'>
                     Signup
                 </div>
 
                 <form className='form-signup'>
-                    <div className='input-wrap'>
+                    <div className='signup-input-wrap'>
                         <div className='input-splitter-left'>
                             <div className='small-header-wrap-signup'>
                                 First Name
@@ -27,7 +27,7 @@ function SignupSection() {
                         </div>
                     </div>
 
-                    <div className='input-wrap'>
+                    <div className='signup-input-wrap'>
                         <div className='input-splitter-left'>
 
                             <input className='input-signup' type="text" name="firstname" />
@@ -42,11 +42,11 @@ function SignupSection() {
                     <div className='small-header-wrap-signup'>
                         Email
                     </div>
-                    <div className='input-wrap'>
+                    <div className='signup-input-wrap'>
                         <input className='input-signup' type="text" name="email" />
                     </div>
 
-                    <div className='input-wrap'>
+                    <div className='signup-input-wrap'>
                         <div className='input-splitter-left'>
                             <div className='small-header-wrap-signup'>
                                 Password
@@ -59,7 +59,7 @@ function SignupSection() {
                         </div>
                     </div>
 
-                    <div className='input-wrap'>
+                    <div className='signup-input-wrap'>
                         <div className='input-splitter-left'>
 
                             <input className='input-signup' type="text" name="password" />

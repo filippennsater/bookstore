@@ -6,9 +6,11 @@ function LogoutSection() {
     return (
 
         <div className='logout-container'>
-            
-            <p>Logout</p>
-
+            <div className='logout-header-container'>
+                <div className='logout-header'>
+                    You have logged out!
+                </div>
+            </div>
         </div>
 
     )
