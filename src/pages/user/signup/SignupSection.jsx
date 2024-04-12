@@ -10,7 +10,7 @@ function SignupSection() {
             <div className='signup-form-container'>
 
                 <div className='signup-form-header'>
-                    Signup
+                    Sign up
                 </div>
 
                 <form className='form-signup'>
@@ -72,7 +72,7 @@ function SignupSection() {
                     </div>
 
 
-                    <input className='signup-button cursor-pointer' type="submit" value="Signup" />
+                    <input className='signup-button cursor-pointer' type="submit" value="Sign up" />
                 </form>
 
                 <div className='signup-info-text'>

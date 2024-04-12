@@ -10,7 +10,7 @@ function LoginSection() {
             <div className='login-form-container'>
 
                 <div className='login-form-header'>
-                    Login
+                    Log in
                 </div>
 
                 <form className='form-login'>
@@ -31,7 +31,7 @@ function LoginSection() {
                     </div>
 
 
-                    <input className='login-button cursor-pointer' type="submit" value="Login" />
+                    <input className='login-button cursor-pointer' type="submit" value="Log in" />
                 </form>
 
                 <div className='login-info-text'>
