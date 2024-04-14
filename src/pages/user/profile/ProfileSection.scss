@@ -10,3 +10,20 @@
     z-index: 21;
     overflow: hidden;
 }
+
+.profile-info-container{
+    background-color: #9FCE9A;
+    width: calc(200px + 35vw);
+    height: calc(400px + 10vw);
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(50px + 5vw);
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px black;
+
+    align-items: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+    padding: calc(15px + 1vw);
+}

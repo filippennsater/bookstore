@@ -6,8 +6,11 @@ function ProfileSection() {
     return (
 
         <div className='profile-container'>
-            
-            <p>Profile</p>
+
+            <div className='profile-info-container'>
+
+
+            </div>
 
         </div>
 
