@@ -28,8 +28,34 @@
     padding: calc(15px + 1vw);
 }
 
+
+
+.left-container{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: flex;
+    display: flex;
+    z-index: 30;
+    justify-content: top;
+    align-items: top;
+    flex-direction: column;
+    padding: 60px 40px 60px 40px;
+}
+
+.right-container{
+    background-color: rgb(231, 231, 231);
+    width: 60%;
+    height: flex;
+    display: flex;
+    z-index: 30;
+    justify-content: top;
+    align-items: top;
+    flex-direction: column;
+    padding: 60px 40px 60px 40px;
+}
+
 .profile-picture-container{
-    background-color: #9FCE9A;
+    background-color: #000000;
     width: calc(180px + 35vw);
     height: calc(400px + 10vw);
     display: flex;
