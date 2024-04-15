@@ -9,6 +9,13 @@ function ProfileSection() {
 
             <div className='profile-info-container'>
 
+                <div className='profile-left-container'>
+
+                </div>
+
+                <div className='profile-right-container'>
+
+                </div>
 
             </div>
 
