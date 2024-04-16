@@ -11,6 +11,10 @@ function ProfileSection() {
 
                 <div className='profile-left-container'>
 
+                    <div className='profile-picture-container'>
+
+                    </div>
+
                 </div>
 
                 <div className='profile-right-container'>

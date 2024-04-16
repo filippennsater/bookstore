@@ -14,7 +14,7 @@
 .profile-info-container{
     background-color: #9FCE9A;
     width: calc(200px + 35vw);
-    height: calc(400px + 10vw);
+    height: calc(600px + 4vw);
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -32,13 +32,13 @@
 }
 
 .profile-left-container{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(182, 172, 172);
     width: 40%;
     height: 100%;
     display: flex;
     z-index: 30;
     justify-content: top;
-    align-items: top;
+    align-items: center;
     flex-direction: column;
     //padding: 60px 40px 60px 40px;
 }
@@ -55,21 +55,22 @@
     //padding: 60px 40px 60px 40px;
 }
 
+.profile-name-container{
+
+}
+
 .profile-picture-container{
     background-color: #000000;
-    width: calc(180px + 35vw);
-    height: calc(400px + 10vw);
+    width: calc(60px + 1vw);
+    height: calc(100px + 1vw);
     display: flex;
-    flex-direction: column;
-    margin-top: calc(50px + 5vw);
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 3px 3px 20px black;
 
     align-items: center;
     object-fit: contain;
     z-index: 21;
     overflow: hidden;
-    padding: calc(15px + 1vw);
 }
 
 
