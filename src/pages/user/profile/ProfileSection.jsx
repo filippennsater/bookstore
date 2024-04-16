@@ -15,6 +15,10 @@ function ProfileSection() {
 
                     </div>
 
+                    <div className='profile-name-container'>
+                        Test Testname
+                    </div>
+
                 </div>
 
                 <div className='profile-right-container'>

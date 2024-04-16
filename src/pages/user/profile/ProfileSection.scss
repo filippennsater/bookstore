@@ -55,18 +55,29 @@
     //padding: 60px 40px 60px 40px;
 }
 
-.profile-name-container{
-
-}
-
 .profile-picture-container{
     background-color: #000000;
-    width: calc(60px + 1vw);
-    height: calc(100px + 1vw);
+    width: calc(80px + 4vw);
+    height: calc(100px + 4vw);
     display: flex;
     border-radius: 10px;
     box-shadow: 3px 3px 20px black;
+    margin-top: calc(7vw - 10px);
+    align-items: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+}
 
+.profile-name-container{
+    //background-color: #000000;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: calc(12px + 0.6vw);
+    width: flex;
+    height: flex;
+    display: flex;
+    margin-top: calc(7px + 2vw);
     align-items: center;
     object-fit: contain;
     z-index: 21;
