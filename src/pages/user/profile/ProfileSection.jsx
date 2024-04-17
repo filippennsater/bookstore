@@ -44,6 +44,15 @@ function ProfileSection() {
                         Madeupstreet 0, 223 57 Lund
                     </div>
 
+
+
+                    <div className='settings-container'>
+                        Change password or account info:&nbsp;&nbsp;
+                        <div className='settings-wheel-container'>
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
