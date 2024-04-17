@@ -84,6 +84,21 @@
     overflow: hidden;
 }
 
+.profile-phone-container{
+    //background-color: #000000;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: calc(12px + 0.6vw);
+    width: flex;
+    height: flex;
+    display: flex;
+    margin-top: calc(7px + 2vw);
+    align-items: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+}
+
 .profile-email-container{
     //background-color: #000000;
     color: #000000;
@@ -99,20 +114,7 @@
     overflow: hidden;
 }
 
-.profile-phone-container{
-    //background-color: #000000;
-    color: #000000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: calc(12px + 0.6vw);
-    width: flex;
-    height: flex;
-    display: flex;
-    margin-top: calc(7px + 2vw);
-    align-items: center;
-    object-fit: contain;
-    z-index: 21;
-    overflow: hidden;
-}
+
 
 
 

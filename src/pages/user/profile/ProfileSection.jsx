@@ -23,6 +23,14 @@ function ProfileSection() {
 
                 <div className='profile-right-container'>
 
+                    <div className='profile-phone-container'>
+                        0000-000000
+                    </div>
+
+                    <div className='profile-email-container'>
+                        madeup@gmail.com
+                    </div>
+
                 </div>
 
             </div>
