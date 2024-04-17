@@ -23,12 +23,25 @@ function ProfileSection() {
 
                 <div className='profile-right-container'>
 
-                    <div className='profile-phone-container'>
+                    <div className='profile-info-head-container'>
+                        Phonenumber
+                    </div>
+                    <div className='profile-info-text-container'>
                         0000-000000
                     </div>
 
-                    <div className='profile-email-container'>
+                    <div className='profile-info-head-container'>
+                        Email
+                    </div>
+                    <div className='profile-info-text-container'>
                         madeup@gmail.com
+                    </div>
+
+                    <div className='profile-info-head-container'>
+                        Adress
+                    </div>
+                    <div className='profile-info-text-container'>
+                        Madeupstreet 0, 223 57 Lund
                     </div>
 
                 </div>

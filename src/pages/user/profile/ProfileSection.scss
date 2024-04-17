@@ -84,22 +84,24 @@
     overflow: hidden;
 }
 
-.profile-phone-container{
+.profile-info-head-container{
     //background-color: #000000;
     color: #000000;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: calc(12px + 0.6vw);
+    font-weight: bold;
     width: flex;
     height: flex;
     display: flex;
-    margin-top: calc(7px + 2vw);
+    margin-top: calc(15px + 1vw);
     align-items: center;
+    justify-content: center;
     object-fit: contain;
     z-index: 21;
     overflow: hidden;
 }
 
-.profile-email-container{
+.profile-info-text-container{
     //background-color: #000000;
     color: #000000;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -107,8 +109,9 @@
     width: flex;
     height: flex;
     display: flex;
-    margin-top: calc(7px + 2vw);
+    margin-top: calc(7px + 0.5vw);
     align-items: center;
+    justify-content: center;
     object-fit: contain;
     z-index: 21;
     overflow: hidden;
