@@ -117,6 +117,30 @@
     overflow: hidden;
 }
 
+.settings-wheel-container{
+    //background-color: #000000;
+    color: #572D87;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: calc(12px + 0.6vw);
+    width: flex;
+    height: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+}
+
+.settings-wheel-container:hover{
+    color: #361c53;
+    cursor: pointer;
+}
+
+.settings-wheel-container:active{
+    color: #190d27;
+    cursor: grab;
+}
 
 
 
