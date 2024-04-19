@@ -35,7 +35,7 @@ function LoginSection() {
                 </form>
 
                 <div className='login-info-text'>
-                    Please note: For demo login with usr: Admin and pwd: Admin
+                    Please note: For demo login with usr: test@gmail.com and pwd: test123
                 </div>
 
             </div>
