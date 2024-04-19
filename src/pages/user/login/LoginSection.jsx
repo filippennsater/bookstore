@@ -20,14 +20,22 @@ function LoginSection() {
                         Email
                     </div>
                     <div className='login-input-wrap'>
-                        <input className='input-login' type="text" name="email" />
+                        <input
+                            className='input-login'
+                            type="email"
+                            name="email"
+                        />
                     </div>
 
                     <div className='small-header-wrap-login'>
                         Password
                     </div>
                     <div className='login-input-wrap'>
-                        <input className='input-login' type="text" name="password" />
+                        <input
+                            className='input-login'
+                            type="password"
+                            name="password"
+                        />
                     </div>
 
 
