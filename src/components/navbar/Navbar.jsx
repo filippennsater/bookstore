@@ -3,12 +3,22 @@ import './Navbar.scss';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { createContext } from 'react';
+import { signOut } from 'firebase/auth';
+import { auth } from '../../firebase';
 
 
 export const ThemeContext = createContext(null);
 
 
 function Navbar() {
+
+
+    const handleLogout = async () => {
+        await signOut(auth);
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        //Navigate("/logout");
+    }
 
 
     const [click, setClick] = useState(false);
@@ -106,7 +116,7 @@ function Navbar() {
 
 
                         <li className='prof-item'>
-                            <Link to='/logout' className='prof-links' onClick={closeProfMenu}>
+                            <Link to='/logout' className='prof-links' onClick={() => { closeProfMenu(); handleLogout(); }}>
                                 Log out
                             </Link>
                         </li>
