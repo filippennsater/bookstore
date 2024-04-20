@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { createContext } from 'react';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase';
+import { onAuthStateChanged } from 'firebase/auth';
 
 
 export const ThemeContext = createContext(null);
@@ -15,10 +16,16 @@ function Navbar() {
 
     const handleLogout = async () => {
         await signOut(auth);
-        localStorage.removeItem('token');
-        localStorage.removeItem('user');
-        //Navigate("/logout");
-    }
+      };
+
+      const [user, setUser] = useState({});
+
+      useEffect(() => {
+        onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
+        });
+    
+    }, [])
 
 
     const [click, setClick] = useState(false);
@@ -102,31 +109,31 @@ function Navbar() {
 
                     <div className={clock ? 'prof-menu active' : 'prof-menu'}>
 
-                        <li className='prof-item'>
+                    {user ? <li className='prof-item'>
                             <Link to='/profile' className='prof-links' onClick={closeProfMenu}>
                                 Profile
                             </Link>
-                        </li>
+                        </li> : <></>}
 
-                        <li className='prof-item'>
+                        {user ? <></> :<li className='prof-item'>
                             <Link to='/login' className='prof-links' onClick={closeProfMenu}>
                                 Log in
                             </Link>
-                        </li>
+                        </li>}
 
 
-                        <li className='prof-item'>
+                        {user ? <li className='prof-item'>
                             <Link to='/logout' className='prof-links' onClick={() => { closeProfMenu(); handleLogout(); }}>
                                 Log out
                             </Link>
-                        </li>
+                        </li> : <></>}
 
-
-                        <li className='prof-item'>
+                        {user ? <></> : <li className='prof-item'>
                             <Link to='/signup' className='prof-links' onClick={closeProfMenu}>
                                 Sign up
                             </Link>
-                        </li>
+                        </li>}
+                        
 
                     </div>
 
