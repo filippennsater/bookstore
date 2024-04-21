@@ -2,10 +2,27 @@ import React from 'react';
 import '../../../App.css';
 import './SignupSection.scss';
 
+import { useState, useEffect } from 'react';
+import { auth } from '../../../firebase.js';
+import { onAuthStateChanged } from 'firebase/auth';
+import { Navigate } from "react-router-dom"
+
 function SignupSection() {
+
+    const [user, setUser] = useState({});
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
+        });
+
+    }, [])
+
     return (
 
         <div className='signup-container'>
+
+            {user ? <Navigate to="/profile" /> : <Navigate to="/signup" />}
 
             <div className='signup-form-container'>
 
@@ -13,7 +30,7 @@ function SignupSection() {
                     Sign up
                 </div>
 
-                <form className='form-signup'>
+                <div className='form-signup'>
                     <div className='signup-input-wrap'>
                         <div className='input-splitter-left'>
                             <div className='small-header-wrap-signup'>
@@ -73,7 +90,7 @@ function SignupSection() {
 
 
                     <input className='signup-button cursor-pointer' type="submit" value="Sign up" />
-                </form>
+                </div>
 
                 <div className='signup-info-text'>
                     Please note: The form is not functional, this is only a demo!

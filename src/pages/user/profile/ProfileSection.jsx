@@ -2,10 +2,28 @@ import React from 'react';
 import '../../../App.css';
 import './ProfileSection.scss';
 
+import { useState, useEffect } from 'react';
+import { auth } from '../../../firebase.js';
+import { onAuthStateChanged } from 'firebase/auth';
+import { Navigate } from "react-router-dom"
+
 function ProfileSection() {
+
+    const [user, setUser] = useState({});
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
+        });
+
+    }, [])
+
+
     return (
 
         <div className='profile-container'>
+
+            { !user ? <Navigate to="/login" /> : null }
 
             <div className='profile-info-container'>
 

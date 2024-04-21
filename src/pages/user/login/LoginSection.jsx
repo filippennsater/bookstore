@@ -1,9 +1,10 @@
 import React from 'react';
 import '../../../App.css';
 import './LoginSection.scss';
-import { useState/*, useEffect*/ } from 'react';
+import { useState, useEffect } from 'react';
 import { auth } from '../../../firebase.js';
-import { /*onAuthStateChanged, */signInWithEmailAndPassword } from 'firebase/auth';
+import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
+import { Navigate } from "react-router-dom"
 
 function LoginSection() {
 
@@ -23,23 +24,21 @@ function LoginSection() {
         }
     };
 
-    //const [user, setUser] = useState({});
+    const [user, setUser] = useState({});
 
-    /*
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
         });
 
     }, [])
-    
-    Can be used with:
-    <h4> {user ? user.email : "Not Logged In"} </h4>
-    */
 
     return (
 
+
         <div className='login-container'>
+
+            {user ? <Navigate to="/profile" /> : <Navigate to="/login" />}
 
             <div className='login-form-container'>
 
@@ -85,7 +84,6 @@ function LoginSection() {
                 <div className='login-info-text'>
                     Please note: For demo login with usr: test@gmail.com and pwd: test123
                 </div>
-
 
             </div>
 
