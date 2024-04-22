@@ -82,7 +82,7 @@ function LoginSection() {
                 </div>
 
                 <div className='login-info-text'>
-                    Please note: For demo login with usr: test@gmail.com and pwd: test123
+                    Please note: For demo log in with usr: test@gmail.com and pwd: test123
                 </div>
 
             </div>

@@ -7,6 +7,8 @@ import { auth } from '../../../firebase.js';
 import { onAuthStateChanged } from 'firebase/auth';
 import { Navigate } from "react-router-dom"
 
+
+
 function ProfileSection() {
 
     const [user, setUser] = useState({});
@@ -18,12 +20,11 @@ function ProfileSection() {
 
     }, [])
 
-
     return (
 
         <div className='profile-container'>
 
-            { !user ? <Navigate to="/login" /> : null }
+            {!user ? <Navigate to="/login" /> : null}
 
             <div className='profile-info-container'>
 
@@ -34,7 +35,7 @@ function ProfileSection() {
                     </div>
 
                     <div className='profile-name-container'>
-                        Test Testname
+                        {user ? "{userData.name}" : "useriuser"}
                     </div>
 
                 </div>
