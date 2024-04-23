@@ -104,7 +104,7 @@ function Navbar() {
                     </div>
 
                     <div className='prof-icon' onClick={() => { handleClock(); closeMobileMenu(); }}>
-                        <i class={clock ? "fa-regular fa-user" : "fa-solid fa-user"}></i>
+                        <i className={clock ? "fa-regular fa-user" : "fa-solid fa-user"}></i>
                     </div>
 
                     <div className={clock ? 'prof-menu active' : 'prof-menu'}>
@@ -139,7 +139,7 @@ function Navbar() {
 
 
                     <Link to='/cart' className='cart-icon' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i className="fa-solid fa-cart-shopping"></i>
                     </Link>
 
 

@@ -15,11 +15,11 @@ function CartSection() {
                     <div className='cart-hb-container'>
 
                         <div className='cart-hb-header-wrap'>
-                            <cartheader>Shopping Cart</cartheader>
+                            <div className='cartheader'>Shopping Cart</div>
                         </div>
 
                         <div className='cart-hb-button-wrap'>
-                            <cartheader>X items</cartheader>
+                            <div className='cartheader'>X items</div>
                         </div>
 
                     </div>
@@ -27,16 +27,16 @@ function CartSection() {
 
                     <div className='basket-item-wrap'>
                         <div className='basket-left-head'>
-                            <basketheader>Product Details</basketheader>
+                            <div className='basketheader'>Product Details</div>
                         </div>
                         <div className='basket-other-head'>
-                            <basketheader>Quantity</basketheader>
+                            <div className='basketheader'>Quantity</div>
                         </div>
                         <div className='basket-other-head'>
-                            <basketheader>Price</basketheader>
+                            <div className='basketheader'>Price</div>
                         </div>
                         <div className='basket-other-head'>
-                            <basketheader>Total</basketheader>
+                            <div className='basketheader'>Total</div>
                         </div>
                     </div>
 
@@ -50,7 +50,7 @@ function CartSection() {
                     <div className='cart-hb-container'>
 
                         <div className='cart-hb-header-wrap'>
-                            <cartheader>Order Summary</cartheader>
+                            <div className='cartheader'>Order Summary</div>
                         </div>
 
                     </div>
@@ -58,24 +58,24 @@ function CartSection() {
 
                     <div className='small-header-container'>
                         <div className='head-left'>
-                            <smallsumheader>Items X</smallsumheader>
+                            <div className='smallsumheader'>Items X</div>
                         </div>
                         <div className='head-right'>
-                            <smallsumheader>X kr</smallsumheader>
+                            <div className='smallsumheader'>X kr</div>
                         </div>
                     </div>
 
                     <div className='small-header-container'>
                         <div className='head-left'>
-                            <smallsumheader>Shipping</smallsumheader>
+                            <div className='smallsumheader'>Shipping</div>
                         </div>
                         <div className='head-right'>
-                            <smallsumheader></smallsumheader>
+                            <div className='smallsumheader'></div>
                         </div>
                     </div>
 
                     <select className='form-select' id="shipping" name="shipping">
-                        <option value="Budbee" selected>Budbee - free</option>
+                        <option defaultValue="Budbee">Budbee - free</option>
                         <option value="Postnord">Postnord - 15 kr</option>
                         <option value="DHL">DHL - 25 kr</option>
                     </select>
@@ -84,10 +84,10 @@ function CartSection() {
 
                     <div className='small-header-container'>
                         <div className='head-left'>
-                            <smallsumheader>Total Cost</smallsumheader>
+                            <div className='smallsumheader'>Total Cost</div>
                         </div>
                         <div className='head-right'>
-                            <smallsumheader>X kr</smallsumheader>
+                            <div className='smallsumheader'>X kr</div>
                         </div>
                     </div>
 
