@@ -113,12 +113,12 @@ owncheader{
     
 }
 
-ownctext{
+.ownctext{
     font-family: "Old Standard TT";
     color: #ffffff;
     font-size: calc(8px + 0.7vw);
     font-weight: 600;
-    line-height: calc(10px + 0.8vw);
+    line-height: 1.18;
 
     text-decoration: inherit;
 }

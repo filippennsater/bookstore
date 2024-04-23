@@ -18,15 +18,15 @@ function Footer() {
 
                     <div className='footer-link-items'>
                         <h2>About Me</h2>
-                        <p3>Filip Pennsäter</p3>
-                        <p3>Sweden, Skåne, Lund</p3>
-                        <p3>Junior developer</p3>
+                        <div className='p3'>Filip Pennsäter</div>
+                        <div className='p3'>Sweden, Skåne, Lund</div>
+                        <div className='p3'>Junior developer</div>
                     </div>
 
                     <div className='footer-link-items'>
                         <h2>Contact</h2>
-                        <p3>0700907172</p3>
-                        <p3>filip.pennsater@gmail.com</p3>
+                        <div className='p3'>0700907172</div>
+                        <div className='p3'>filip.pennsater@gmail.com</div>
                     </div>
 
                 </div>

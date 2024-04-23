@@ -21,7 +21,7 @@ function FlowerSection() {
                     <div className='fc-hb-container'>
 
                         <div className='fc-hb-header-wrap'>
-                            <fcheader>NEW ARRIVALS</fcheader>
+                            <div className='fcheader'>NEW ARRIVALS</div>
                         </div>
 
                         <div className='fc-hb-button-wrap'>

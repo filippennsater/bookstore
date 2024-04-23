@@ -26,12 +26,12 @@
     justify-content: center;
 }
 
-abouttext{
+.abouttext{
     font-family: "Old Standard TT";
     color: #ffffff;
     font-size: calc(10px + 0.6vw);
     font-weight: 600;
-    line-height: calc(1px + 1.5vw);
+    line-height: 1.5;
     
     text-decoration: inherit;
 }

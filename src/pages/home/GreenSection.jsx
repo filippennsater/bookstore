@@ -19,7 +19,7 @@ function GreenSection() {
                     <div className='gc-hb-container'>
 
                     <div className='gc-hb-header-wrap'>
-                            <gcheader>AUDIOBOOKS</gcheader>
+                            <div className='gcheader'>AUDIOBOOKS</div>
                         </div>
 
                         <div className='gc-hb-button-wrap'>

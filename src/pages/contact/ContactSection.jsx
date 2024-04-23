@@ -17,46 +17,46 @@ function ContactSection() {
                 </div>
                 <div className='right-container'>
 
-                    <h30>
+                    <div className='h30'>
                     <br />Phone
-                    </h30>
+                    </div>
 
-                    <p30>
+                    <div className='p30'>
                         000-XXX XX XX<br />
                         Our phone hours are between 9:00 AM and 5:00 PM, Monday through Friday.
-                    </p30>
+                    </div>
 
 
 
-                    <h30>
+                    <div className='h30'>
                         Adress
-                    </h30>
+                    </div>
 
-                    <p30>
+                    <div className='p30'>
                         PHILIP & PEN<br />
                         Make-Believe Lane 00<br />
                         000 00 LUND
-                    </p30>
+                    </div>
 
 
 
-                    <h30>
+                    <div className='h30'>
                         Socials
-                    </h30>
+                    </div>
 
-                    <p30>
+                    <div className='p30'>
                         Follow us on our <a href="https://www.instagram.com/kira.and.minou/" target="blank">social media!</a>
-                    </p30>
+                    </div>
 
 
 
-                    <h30>
+                    <div className='h30'>
                         Poetry competition 2024!
-                    </h30>
+                    </div>
 
-                    <p30>
+                    <div className='p30'>
                         Here, you can submit your entries for our poetry competition.<br />By participating, you agree that we reserve the right to publish your texts on our website.<br /><br />
-                    </p30>
+                    </div>
 
                     <form>
                         <label>
