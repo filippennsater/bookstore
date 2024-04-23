@@ -21,7 +21,7 @@ function EndSection() {
                     <div className='ec-hb-container'>
 
                         <div className='ec-hb-header-wrap'>
-                            <echeader>PODCAST: The Literary Voyage</echeader>
+                            <div className="echeader">PODCAST: The Literary Voyage</div>
                         </div>
 
                         <div className='ec-hb-button-wrap'>
