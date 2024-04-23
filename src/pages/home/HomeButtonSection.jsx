@@ -12,15 +12,15 @@ function HomeButtonSection() {
     <div className='h-button-container'>
 
             <Link to='/shop' className='button-container'>
-                <h20>OUR WIDE SELECTION OF BOOKS</h20>
+                <div className='homebuttonsheader'>OUR WIDE SELECTION OF BOOKS</div>
             </Link>
 
             <Link to='https://www.instagram.com/kira.and.minou/' target='empty' className='button-container'>
-                <h20>FOLLOW US ON SOCIAL MEDIA</h20>
+                <div className='homebuttonsheader'>FOLLOW US ON SOCIAL MEDIA</div>
             </Link>
 
             <Link to='/contact' className='button-container'>
-                <h20>POETRY COMPETITION 2024!</h20>
+                <div className='homebuttonsheader'>POETRY COMPETITION 2024!</div>
             </Link>
     
     </div>

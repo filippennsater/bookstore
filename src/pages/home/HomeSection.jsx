@@ -13,9 +13,9 @@ function HomeSection() {
             <div className='logo-container'/>
 
             <div className='intro-container'>
-                <h20>A MODERN BOOKSTORE WITH THE BEST PRICES!</h20>
+                <div className='homeheader'>A MODERN BOOKSTORE WITH THE BEST PRICES!</div>
                 <Link to='/about' className='first-button'>
-                    <buttontext>More about us &gt;&gt;</buttontext>
+                    <div className='buttontext'>More about us &gt;&gt;</div>
                 </Link>
 
             </div>

@@ -21,7 +21,7 @@ function PearSection() {
                     <div className='pc-hb-container'>
                         
                         <div className='pc-hb-header-wrap'>
-                            <pcheader>POPULAR</pcheader>
+                            <div className='pcheader'>POPULAR</div>
                         </div>
 
                         <div className='pc-hb-button-wrap'>

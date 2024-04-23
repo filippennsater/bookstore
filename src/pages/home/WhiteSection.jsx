@@ -20,7 +20,7 @@ function WhiteSection() {
 
               <div className='whitec-hb-header-wrap'>
 
-                    <whitecheader>Reviews</whitecheader>
+                    <div className='whitecheader'>Reviews</div>
 
               </div>
         </div>
