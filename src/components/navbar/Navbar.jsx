@@ -25,7 +25,7 @@ function Navbar() {
             setUser(currentUser);
         });
     
-    }, [])
+    }, [user])
 
 
     const [click, setClick] = useState(false);

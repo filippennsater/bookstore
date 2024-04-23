@@ -5,12 +5,14 @@ import './ProfileSection.scss';
 import { useState, useEffect } from 'react';
 import { auth } from '../../../firebase.js';
 import { onAuthStateChanged } from 'firebase/auth';
-import { Navigate } from "react-router-dom"
+import { Navigate } from "react-router-dom";
 
+import {doc, getDoc} from 'firebase/firestore';
+import { db } from '../../../firebase.js';
 
 
 function ProfileSection() {
-
+    //To get the user currently logged in
     const [user, setUser] = useState({});
 
     useEffect(() => {
@@ -18,7 +20,34 @@ function ProfileSection() {
             setUser(currentUser);
         });
 
-    }, [])
+    }, [user]);
+
+    //to get the data from the current user uid
+    const [userData, setUserData] = useState([]);
+
+    useEffect(() => {
+        if (user) {
+            getUserData(user.uid);
+        }
+    }, [user]);
+
+    async function getUserData(uid) {
+        const userDocRef = doc(db, 'users', uid);
+        try {
+            const userDocSnapshot = await getDoc(userDocRef);
+            if (userDocSnapshot.exists()) {
+                setUserData(userDocSnapshot.data());
+            } else {
+                console.log('No such data!');
+            }
+        } catch (error) {
+            console.error('Error getting user data:', error);
+        }
+    };
+
+
+
+
 
     return (
 
@@ -35,7 +64,7 @@ function ProfileSection() {
                     </div>
 
                     <div className='profile-name-container'>
-                        {user ? "{userData.name}" : "useriuser"}
+                        {user ? userData.name : "---"}
                     </div>
 
                 </div>
@@ -46,21 +75,21 @@ function ProfileSection() {
                         Phonenumber
                     </div>
                     <div className='profile-info-text-container'>
-                        0000-000000
+                        {user ? userData.phone : "---"}
                     </div>
 
                     <div className='profile-info-head-container'>
                         Email
                     </div>
                     <div className='profile-info-text-container'>
-                        madeup@gmail.com
+                        {user ? userData.email : "---"}
                     </div>
 
                     <div className='profile-info-head-container'>
                         Adress
                     </div>
                     <div className='profile-info-text-container'>
-                        Madeupstreet 0, 223 57 Lund
+                        {user ? userData.adress : "---"}
                     </div>
 
 

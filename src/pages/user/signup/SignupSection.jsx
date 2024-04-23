@@ -16,7 +16,7 @@ function SignupSection() {
             setUser(currentUser);
         });
 
-    }, [])
+    }, [user])
 
     return (
 
