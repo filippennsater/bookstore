@@ -26,7 +26,7 @@ function ProfileSection() {
     const [userData, setUserData] = useState([]);
 
     useEffect(() => {
-        if (user) {
+        if (user && user.uid) {
             getUserData(user.uid);
         }
     }, [user]);
