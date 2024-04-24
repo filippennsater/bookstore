@@ -32,7 +32,7 @@ function ProfileSection() {
     }, [user]);
 
     async function getUserData(uid) {
-        const userDocRef = doc(db, 'users', uid);
+        const userDocRef = doc(db, "users", uid);
         try {
             const userDocSnapshot = await getDoc(userDocRef);
             if (userDocSnapshot.exists()) {
@@ -97,7 +97,7 @@ function ProfileSection() {
                     <div className='settings-container'>
                         Change password or account info:&nbsp;&nbsp;
                         <div className='settings-wheel-container'>
-                            <i class="fa-solid fa-gear"></i>
+                            <i className="fa-solid fa-gear"></i>
                         </div>
                     </div>
 
