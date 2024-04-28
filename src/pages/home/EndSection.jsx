@@ -40,21 +40,21 @@ function EndSection() {
 
                         <StaticCard 
                             src='images/pod(1).jpg' 
-                            header='The Literary Voyage: #35&nbsp;William Torstensson'
+                            header='The Literary Voyage:&nbsp; #35 William Torstensson'
                             text="" 
                             path='/Market' 
                         />
 
                         <StaticCard 
                             src='images/pod(2).jpg' 
-                            header="The Literary Voyage: #34&nbsp;Sofia Ullman" 
+                            header="The Literary Voyage:&nbsp; #34 Sofia Ullman" 
                             text='' 
                             path='/' 
                         />
 
                         <StaticCard 
                             src='images/pod(3).jpg' 
-                            header='The Literary Voyage: #33&nbsp;Karl Hoffmann' 
+                            header='The Literary Voyage:&nbsp; #33 Karl Hoffmann' 
                             text="" 
                             path='/Market' 
                         />
