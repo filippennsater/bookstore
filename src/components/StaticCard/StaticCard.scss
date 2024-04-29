@@ -16,6 +16,7 @@
     height: flex;
     margin: 1%;
     overflow: hidden;
+    padding: 1%;
   }
   
   .static-card:hover {
@@ -25,7 +26,7 @@
   .static-card-image-wrap{
     background-color: none;
     height: 80%;
-    margin: 3%;
+    //margin: 3%;
   }
   
   .static-card-image{
@@ -48,16 +49,15 @@
   color: #000000;
   font-size: calc(6px + 0.75vw);
   margin-top: 5px;
-  margin-left: 5%;
+  //margin-left: 5%;
   height: flex;
   }
   
   .static-card-text{
-  font-family: "Old Standard TT";
-  color: #000000;
-  font-size: calc(4px + 0.6vw);
-  font-weight: 600;
-  margin-top: 5px;
-  line-height: 15px;
-  text-decoration: inherit;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    font-size: calc(6px + 0.75vw);
+    margin-top: 5px;
+    //margin-left: 5%;
+    height: flex;
   }
