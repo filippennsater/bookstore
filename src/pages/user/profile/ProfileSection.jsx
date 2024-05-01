@@ -13,6 +13,7 @@ import { db } from '../../../firebase.js';
 
 function ProfileSection() {
     const [user, setUser] = useState({});
+    //userData is set by fetching the localstorage array, which is filled with data in "getUserData"
     const [userData, setUserData] = useState(() => {
         const storedData = localStorage.getItem('userData');
         return storedData ? JSON.parse(storedData) : {};
@@ -40,6 +41,7 @@ function ProfileSection() {
             if (userDocSnapshot.exists()) {
                 const data = userDocSnapshot.data();
                 setUserData(data);
+                //have to user json.stringify to convert the data to strings
                 localStorage.setItem('userData', JSON.stringify(data));
             } else {
                 console.log('No such data!');
@@ -48,9 +50,6 @@ function ProfileSection() {
             console.error('Error getting user data:', error);
         }
     };
-
-
-
 
 
     return (
