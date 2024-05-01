@@ -3,6 +3,8 @@ import '../../../App.css';
 import './LogoutSection.scss';
 
 function LogoutSection() {
+
+    localStorage.removeItem('username');
     return (
 
         <div className='logout-container'>

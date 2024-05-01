@@ -12,8 +12,29 @@ import { db } from '../../../firebase.js';
 
 
 function ProfileSection() {
+
+//need to set a default userName value in their local storage
+
+    if (localStorage.getItem("username") === null) {
+        localStorage.setItem('username', '---');
+        console.log('first visitor');
+    } else {
+        console.log('visited before');
+    }
+
+    const[brrrname, setName] = useState(localStorage.getItem("username"));
+
+   
+
+
     //To get the user currently logged in
     const [user, setUser] = useState({});
+
+ useEffect(() => {
+        if (user && user.uid) {
+            setName(localStorage.getItem("username"));
+        }
+    }, []);
 
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
@@ -37,6 +58,10 @@ function ProfileSection() {
             const userDocSnapshot = await getDoc(userDocRef);
             if (userDocSnapshot.exists()) {
                 setUserData(userDocSnapshot.data());
+                //to store the userData.name in localstorage I first need to turn it into a String
+                let jsonString = JSON.stringify(userData.name);
+                //I need to remove the " "" " from the jsonstring
+                localStorage.setItem('username', jsonString.replace(/"/g, ''));
             } else {
                 console.log('No such data!');
             }
@@ -64,7 +89,7 @@ function ProfileSection() {
                     </div>
 
                     <div className='profile-name-container'>
-                        {user ? userData.name : "---"}
+                        {user ? brrrname : "---"}
                     </div>
 
                 </div>
