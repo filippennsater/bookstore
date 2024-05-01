@@ -12,30 +12,13 @@ import { db } from '../../../firebase.js';
 
 
 function ProfileSection() {
-
-//need to set a default userName value in their local storage
-
-    if (localStorage.getItem("username") === null) {
-        localStorage.setItem('username', '---');
-        console.log('first visitor');
-    } else {
-        console.log('visited before');
-    }
-
-    const[brrrname, setName] = useState(localStorage.getItem("username"));
-
-   
-
+    const [user, setUser] = useState({});
+    const [userData, setUserData] = useState(() => {
+        const storedData = localStorage.getItem('userData');
+        return storedData ? JSON.parse(storedData) : {};
+    });
 
     //To get the user currently logged in
-    const [user, setUser] = useState({});
-
- useEffect(() => {
-        if (user && user.uid) {
-            setName(localStorage.getItem("username"));
-        }
-    }, []);
-
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
@@ -44,8 +27,6 @@ function ProfileSection() {
     }, [user]);
 
     //to get the data from the current user uid
-    const [userData, setUserData] = useState([]);
-
     useEffect(() => {
         if (user && user.uid) {
             getUserData(user.uid);
@@ -57,11 +38,9 @@ function ProfileSection() {
         try {
             const userDocSnapshot = await getDoc(userDocRef);
             if (userDocSnapshot.exists()) {
-                setUserData(userDocSnapshot.data());
-                //to store the userData.name in localstorage I first need to turn it into a String
-                let jsonString = JSON.stringify(userData.name);
-                //I need to remove the " "" " from the jsonstring
-                localStorage.setItem('username', jsonString.replace(/"/g, ''));
+                const data = userDocSnapshot.data();
+                setUserData(data);
+                localStorage.setItem('userData', JSON.stringify(data));
             } else {
                 console.log('No such data!');
             }
@@ -89,7 +68,7 @@ function ProfileSection() {
                     </div>
 
                     <div className='profile-name-container'>
-                        {user ? brrrname : "---"}
+                        {user ? userData.name : "---"}
                     </div>
 
                 </div>
