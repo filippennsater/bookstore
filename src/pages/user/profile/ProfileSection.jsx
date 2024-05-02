@@ -67,7 +67,7 @@ function ProfileSection() {
                     </div>
 
                     <div className='profile-name-container'>
-                        {user ? userData.name : "---"}
+                        {userData.name || "---"}
                     </div>
 
                 </div>
@@ -78,22 +78,29 @@ function ProfileSection() {
                         Phonenumber
                     </div>
                     <div className='profile-info-text-container'>
-                        {user ? userData.phone : "---"}
+                        {userData.phone || "---"}
                     </div>
 
                     <div className='profile-info-head-container'>
                         Email
                     </div>
                     <div className='profile-info-text-container'>
-                        {user ? userData.email : "---"}
+                        {userData.email || "---"}
                     </div>
 
                     <div className='profile-info-head-container'>
                         Adress
                     </div>
                     <div className='profile-info-text-container'>
-                        {user ? userData.adress : "---"}
+                        {userData.adress || "---"} 
                     </div>
+
+                    {/*
+                    Before I used this code: 
+                    userData.adress ? userData.adress : "---"
+                    If userData.adress exists, then I use that value as input, otherwize I use "---"
+                    But using the || is better
+                    */}
 
 
 
