@@ -14,7 +14,9 @@ import { storage } from '../../../firebase.js';
 import { ref, getDownloadURL } from "firebase/storage";
 
 function ProfileSection() {
+
     const [user, setUser] = useState({});
+
     //userData is set by fetching the localstorage array, which is filled with data in "getUserData"
     const [userData, setUserData] = useState(() => {
         const storedData = localStorage.getItem('userData');
@@ -23,7 +25,6 @@ function ProfileSection() {
 
     const [profileImageUrl, setProfileImageUrl] = useState('');
     
-
     //To get the user currently logged in
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
@@ -56,22 +57,20 @@ function ProfileSection() {
         }
     };
 
-    
-
-
     async function getProfileImage(uid) {
+        //const cacheName = 'profile-image';
         const imageRef = ref(storage, `${uid}.jpg`);
         try {
             const url = await getDownloadURL(imageRef);
-            console.log(url);
             setProfileImageUrl(url);
-            // Save the image URL to local storage
-            localStorage.setItem(`${uid}_profileImage`, url);
-            console.log(localStorage.getItem(`${uid}_profileImage`));
+            //Save the image URL to local storage
+            //localStorage.setItem(`${uid}_profileImage`, url);
+            
         } catch (error) {
             console.error('Error getting profile image:', error);
         }
     }
+
 
     return (
 
