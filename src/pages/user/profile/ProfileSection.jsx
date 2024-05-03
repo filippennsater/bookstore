@@ -7,9 +7,11 @@ import { auth } from '../../../firebase.js';
 import { onAuthStateChanged } from 'firebase/auth';
 import { Navigate } from "react-router-dom";
 
-import {doc, getDoc} from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../../firebase.js';
 
+import { storage } from '../../../firebase.js';
+import { ref, getDownloadURL } from "firebase/storage";
 
 function ProfileSection() {
     const [user, setUser] = useState({});
@@ -19,18 +21,21 @@ function ProfileSection() {
         return storedData ? JSON.parse(storedData) : {};
     });
 
+    const [profileImageUrl, setProfileImageUrl] = useState('');
+    
+
     //To get the user currently logged in
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
         });
-
     }, [user]);
 
     //to get the data from the current user uid
     useEffect(() => {
         if (user && user.uid) {
             getUserData(user.uid);
+            getProfileImage(user.uid);
         }
     }, [user]);
 
@@ -51,6 +56,22 @@ function ProfileSection() {
         }
     };
 
+    
+
+
+    async function getProfileImage(uid) {
+        const imageRef = ref(storage, `${uid}.jpg`);
+        try {
+            const url = await getDownloadURL(imageRef);
+            console.log(url);
+            setProfileImageUrl(url);
+            // Save the image URL to local storage
+            localStorage.setItem(`${uid}_profileImage`, url);
+            console.log(localStorage.getItem(`${uid}_profileImage`));
+        } catch (error) {
+            console.error('Error getting profile image:', error);
+        }
+    }
 
     return (
 
@@ -63,6 +84,13 @@ function ProfileSection() {
                 <div className='profile-left-container'>
 
                     <div className='profile-picture-container'>
+                    {profileImageUrl &&
+                        <img
+                        src={profileImageUrl}
+                        alt="Profile"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        />
+                    }
 
                     </div>
 
@@ -92,7 +120,7 @@ function ProfileSection() {
                         Adress
                     </div>
                     <div className='profile-info-text-container'>
-                        {userData.adress || "---"} 
+                        {userData.adress || "---"}
                     </div>
 
                     {/*
@@ -101,7 +129,6 @@ function ProfileSection() {
                     If userData.adress exists, then I use that value as input, otherwize I use "---"
                     But using the || is better
                     */}
-
 
 
                     <div className='settings-container'>
