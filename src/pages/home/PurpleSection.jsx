@@ -29,7 +29,7 @@ function PurpleSection() {
                             color='white'
                             colorAfter='#5A2677'
                             backAfter='white'
-                            path='/Market'
+                            path='/shop'
                             />
                         </div>
 

@@ -30,7 +30,7 @@ function EndSection() {
                             color='black'
                             colorAfter='white'
                             backAfter='black'
-                            path='/Market'
+                            path='/'
                             />
                         </div>
 
@@ -42,21 +42,21 @@ function EndSection() {
                             src='images/pod(1).jpg' 
                             header='The Literary Voyage: #35'
                             text="William Torstensson" 
-                            path='/Market' 
+                            path='/' 
                         />
 
                         <StaticCard 
                             src='images/pod(2).jpg' 
                             header="The Literary Voyage: #34" 
                             text='Sofia Ullman' 
-                            path='/Market' 
+                            path='/' 
                         />
 
                         <StaticCard 
                             src='images/pod(3).jpg' 
                             header='The Literary Voyage: #33'
                             text="Karl Hoffmann" 
-                            path='/Market' 
+                            path='/' 
                         />
                     
                     </div>

@@ -18,7 +18,7 @@ function HomeTransitionSection() {
             src='images/ex1.jpg' 
             header='Our top seller!' 
             text="This month's top-selling book is Whispers of Serenity. Lose yourself in its gripping tale of adventure and redemption. With twists that will leave you breathless, it's a must-read for any book lover!" 
-            path='/Market' 
+            path='/shop' 
         />
 
         <BigCard 

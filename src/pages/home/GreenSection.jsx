@@ -28,7 +28,7 @@ function GreenSection() {
                             color='white'
                             colorAfter='#93CF9C'
                             backAfter='white'
-                            path='/Market'
+                            path='/shop'
                             />
                         </div>
                     </div>
@@ -39,28 +39,28 @@ function GreenSection() {
                             src='images/audiobook(1).jpg' 
                             header='Vincent' 
                             text="" 
-                            path='/Market' 
+                            path='/shop' 
                         />
 
                         <SmallAudioCard 
                             src='images/audiobook(2).jpg' 
                             header="Reflections by the Moonlit Pond" 
                             text='' 
-                            path='/' 
+                            path='/shop' 
                         />
 
                         <SmallAudioCard 
                             src='images/audiobook(3).jpg' 
                             header='A Summer Saga' 
                             text="" 
-                            path='/Market' 
+                            path='/shop' 
                         />
 
                         <SmallAudioCard 
                             src='images/audiobook(4).jpg' 
                             header="DR. Raven" 
                             text='' 
-                            path='/' 
+                            path='/shop' 
                         />
                     
                     </div>

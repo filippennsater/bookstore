@@ -30,7 +30,7 @@ function PearSection() {
                             color='#93CF9C'
                             colorAfter='white'
                             backAfter='#93CF9C'
-                            path='/Market'
+                            path='/shop'
                             />
                         </div>
 
@@ -42,28 +42,28 @@ function PearSection() {
                             src='images/book(5).jpg' 
                             header='Elderly Globetrotters' 
                             text="Jasper Wilde" 
-                            path='/Market' 
+                            path='/shop' 
                         />
 
                         <MediumCard 
                             src='images/book(6).jpg' 
                             header="Wings" 
                             text="Linnea Berggren"
-                            path='/' 
+                            path='/shop' 
                         />
 
                         <MediumCard 
                             src='images/book(7).jpg' 
                             header='Damsel' 
                             text="Clara Müller" 
-                            path='/Market' 
+                            path='/shop' 
                         />
 
                         <MediumCard 
                             src='images/book(8).jpg' 
                             header="WW2: Echoes" 
                             text='Tobias Hawthorne' 
-                            path='/' 
+                            path='/shop' 
                         />
                     
                     </div>
