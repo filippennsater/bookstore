@@ -7,7 +7,6 @@ function BooksSection() {
 
         <div className='books-container'>
             
-            <p>Books</p>
 
         </div>
 
