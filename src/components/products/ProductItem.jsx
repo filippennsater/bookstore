@@ -1,8 +1,9 @@
 import React from 'react'
+import "./ProductItem.scss";
 
 const ProductItem = ({item}) => {
   return (
-    <div>
+    <div className='product-item-container'>
         <img src={item.image} alt={item.title} />
         <h3>{item.title}</h3>
         <p>{item.price}</p>
