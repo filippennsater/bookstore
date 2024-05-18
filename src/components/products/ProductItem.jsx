@@ -5,10 +5,10 @@ const ProductItem = ({item}) => {
   return (
     <div className='product-item-container'>
         <img className='product-image' src={item.image} alt={item.title} />
-        <h3>{item.title}</h3>
-        <p>{item.price}</p>
-        <p>{item.qtyInStock}</p>
-        <p>{item.description}</p>
+        <div className='product-title'>{item.title}</div>
+        <div className='product-price'>{item.price} kr</div>
+        <div className='product-qty'>{item.qtyInStock}</div>
+        <div className='product-text'>{item.description}</div>
     </div>
   )
 }
