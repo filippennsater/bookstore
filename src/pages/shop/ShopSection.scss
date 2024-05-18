@@ -11,3 +11,16 @@
     z-index: 21;
     overflow: hidden;
 }
+
+.product-list-container{
+    background-color: #9FCE9A;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: center;
+    object-fit: contain;
+    flex-wrap: wrap;
+    z-index: 21;
+}

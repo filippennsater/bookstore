@@ -8,12 +8,14 @@ function ShopSection() {
     return (
 
         <div className='shop-container'>
-
             <h1>Products</h1>
-            {products.map((item) => (
-                <ProductItem item={item} />
-            ))}
+            <div className='product-list-container'>
 
+                
+                {products.map((item) => (
+                    <ProductItem item={item} />
+                ))}
+            </div>
         </div>
 
     )
