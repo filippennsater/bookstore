@@ -15,7 +15,7 @@
 .product-list-container{
     background-color: #9FCE9A;
     width: 90%;
-    height: 100%;
+    height: flex;
     display: flex;
     flex-flow: row;
     align-items: flex-start;
@@ -23,6 +23,12 @@
     object-fit: contain;
     flex-wrap: wrap;
     z-index: 21;
+}
+
+@media screen and (min-width: 1700px) {
+    .product-list-container {
+        width: calc(90% - 45vw);
+    }
 }
 
 .shop-header{
