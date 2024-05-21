@@ -9,6 +9,7 @@ const ProductItem = ({item}) => {
         <div className='product-price'>{item.price} kr</div>
         <div className='product-qty'>{item.qtyInStock}</div>
         <div className='product-text'>{item.description}</div>
+        <div className='buy-button'>Buy</div>
     </div>
   )
 }
