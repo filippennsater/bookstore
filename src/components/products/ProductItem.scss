@@ -70,4 +70,10 @@
 
 .buy-button:hover{
     cursor: pointer;
+    background-color: #61995b;
+}
+
+.buy-button:active{
+    cursor: pointer;
+    background-color: #395a36;
 }
