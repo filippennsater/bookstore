@@ -1,10 +1,12 @@
 .product-item-container{
     background-color: #572D87;
     width: calc(140px + 1vw);
-    height: 500px;
+    height: calc(420px + 3vw);
     margin: 1%;
     overflow: hidden;
     padding: 12.5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-image{
@@ -27,28 +29,28 @@
     font-size: calc(13px + 0.2vw);
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .product-price{
     color: white;
     font-size: calc(10px + 0.2vw);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .product-qty{
     color: white;
     font-size: calc(10px + 0.2vw);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .product-text{
     color: #9FCE9A;
     font-size: calc(10px + 0.2vw);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .buy-button{
@@ -58,13 +60,17 @@
     justify-content: center;
     width: 100%;
     height: 20px;
+    
+    margin-top: auto;
+    bottom: 0;
 
     border-width: calc(1px + 0.08vw);
     border-style: solid;
     border-radius: 25px;
     //border-color: white;
-    right: 0;
-    font-size: calc(5px + 0.5vw);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
