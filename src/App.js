@@ -16,6 +16,7 @@ import Logout from './pages/user/logout/Logout';
 import Signup from './pages/user/signup/Signup';
 
 import Cart from './pages/cart/Cart';
+import SingleItem from './pages/cart/Cart';
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
           <Route path="/signup" exact Component={Signup} />
 
           <Route path="/cart" exact Component={Cart} />
+          <Route path="/product/:id" exact Component={SingleItem} />
+
         </Routes>
       </Router>
     </>
