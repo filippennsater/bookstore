@@ -16,7 +16,7 @@ import Logout from './pages/user/logout/Logout';
 import Signup from './pages/user/signup/Signup';
 
 import Cart from './pages/cart/Cart';
-import SingleItem from './pages/cart/Cart';
+import SingleItem from './components/products/SingleItem';
 
 function App() {
   return (
