@@ -1,10 +1,12 @@
 import React from 'react';
 import '../../App.css';
 import './ShopSection.scss';
-import { products } from '../../components/products/products'
+//import { products } from '../../components/products/products'
 import ProductItem from '../../components/products/ProductItem';
 
-function ShopSection() {
+import { connect } from 'react-redux';
+
+const ShopSection= ({products}) => {
     return (
 
         <div className='shop-container'>
@@ -21,4 +23,10 @@ function ShopSection() {
     )
 }
 
-export default ShopSection
+const mapStateToProps = state => {
+    return{
+        products: state.shop.products,
+    };
+};
+
+export default connect(mapStateToProps)(ShopSection);
