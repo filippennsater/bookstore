@@ -15,7 +15,7 @@ const ShopSection= ({products}) => {
 
                 
                 {products.map((item) => (
-                    <ProductItem item={item} />
+                    <ProductItem key={item.id} item={item} />
                 ))}
             </div>
         </div>
