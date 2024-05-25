@@ -7,12 +7,24 @@ import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 
+import { connect } from 'react-redux';
+
 
 export const ThemeContext = createContext(null);
 
 
-function Navbar() {
+const Navbar = ({ cart }) => {
 
+    const [cartCount, setCartCount] = useState(0);
+
+    useEffect(() => {
+        let count = 0;
+        cart.forEach((item) => {
+          count += item.qty;
+        });
+    
+        setCartCount(count);
+      }, [cart, cartCount]);
 
     const handleLogout = async () => {
         await signOut(auth);
@@ -141,6 +153,9 @@ function Navbar() {
                     <Link to='/cart' className='cart-icon' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
                         <i className="fa-solid fa-cart-shopping"></i>
                     </Link>
+                    <Link to='/cart' className='cart-icon-number' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
+                        {cartCount}
+                    </Link>
 
 
                 </div>
@@ -152,4 +167,10 @@ function Navbar() {
 
 }
 
-export default Navbar;
+const mapStateToProps = (state) => {
+    return {
+      cart: state.shop.cart,
+    };
+  };
+  
+  export default connect(mapStateToProps)(Navbar);

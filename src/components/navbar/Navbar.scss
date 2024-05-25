@@ -44,6 +44,19 @@
   font-size: 1.6rem;
   display: flex;
   align-items: center;
+  margin-right: 5px;
+}
+
+.cart-icon-number {
+  display: flex;
+  color: #ffffff;
+  justify-self: end;
+  //margin-left: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
   margin-right: 15px;
 }
 
@@ -273,6 +286,17 @@
     right: 0;
     transform: translate(-190%, 70%);
     font-size: 1.8rem;
+    cursor: pointer;
+    margin-right: 0px;
+  }
+
+  .cart-icon-number {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-490%, 40%);
+    font-size: 20px;
     cursor: pointer;
     margin-right: 0px;
   }
