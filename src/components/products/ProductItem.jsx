@@ -13,7 +13,7 @@ const ProductItem = ({item, addToCart}) => {
         <div className='product-price'>{item.price} kr</div>
         <div className='product-qty'>{item.qtyInStock}</div>
         <div className='product-text'>{item.description}</div>
-        <div className='buy-button' onClick={() => addToCart(item.id)}>Add To Cart</div>
+        <button className='buy-button' onClick={() => addToCart(item.id)}>Add To Cart</button>
     </div>
   )
 }

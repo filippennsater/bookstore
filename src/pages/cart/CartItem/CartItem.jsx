@@ -12,8 +12,9 @@ const CartItem = ({ item, adjustQty, removeFromCart }) => {
   const [input, setInput] = useState(item.qty);
 
   const onChangeHandler = (e) => {
-    setInput(e.target.value);
-    adjustQty(item.id, e.target.value);
+    const value = Math.max(1, e.target.value); // Ensures that value is at least 1 and noone tries negative numbers to get a "discount" ;)
+    setInput(value);
+    adjustQty(item.id, value);
   };
 
   return (
