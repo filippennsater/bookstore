@@ -1,0 +1,87 @@
+.cartItem-item-wrap{
+  //background-color: aqua;
+  display: flex;
+  width: 100%;
+  height: calc(50px + 4vw);
+  margin-top: calc(15px + 0.8vw);
+}
+
+.cartItem-left-head{
+  display: flex;
+  width: 40%;
+  height: flex;
+  object-fit: contain;
+  justify-content: left;
+}
+
+.cartItem-other-head{
+  font-size: calc(5px + 0.5vw);
+  font-weight: bold;
+  display: flex;
+  width: 20%;
+  height: flex;
+  object-fit: contain;
+  justify-content: center;
+}
+
+.cartItem-image{
+  display: flex;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.cartItem-info{
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  height: 100%;
+  object-fit: contain;
+  align-items: center;
+  //padding: 5%;
+}
+.cartItem-header{
+  font-size: calc(5px + 0.5vw);
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.deleteItemBtn{
+  background: url('../../../../public/images/trashbin.jpg') center center/cover no-repeat;
+  width: calc(14px + 1vw);
+  height: calc(14px + 1vw);
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all ease-in-out 0.7s;
+  outline: none;
+  margin-top: auto;
+  margin-bottom: 7%;
+}
+
+.deleteItemBtn:hover{
+  transform: scale(1.2) rotate(360deg);
+  background-color: rgb(209, 15, 15);
+}
+
+.deleteItemBtn img{
+  width: 100%;
+  height: 100%;
+}
+
+.qty-input{
+  font-weight: bold;
+  background-color: rgb(231, 231, 231);
+  height: calc(0px + 0.4vw);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-left: 0.4rem;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+  outline:auto;
+}
+  
