@@ -10,7 +10,9 @@ const ProductItem = ({ item, addToCart, loadCurrentItem }) => {
   return (
     <div className='product-item-container'>
       <Link to={`/product/${item.id}`} onClick={() => loadCurrentItem(item)}>
-        <img className='product-image' src={item.image} alt={item.title} />
+        <div className='product-image-wrap'>
+          <img className='product-image' src={item.image} alt={item.title} />
+        </div>
         <div className='product-title'>{item.title}</div>
       </Link>
       <div className='product-price'>{item.price} kr</div>

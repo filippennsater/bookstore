@@ -9,6 +9,9 @@
     flex-direction: column;
 }
 
+.product-image-wrap{
+    overflow: hidden;
+  }
 .product-image{
     background-color: green;
     top: 0;
@@ -23,6 +26,10 @@
     object-fit: cover;
     transition: all 0.2s linear;
   }
+  .product-image:hover{
+    scale: 1.1;
+    transition: 900ms;
+}
 
 .product-title{
     color: #9FCE9A;
@@ -30,6 +37,9 @@
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10px;
+}
+.product-title:hover{
+    text-decoration: underline;
 }
 
 .product-price{

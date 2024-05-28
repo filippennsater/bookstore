@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./SingleItem.module.css";
+import styles from "./SingleItemSection.module.css";
 
 import { connect } from "react-redux";
 import { addToCart } from "../../redux/Shopping/shopping-actions";
 
-const SingleItem = ({ current, addToCart }) => {
+const SingleItemSection = ({ current, addToCart }) => {
   return (
     <div className={styles.singleItem}>
       <img
@@ -40,4 +40,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SingleItem);
+export default connect(mapStateToProps, mapDispatchToProps)(SingleItemSection);
