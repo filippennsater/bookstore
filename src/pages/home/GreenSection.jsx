@@ -36,28 +36,28 @@ function GreenSection() {
                     <div className='small-audio-cards-container'>
 
                         <SmallAudioCard 
-                            src='images/audiobook(1).jpg' 
+                            src={require('../../components/products/productImages/audiobook(1).jpg')}
                             header='Vincent' 
                             text="" 
                             path='/shop' 
                         />
 
                         <SmallAudioCard 
-                            src='images/audiobook(2).jpg' 
+                            src={require('../../components/products/productImages/audiobook(2).jpg')}
                             header="Reflections by the Moonlit Pond" 
                             text='' 
                             path='/shop' 
                         />
 
                         <SmallAudioCard 
-                            src='images/audiobook(3).jpg' 
+                            src={require('../../components/products/productImages/audiobook(3).jpg')}
                             header='A Summer Saga' 
                             text="" 
                             path='/shop' 
                         />
 
                         <SmallAudioCard 
-                            src='images/audiobook(4).jpg' 
+                            src={require('../../components/products/productImages/audiobook(4).jpg')}
                             header="DR. Raven" 
                             text='' 
                             path='/shop' 

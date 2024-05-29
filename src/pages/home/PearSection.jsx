@@ -39,28 +39,28 @@ function PearSection() {
                     <div className='medium-cards-container'>
 
                         <MediumCard 
-                            src='images/book(5).jpg' 
+                            src={require('../../components/products/productImages/book(5).jpg')}
                             header='Elderly Globetrotters' 
                             text="Jasper Wilde" 
                             path='/shop' 
                         />
 
                         <MediumCard 
-                            src='images/book(6).jpg' 
+                            src={require('../../components/products/productImages/book(6).jpg')}
                             header="Wings" 
                             text="Linnea Berggren"
                             path='/shop' 
                         />
 
                         <MediumCard 
-                            src='images/book(7).jpg' 
+                            src={require('../../components/products/productImages/book(7).jpg')}
                             header='Damsel' 
                             text="Clara Müller" 
                             path='/shop' 
                         />
 
                         <MediumCard 
-                            src='images/book(8).jpg' 
+                            src={require('../../components/products/productImages/book(8).jpg')}
                             header="WW2: Echoes" 
                             text='Tobias Hawthorne' 
                             path='/shop' 
