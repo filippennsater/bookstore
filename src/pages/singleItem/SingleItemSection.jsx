@@ -7,24 +7,33 @@ import { addToCart } from "../../redux/Shopping/shopping-actions";
 const SingleItemSection = ({ current, addToCart }) => {
 
   return (
-    <div className='SingleItem-container'>
-      <div className='SingleItem'>
-        <img
-          className='singleItem-image'
-          src={current.image}
-          alt={current.title}
-        />
-        <div className='singleItem-details'>
-          <div className='details-title'>{current.title}</div>
-          <div className='details-description'>{current.description}</div>
-          <div className='details-price'>$ {current.price}</div>
+    <div className='singleItem-container'>
+      <div className='singleItem-info-wrap'>
+        <div className='singleItem-left-container'>
+          <img
+            className='singleItem-img'
+            src={current.image}
+            alt={current.title}
+          />
+        </div>
+        <div className='singleItem-right-container'>
+          <div className='h35'>{current.title}</div>
+          <div className='p35'>{current.description}</div>
+          <div className='h35'>{current.price} kr</div>
 
-          <button
-            onClick={() => addToCart(current.id)}
-            className='details-addBtn'
-          >
-            Add To Cart
-          </button>
+          <div className='h36'>Category:
+            <div className='p36'>{current.category}
+            </div>
+          </div>
+
+          <div className='singleItem-button-container'>
+            <button
+              onClick={() => addToCart(current.id)}
+              className='singleItem-add-button'
+            >
+              Add To Cart
+            </button>
+          </div>
         </div>
       </div>
     </div>
