@@ -1,16 +1,18 @@
 .singleItem-container {
   background-color: #572D87;
   width: 100%;
+  min-height: calc(800px + 10vw);
   height: flex;
   display: flex;
   flex-direction: column;
   
+  //justify-content: center;
   align-items: center;
   object-fit: contain;
   z-index: 21;
   overflow: hidden;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 6%;
+  //padding-bottom: 8%;
 }
 
 .singleItem-info-wrap{
@@ -25,6 +27,7 @@
   object-fit: contain;
   flex-wrap: wrap;
   z-index: 21;
+  margin-bottom: 6%;
 }
 
 .singleItem-img{

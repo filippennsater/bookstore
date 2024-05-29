@@ -39,28 +39,28 @@ function FlowerSection() {
                     <div className='small-cards-container'>
 
                         <SmallCard 
-                            src='images/book(1).jpg' 
+                            src={require('../../components/products/productImages/book(1).jpg')}
                             header='Explore Beatrice Fitzwilliams new book "What If?"' 
                             text="Intriguing questions about alternate realities and choice" 
                             path='/shop' 
                         />
 
                         <SmallCard 
-                            src='images/book(2).jpg' 
+                            src={require('../../components/products/productImages/book(2).jpg')}
                             header="Enchanting enigmas and captivating adventures" 
                             text='' 
                             path='/shop' 
                         />
 
                         <SmallCard 
-                            src='images/book(3).jpg' 
+                            src={require('../../components/products/productImages/book(3).jpg')}
                             header='Discover the secrets of craft beer from brewing to tasting!' 
                             text="" 
                             path='/shop' 
                         />
 
                         <SmallCard 
-                            src='images/book(4).jpg' 
+                            src={require('../../components/products/productImages/book(4).jpg')}
                             header="A beautifully illustrated tale about transformation and self-discovery" 
                             text='' 
                             path='/shop' 

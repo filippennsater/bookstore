@@ -18,7 +18,7 @@ const SingleItemSection = ({ current, addToCart }) => {
         </div>
         <div className='singleItem-right-container'>
           <div className='h35'>{current.title}</div>
-          <div className='p35'>{current.description}</div>
+          <div className='p35'>{current.longDescription}</div>
           <div className='h35'>{current.price} kr</div>
 
           <div className='h36'>Category:
