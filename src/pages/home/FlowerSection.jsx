@@ -6,18 +6,21 @@ import '../../components/SmallCard/SmallCard.scss';
 import RoundedButton from '../../components/RoundedButton/RoundedButton';
 import '../../components/RoundedButton/RoundedButton.scss';
 
+import { connect } from 'react-redux';
 
-function FlowerSection() {
+
+
+const FlowerSection = ({ products }) => {
 
 
     return (
 
-    <div className='wrap-flower-container'>
+        <div className='wrap-flower-container'>
 
             <div className='flower-container'>
 
                 <div className='fc-container'>
-                    <div className='fc-line'/>
+                    <div className='fc-line' />
                     <div className='fc-hb-container'>
 
                         <div className='fc-hb-header-wrap'>
@@ -26,11 +29,11 @@ function FlowerSection() {
 
                         <div className='fc-hb-button-wrap'>
                             <RoundedButton
-                            text='See more'
-                            color='#42752F'
-                            colorAfter='white'
-                            backAfter='#42752F'
-                            path='/shop'
+                                text='See more'
+                                color='#42752F'
+                                colorAfter='white'
+                                backAfter='#42752F'
+                                path='/shop'
                             />
                         </div>
 
@@ -38,6 +41,20 @@ function FlowerSection() {
 
                     <div className='small-cards-container'>
 
+
+
+                        {products.slice(0, 4).map((item) => (
+                            <SmallCard key={item.id} item={item} />
+                        ))}
+
+
+
+
+
+
+
+
+                        {/*
                         <SmallCard 
                             src={require('../../components/products/productImages/book(1).jpg')}
                             header='Explore Beatrice Fitzwilliams new book "What If?"' 
@@ -65,16 +82,22 @@ function FlowerSection() {
                             text='' 
                             path='/shop' 
                         />
-                    
+                    */}
                     </div>
-                    
+
                 </div>
-            
+
             </div>
-            
-    </div>
+
+        </div>
 
     )
 }
 
-export default FlowerSection
+const mapStateToProps = state => {
+    return {
+        products: state.shop.products,
+    };
+};
+
+export default connect(mapStateToProps)(FlowerSection);
