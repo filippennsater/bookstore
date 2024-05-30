@@ -41,20 +41,15 @@ const FlowerSection = ({ products }) => {
 
                     <div className='small-cards-container'>
 
-
-
                         {products.slice(0, 4).map((item) => (
                             <SmallCard key={item.id} item={item} />
                         ))}
 
 
-
-
-
-
-
-
                         {/*
+
+                        How I did it before with props, now I load all the info from my local "database"
+
                         <SmallCard 
                             src={require('../../components/products/productImages/book(1).jpg')}
                             header='Explore Beatrice Fitzwilliams new book "What If?"' 
@@ -83,6 +78,7 @@ const FlowerSection = ({ products }) => {
                             path='/shop' 
                         />
                     */}
+
                     </div>
 
                 </div>

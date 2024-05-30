@@ -16,11 +16,11 @@ const SmallCard = ({ item, loadCurrentItem }) => {
                     className="small-card-image"
                     />
                     <div className="small-card-header">
-                        {item.title}
+                        {item.alt1}
                     </div>
 
                     <div className="small-card-text">
-                        {item.price}
+                        {item.alt2}
                     </div>
                 </div>
             </Link>

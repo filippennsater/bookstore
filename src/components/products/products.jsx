@@ -7,6 +7,8 @@ export const products = [
     longDescription: "A thrilling exploration of alternative realities and the choices that shape our destinies. Fitzwilliams masterfully intertwines different timelines, creating a captivating narrative that keeps readers on the edge of their seats. Each chapter reveals new dimensions and profound insights into the human condition.",
     category: "Science Fiction",
     image: require("./productImages/book(1).jpg"),
+    alt1: 'Explore Beatrice Fitzwilliams new book "What If?"',
+    alt2: "Intriguing questions about alternate realities and choice",
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ export const products = [
     longDescription: "A collection of short stories filled with intrigue and unexpected twists. Each tale unravels a new enigma, inviting readers to become amateur detectives. The author’s sharp storytelling and clever plots will keep you guessing until the very end.",
     category: "Mystery",
     image: require("./productImages/book(2).jpg"),
+    alt1: "Enchanting enigmas and captivating adventures",
+    alt2: "",
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ export const products = [
     longDescription: "Discover the best brews from around the world and the stories behind them. This guide explores the rich histories and unique flavors of various beers, making it a must-have for enthusiasts. Detailed profiles and tasting notes make it easy to find your next favorite brew.",
     category: "Non-Fiction",
     image: require("./productImages/book(3).jpg"),
+    alt1: "Discover the secrets of craft beer from brewing to tasting!",
+    alt2: "",
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ export const products = [
     longDescription: "A timeless tale of transformation and self-discovery for all ages. This classic story highlights the importance of inner beauty and self-acceptance. With beautiful illustrations and an enduring message, it continues to inspire generations.",
     category: "Children's Literature",
     image: require("./productImages/book(4).jpg"),
+    alt1: "A beautifully illustrated tale about transformation and self-discovery",
+    alt2: "",
   },
   {
     id: 5,
