@@ -2,13 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./SmallAudioCard.scss";
 
-function SmallAudioCard(props){
+import { connect } from 'react-redux';
+import { loadCurrentItem } from "../../redux/Shopping/shopping-actions";
+
+const SmallAudioCard = ({ item, loadCurrentItem }) => {
+
     return(
         <>
-            <Link className="small-audio-card" to={props.path}>
+            <Link className="small-audio-card" to={`/product/${item.id}`} onClick={() => loadCurrentItem(item)}>
                 <div className="small-audio-card-image-wrap">
                     <img
-                    src={props.src}
+                    src={item.image}
                     alt="smallWboi"
                     className="small-audio-card-image"
                     />
@@ -16,17 +20,25 @@ function SmallAudioCard(props){
                 </div>
 
                     <div className="small-audio-card-header">
-                        {props.header}
+                        {item.title}
                     </div>
 
+                    {/* 
                     <div className="small-audio-card-text">
                         {props.text}
                     </div>
-                
+                    */}
+                    
             </Link>
         
         </>
     );
 }
 
-export default SmallAudioCard;
+const mapDispatchToProps = (dispatch) => {
+    return {
+      loadCurrentItem: (item) => dispatch(loadCurrentItem(item)),
+    };
+  };
+
+  export default connect(null, mapDispatchToProps)(SmallAudioCard);

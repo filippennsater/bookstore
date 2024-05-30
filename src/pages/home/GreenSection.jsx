@@ -7,34 +7,40 @@ import RoundedButton from '../../components/RoundedButton/RoundedButton';
 import '../../components/RoundedButton/RoundedButton.scss';
 
 
-function GreenSection() {
+import { connect } from 'react-redux';
 
+const GreenSection = ({ products }) => {
 
     return (
 
-    <div className='green-container'>
+        <div className='green-container'>
 
-                <div className='gc-container'>
-                    <div className='gc-line'/>
-                    <div className='gc-hb-container'>
+            <div className='gc-container'>
+                <div className='gc-line' />
+                <div className='gc-hb-container'>
 
                     <div className='gc-hb-header-wrap'>
-                            <div className='gcheader'>AUDIOBOOKS</div>
-                        </div>
+                        <div className='gcheader'>AUDIOBOOKS</div>
+                    </div>
 
-                        <div className='gc-hb-button-wrap'>
-                            <RoundedButton
+                    <div className='gc-hb-button-wrap'>
+                        <RoundedButton
                             text='See more'
                             color='white'
                             colorAfter='#93CF9C'
                             backAfter='white'
                             path='/shop'
-                            />
-                        </div>
+                        />
                     </div>
+                </div>
 
-                    <div className='small-audio-cards-container'>
+                <div className='small-audio-cards-container'>
 
+                    {products.slice(13, 17).map((item) => (
+                        <SmallAudioCard key={item.id} item={item} />
+                    ))}
+
+                    {/*
                         <SmallAudioCard 
                             src={require('../../components/products/productImages/audiobook(1).jpg')}
                             header='Vincent' 
@@ -62,14 +68,21 @@ function GreenSection() {
                             text='' 
                             path='/shop' 
                         />
-                    
-                    </div>
-                    
+                        */}
+
                 </div>
-            
-    </div>
+
+            </div>
+
+        </div>
 
     )
 }
 
-export default GreenSection
+const mapStateToProps = state => {
+    return {
+        products: state.shop.products,
+    };
+};
+
+export default connect(mapStateToProps)(GreenSection);

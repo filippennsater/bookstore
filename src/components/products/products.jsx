@@ -51,6 +51,8 @@ export const products = [
     longDescription: "Join a group of spirited seniors on their adventures around the world. Their journeys are filled with humor, wisdom, and the occasional mishap, offering a refreshing perspective on travel. This heartwarming narrative celebrates life and the joy of discovering new places at any age.",
     category: "Travel",
     image: require("./productImages/book(5).jpg"),
+    alt1: "Jasper Wilde",
+    alt2: "",
   },
   {
     id: 6,
@@ -60,6 +62,8 @@ export const products = [
     longDescription: "An inspiring journey of personal growth and overcoming obstacles. Through challenges and triumphs, the protagonist learns the true meaning of resilience and strength. This motivational story encourages readers to embrace their own journeys with courage and hope.",
     category: "Self-Help",
     image: require("./productImages/book(6).jpg"),
+    alt1: "Linnea Berggren",
+    alt2: "",
   },
   {
     id: 7,
@@ -69,6 +73,8 @@ export const products = [
     longDescription: "A gripping tale of courage and resilience in the face of adversity. Set against a historical backdrop, this novel brings to life the struggles and triumphs of its heroine. Rich in detail and emotion, it’s a story that will stay with you long after the final page.",
     category: "Historical Fiction",
     image: require("./productImages/book(7).jpg"),
+    alt1: "Clara Müller",
+    alt2: "",
   },
   {
     id: 8,
@@ -78,6 +84,8 @@ export const products = [
     longDescription: "A detailed account of the events and personal stories from World War II. This comprehensive volume captures the heroism and heartbreak of the era, through the eyes of those who lived it. It is a tribute to the enduring spirit of humanity during times of conflict.",
     category: "History",
     image: require("./productImages/book(8).jpg"),
+    alt1: "Tobias Hawthorne",
+    alt2: "",
   },
   {
     id: 9,

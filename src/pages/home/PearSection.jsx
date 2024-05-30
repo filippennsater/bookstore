@@ -6,31 +6,32 @@ import '../../components/MediumCard/MediumCard.scss';
 import RoundedButton from '../../components/RoundedButton/RoundedButton';
 import '../../components/RoundedButton/RoundedButton.scss';
 
+import { connect } from 'react-redux';
 
-function PearSection() {
 
+const PearSection = ({ products }) => {
 
     return (
 
-    <div className='wrap-pear-container'>
+        <div className='wrap-pear-container'>
 
             <div className='pear-container'>
 
                 <div className='pc-container'>
-                    <div className='pc-line'/>
+                    <div className='pc-line' />
                     <div className='pc-hb-container'>
-                        
+
                         <div className='pc-hb-header-wrap'>
                             <div className='pcheader'>POPULAR</div>
                         </div>
 
                         <div className='pc-hb-button-wrap'>
                             <RoundedButton
-                            text='See more'
-                            color='#93CF9C'
-                            colorAfter='white'
-                            backAfter='#93CF9C'
-                            path='/shop'
+                                text='See more'
+                                color='#93CF9C'
+                                colorAfter='white'
+                                backAfter='#93CF9C'
+                                path='/shop'
                             />
                         </div>
 
@@ -38,43 +39,55 @@ function PearSection() {
 
                     <div className='medium-cards-container'>
 
-                        <MediumCard 
+                    {products.slice(4, 8).map((item) => (
+                            <MediumCard key={item.id} item={item} />
+                        ))}
+
+                        {/*
+                        <MediumCard
                             src={require('../../components/products/productImages/book(5).jpg')}
-                            header='Elderly Globetrotters' 
-                            text="Jasper Wilde" 
-                            path='/shop' 
+                            header='Elderly Globetrotters'
+                            text="Jasper Wilde"
+                            path='/shop'
                         />
 
-                        <MediumCard 
+                        <MediumCard
                             src={require('../../components/products/productImages/book(6).jpg')}
-                            header="Wings" 
+                            header="Wings"
                             text="Linnea Berggren"
-                            path='/shop' 
+                            path='/shop'
                         />
 
-                        <MediumCard 
+                        <MediumCard
                             src={require('../../components/products/productImages/book(7).jpg')}
-                            header='Damsel' 
-                            text="Clara Müller" 
-                            path='/shop' 
+                            header='Damsel'
+                            text="Clara Müller"
+                            path='/shop'
                         />
 
-                        <MediumCard 
+                        <MediumCard
                             src={require('../../components/products/productImages/book(8).jpg')}
-                            header="WW2: Echoes" 
-                            text='Tobias Hawthorne' 
-                            path='/shop' 
+                            header="WW2: Echoes"
+                            text='Tobias Hawthorne'
+                            path='/shop'
                         />
-                    
+                        */}
+
                     </div>
-                    
+
                 </div>
 
             </div>
-            
-    </div>
+
+        </div>
 
     )
 }
 
-export default PearSection
+const mapStateToProps = state => {
+    return {
+        products: state.shop.products,
+    };
+};
+
+export default connect(mapStateToProps)(PearSection);
