@@ -16,7 +16,7 @@ const ProductItem = ({ item, addToCart, loadCurrentItem }) => {
         <div className='product-title'>{item.title}</div>
       </Link>
       <div className='product-price'>{item.price} kr</div>
-      <div className='product-qty'>{item.qtyInStock}</div>
+      {/*<div className='product-qty'>{item.qtyInStock}</div>*/}
       <div className='product-text'>{item.description}</div>
       <button className='buy-button' onClick={() => addToCart(item.id)}>Add To Cart</button>
     </div>

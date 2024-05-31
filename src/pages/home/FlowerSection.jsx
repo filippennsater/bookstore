@@ -8,10 +8,7 @@ import '../../components/RoundedButton/RoundedButton.scss';
 
 import { connect } from 'react-redux';
 
-
-
 const FlowerSection = ({ products }) => {
-
 
     return (
 

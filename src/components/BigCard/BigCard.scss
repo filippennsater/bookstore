@@ -6,7 +6,7 @@
     align-items: top;
     justify-content: center;
     width: calc(600px + 35vw);
-    height: calc(350px + 35vw);
+    height: calc(360px + 35vw);
     margin-top: 40px;
     object-fit: contain;
   }
@@ -14,7 +14,7 @@
 .big-card{
     background-color: none;
     width: calc(33% - 50px);
-    height: calc(350px + 14vw);
+    height: calc(360px + 14vw);
     margin: calc(2.2vw - 5px);
     overflow: hidden;
     filter: saturate(40%);
@@ -30,7 +30,7 @@
 
 .big-card-image-wrap{
     background-color: none;
-    height: 60%;
+    height: 58%;
     margin: 10px;
 }
 
