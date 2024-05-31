@@ -15,7 +15,7 @@ function HomeButtonSection() {
                 <div className='homebuttonsheader'>OUR WIDE SELECTION OF BOOKS</div>
             </Link>
 
-            <Link to='https://www.instagram.com/kira.and.minou/' target='empty' className='button-container'>
+            <Link to='https://www.instagram.com/filippdev/' target='empty' className='button-container'>
                 <div className='homebuttonsheader'>FOLLOW US ON SOCIAL MEDIA</div>
             </Link>
 
