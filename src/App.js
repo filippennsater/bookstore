@@ -9,6 +9,7 @@ import Home from './pages/home/Home';
 import Shop from './pages/shop/Shop';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
+import Suggestion from './pages/suggestion/Suggestion';
 
 import Profile from './pages/user/profile/Profile';
 import Login from './pages/user/login/Login';
@@ -32,6 +33,7 @@ function App({ current }) {
           <Route path="/shop" exact Component={Shop} />
           <Route path="/contact" exact Component={Contact} />
           <Route path="/about" exact Component={About} />
+          <Route path="/suggestion" exact Component={Suggestion} />
           
           <Route path="/profile" exact Component={Profile} />
           <Route path="/login" exact Component={Login} />
