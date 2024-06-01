@@ -30,7 +30,7 @@ function EndSection() {
                             color='black'
                             colorAfter='white'
                             backAfter='black'
-                            path='/'
+                            path='/podcastList'
                             />
                         </div>
 

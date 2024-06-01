@@ -19,6 +19,9 @@ import Signup from './pages/user/signup/Signup';
 import Cart from './pages/cart/Cart';
 import SingleItem from './pages/singleItem/SingleItem';
 
+import PodcastList from './pages/podcastList/PodcastList';
+import Podcast from './pages/podcast/Podcast';
+
 import { connect } from "react-redux";
 
 function App({ current }) {
@@ -42,6 +45,9 @@ function App({ current }) {
 
           <Route path="/cart" exact Component={Cart} />
           <Route path="/product/:id" element={current ? <SingleItem /> : <Navigate to="/shop" />}/>
+
+          <Route path="/podcastList" exact Component={PodcastList} />
+          <Route path="/podcast" exact Component={Podcast} />
         </Routes>
       </Router>
     </>
