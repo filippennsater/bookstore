@@ -33,6 +33,15 @@ const CartSection = ({ cart }) => {
     // Convert selectedShipping to a number, defaulting to 0 if empty string
     const shippingCost = parseInt(selectedShipping) || 0; // Use 0 if NaN
 
+    const [showRedText, setShowRedText] = useState(false);
+
+    const handleSettingsClick = () => {
+        setShowRedText(true);
+        setTimeout(() => {
+            setShowRedText(false);
+        }, 3000);
+    };
+
     return (
 
         <div className='cart-container'>
@@ -120,9 +129,12 @@ const CartSection = ({ cart }) => {
                     </div>
 
                     <form>
-                        <input className='checkout-button cursor-pointer' type="submit" value="Checkout" />
+                        <input className='checkout-button cursor-pointer' type="submit" value="Checkout" onClick={handleSettingsClick}/>
                     </form>
 
+                    <div className='redTextCart-container'>
+                        {showRedText && <div className="redTextCart">This is only a demo</div>}
+                    </div>
                 </div>
             </div>
         </div>

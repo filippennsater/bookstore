@@ -67,7 +67,7 @@
     margin-top: calc(15px + 1vw);
     letter-spacing: 2px;
     font-weight: 400;
-  }
+}
   
 .p30{
     font-family: "Old Standard TT";
@@ -78,11 +78,27 @@
     margin-top: calc(15px + 0.5vw);;
     line-height: 35px;
     text-decoration: inherit;
-  }
+}
 
-  .input-competition{
+.input-competition{
     margin-bottom: 10px;
     outline: 0;
     border-width: 0 0 2px;
     border-color: rgb(0, 0, 0)
-  }
+}
+
+.redTextContact-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redTextContact {
+    display: flex;
+    color: red;
+    margin-top: 10px;
+    font-size: calc(9px + 0.3vw);
+    font-weight: bold;
+    margin-top: 10px;  
+}

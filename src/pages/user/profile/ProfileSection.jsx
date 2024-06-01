@@ -24,7 +24,9 @@ function ProfileSection() {
     });
 
     const [profileImageUrl, setProfileImageUrl] = useState('');
-    
+
+    const [showRedText, setShowRedText] = useState(false);
+
     //To get the user currently logged in
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
@@ -65,12 +67,18 @@ function ProfileSection() {
             setProfileImageUrl(url);
             //Save the image URL to local storage
             //localStorage.setItem(`${uid}_profileImage`, url);
-            
+
         } catch (error) {
             console.error('Error getting profile image:', error);
         }
     }
 
+    const handleSettingsClick = () => {
+        setShowRedText(true);
+        setTimeout(() => {
+            setShowRedText(false);
+        }, 3000);
+    };
 
     return (
 
@@ -83,13 +91,13 @@ function ProfileSection() {
                 <div className='profile-left-container'>
 
                     <div className='profile-picture-container'>
-                    {profileImageUrl &&
-                        <img
-                        src={profileImageUrl}
-                        alt="Profile"
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                        />
-                    }
+                        {profileImageUrl &&
+                            <img
+                                src={profileImageUrl}
+                                alt="Profile"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                        }
 
                     </div>
 
@@ -132,11 +140,14 @@ function ProfileSection() {
 
                     <div className='settings-container'>
                         Change password or account info:&nbsp;&nbsp;
-                        <div className='settings-wheel-container'>
+                        <div className='settings-wheel-container' onClick={handleSettingsClick}>
                             <i className="fa-solid fa-gear"></i>
                         </div>
-                    </div>
 
+                    </div>
+                    <div className='redTextProf-container'>
+                        {showRedText && <div className="redTextProf">This is only a demo</div>}
+                    </div>
                 </div>
 
             </div>

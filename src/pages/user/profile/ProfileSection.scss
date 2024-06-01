@@ -14,7 +14,8 @@
 .profile-info-container{
     background-color: #9FCE9A;
     width: calc(200px + 35vw);
-    height: calc(470px + 9vw);
+    min-height: calc(470px + 9vw);
+    height: flex;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -159,6 +160,22 @@
     color: #190d27;
 }
 
+
+.redTextProf-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redTextProf {
+    display: flex;
+    color: red;
+    margin-top: 10px;
+    font-size: calc(9px + 0.3vw);
+    font-weight: bold;
+    margin-top: 10px;  
+}
 
 
 

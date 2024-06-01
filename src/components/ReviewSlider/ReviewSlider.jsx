@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //import { Link } from "react-router-dom";
 import "./ReviewSlider.scss";
 
@@ -8,12 +8,22 @@ import "slick-carousel/slick/slick-theme.css";
 
 function ReviewSlider() {
 
+  const [visibleMessages, setVisibleMessages] = useState({});
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1
+  };
+
+  const handleButtonClick = (name) => {
+    setVisibleMessages((prev) => ({ ...prev, [name]: true }));
+
+    setTimeout(() => {
+      setVisibleMessages((prev) => ({ ...prev, [name]: false }));
+    }, 3000);
   };
 
   return (
@@ -30,9 +40,10 @@ function ReviewSlider() {
                 <div className="reviewHeader">{d.name}</div>
                 <div className="reviewText">{d.review}</div>
               </div>
-                
-                <button className='revButton cursor-pointer'>Read More</button>
-              
+
+              <button className='revButton cursor-pointer' onClick={() => handleButtonClick(d.name)}>Read More</button>
+              {visibleMessages[d.name] && <div className="redText">This is only a demo</div>}
+
             </div>
           ))}
         </Slider>

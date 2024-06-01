@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../App.css';
 import './ContactSection.scss';
 
 function ContactSection() {
+
+    const [showRedText, setShowRedText] = useState(false);
+
+    const handleSettingsClick = () => {
+        setShowRedText(true);
+        setTimeout(() => {
+            setShowRedText(false);
+        }, 3000);
+    };
 
     return (
 
@@ -45,7 +54,7 @@ function ContactSection() {
                     </div>
 
                     <div className='p30'>
-                        Follow us on our <a href="https://www.instagram.com/kira.and.minou/" target="blank">social media!</a>
+                        Follow us on our <a href="https://www.instagram.com/filippdev/" target="blank">social media!</a>
                     </div>
 
 
@@ -73,8 +82,12 @@ function ContactSection() {
                         </label>
                         
                         <input type="file" />
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="Submit" onClick={handleSettingsClick}/>
                     </form>
+
+                    <div className='redTextContact-container'>
+                        {showRedText && <div className="redTextContact">This is only a demo</div>}
+                    </div>
 
                 </div>
 

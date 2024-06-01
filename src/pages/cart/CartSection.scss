@@ -165,6 +165,22 @@
     font-size: calc(15px + 0.3vw);
   }
 
+.redTextCart-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redTextCart {
+    display: flex;
+    color: red;
+    margin-top: 10px;
+    font-size: calc(9px + 0.3vw);
+    font-weight: bold;
+    margin-top: 10px;  
+}
+
 
 
 

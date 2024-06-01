@@ -2,7 +2,7 @@ import './App.css';
 
 import React from 'react';
 import Navbar from './components/navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 
 import Home from './pages/home/Home';
@@ -18,7 +18,9 @@ import Signup from './pages/user/signup/Signup';
 import Cart from './pages/cart/Cart';
 import SingleItem from './pages/singleItem/SingleItem';
 
-function App() {
+import { connect } from "react-redux";
+
+function App({ current }) {
   return (
     
     <>
@@ -37,8 +39,7 @@ function App() {
           <Route path="/signup" exact Component={Signup} />
 
           <Route path="/cart" exact Component={Cart} />
-          <Route path="/product/:id" exact Component={SingleItem} />
-
+          <Route path="/product/:id" element={current ? <SingleItem /> : <Navigate to="/shop" />}/>
         </Routes>
       </Router>
     </>
@@ -46,4 +47,10 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    current: state.shop.currentItem,
+  };
+};
+
+export default connect(mapStateToProps)(App);
