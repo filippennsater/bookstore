@@ -1,0 +1,122 @@
+.suggesti-container {
+    background-image: linear-gradient(to right, #14520e, #572D87);
+    width: 100%;
+    height: calc(1100px + 3vw);
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+}
+
+.suggestion-container {
+    background-color: #572D87;
+    width: 100%;
+    height: calc(800px + 15vw);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+}
+
+.suggestion-form-container{
+    background-color: #9FCE9A;
+    width: calc(250px + 20vw);
+    height: calc(450px + 9vw);
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(50px + 5vw);
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px black;
+
+    align-items: center;
+    object-fit: contain;
+    z-index: 21;
+    overflow: hidden;
+    padding: calc(15px + 1vw);
+}
+
+.suggestion-form-header{
+    color: #572D87;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: calc(25px + 1.1vw);
+    width: 100%;
+}
+
+.suggestion-input-wrap{
+    //background-color: yellow;
+    display: flex;
+    height: flex;
+    width: 100%;
+    margin-top: calc(4px + 0.8vw);
+}
+
+
+.input-suggestion{
+    display: flex;
+    height: calc(15px + 0.8vw);
+    width: 100%;
+    border-color: #572D87;
+    padding-left: 5px;
+    border-width: 2px;
+}
+
+.input-suggestion2{
+    display: flex;
+    height: calc(75px + 3vw);
+    width: 100%;
+    border-color: #572D87;
+    border-width: 2px;
+    
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    //font-size: 16px;
+    resize: vertical;
+}
+
+.small-header-wrap-suggestion{
+    //background-color: blue;
+    display: flex;
+    height: flex;
+    width: 100%;
+    color: #572D87;
+    font-weight: bold;
+    font-size: calc(15px + 0.2vw);
+    margin-top: calc(35px + 0.8vw);
+}
+
+.suggestion-button{
+    color: white;
+    background-color: #572D87;
+    width: 100%;
+    padding: calc(5px + 0.1vw);
+    margin-top: calc(75px + 0.8vw);
+    font-weight: 600;
+    font-size: calc(12px + 0.2vw);
+}
+
+.form-suggestion{
+    flex-direction: column;
+    display: flex !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.suggestion-info-text{
+    //background-color: blue;
+    display: flex;
+    height: flex;
+    width: 100%;
+    color: #572D87;
+    font-weight: bold;
+    font-size: calc(10px + 0.2vw);
+    margin-top: calc(15px + 0.8vw);
+}
