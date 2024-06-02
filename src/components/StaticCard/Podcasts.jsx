@@ -1,0 +1,42 @@
+export const products = [
+    {
+        id: 1,
+        title: "The Literary Voyage: #1",
+        guest: 'Beatrice Fitzwilliams',
+        description: "A thrilling exploration of alternative realities and the choices that shape our destinies.",
+        image: require("./productImages/book(1).jpg"),
+        link: 'soundcloud.......',
+    },
+    {
+        id: 2,
+        title: "The Literary Voyage: #1",
+        guest: 'Beatrice Fitzwilliams',
+        description: "A thrilling exploration of alternative realities and the choices that shape our destinies.",
+        image: require("./productImages/book(1).jpg"),
+        link: 'soundcloud.......',
+    },
+    {
+        id: 3,
+        title: "The Literary Voyage: #1",
+        guest: 'Beatrice Fitzwilliams',
+        description: "A thrilling exploration of alternative realities and the choices that shape our destinies.",
+        image: require("./productImages/book(1).jpg"),
+        link: 'soundcloud.......',
+    },
+    {
+        id: 4,
+        title: "The Literary Voyage: #1",
+        guest: 'Beatrice Fitzwilliams',
+        description: "A thrilling exploration of alternative realities and the choices that shape our destinies.",
+        image: require("./productImages/book(1).jpg"),
+        link: 'soundcloud.......',
+    },
+    {
+        id: 5,
+        title: "The Literary Voyage: #1",
+        guest: 'Beatrice Fitzwilliams',
+        description: "A thrilling exploration of alternative realities and the choices that shape our destinies.",
+        image: require("./productImages/book(1).jpg"),
+        link: 'soundcloud.......',
+    },
+];
