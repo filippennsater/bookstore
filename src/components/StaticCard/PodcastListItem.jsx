@@ -17,14 +17,17 @@ function PodcastListItem(props) {
                         className="pli-image"
                     />
 
-                <div className="plid-header">
+                <div className="pli-header">
                     {props.title}
+                </div>
+                <div className="pli-header2">
+                    {props.guest}
                 </div>
 
                 <div className="pli-text">
                     {props.description}
                 </div>
-                
+
           </div>
         </>
     );

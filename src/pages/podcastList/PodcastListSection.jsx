@@ -15,6 +15,7 @@ function PodcastListSection() {
                     id={podcast.id}
                     image={podcast.image} 
                     title={podcast.title} 
+                    guest={podcast.guest}
                     description={podcast.description}
                     path={`/podcast/${podcast.id}`} // Dynamic link
                 />

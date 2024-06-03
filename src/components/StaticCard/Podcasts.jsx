@@ -2,7 +2,7 @@ export const podcasts = [
     {
         id: 1,
         title: "The Literary Voyage: #1",
-        guest: 'Beatrice Fitzwilliams',
+        guest: 'Lars Håvard and Ingrid Solveig',
         description: "A thrilling exploration of alternative realities and the choices that shape our destinies.",
         image: require("./podcastImages/podcast(1).jpg"),
         link: 'soundcloud.......',
@@ -10,7 +10,7 @@ export const podcasts = [
     {
         id: 2,
         title: "The Literary Voyage: #2",
-        guest: 'Beatrice Fitzwilliams',
+        guest: 'Hikaru Yamashita',
         description: "A thrilling exploration of alternative realities and the choices that shape our destinies.",
         image: require("./podcastImages/podcast(2).jpg"),
         link: 'soundcloud.......',

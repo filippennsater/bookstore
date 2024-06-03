@@ -1,7 +1,55 @@
 .pli-container{
     display: flex;
-    width: 50%;
+    width: 40%;
     height: calc(200px + 2vw);
     background-color: green;
     margin-top: 1vw;
 }
+
+.pli-image{
+    display: flex;
+    width:calc(200px + 2vw);
+    height: calc(200px + 2vw);
+}
+
+.pli-header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    //color: #555555;
+    //color: #572D87;
+    font-size: calc(20px + 0.2vw);
+    margin-top: calc(15px + 1vw);
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  
+  .pli-header2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    //color: #555555;
+    //color: #572D87;
+    font-size: calc(12px + 0.1vw);
+    margin-top: 10%;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  
+  .pli-text{
+    font-family: "Old Standard TT";
+    //color: #555555;
+    //color: #572D87;
+    font-size: calc(12px + 0.2vw);
+    font-weight: 200;
+    margin-top: calc(15px + 0.5vw);
+    line-height: 35px;
+    text-decoration: inherit;
+  }
+  
+  .p36{
+    font-family: "Old Standard TT";
+    //color: #555555;
+    //color: #572D87;
+    font-size: calc(11px + 0.1vw);
+    font-weight: 200;
+    line-height: 35px;
+    text-decoration: inherit;
+  }
+  
