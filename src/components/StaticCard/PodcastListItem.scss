@@ -2,9 +2,11 @@
     display: flex;
     width: 40%;
     height: calc(200px + 2vw);
-    background-color: green;
-    margin-top: 1vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    color: white;
 }
+
 
 .pli-image{
     display: flex;
@@ -12,12 +14,66 @@
     height: calc(200px + 2vw);
 }
 
+.pli-left-container{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.pli-right-container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  flex-direction: column;
+}
+
+.pli-button-container{
+  display: flex;
+  justify-content: center;   
+  width: 100%;
+  height: flex;
+  object-fit: contain;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.pli-button{
+  color: white;
+  background-color: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: flex;
+  height: 100%;
+  padding: 1% 2% 1% 2%;
+
+
+
+  border-width: calc(1px + 0.08vw);
+  border-style: solid;
+  border-radius: 25px;
+  border-color: white;
+  font-size: calc(5px + 0.5vw);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pli-button:hover{
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+
 .pli-header{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     //color: #555555;
     //color: #572D87;
     font-size: calc(20px + 0.2vw);
-    margin-top: calc(15px + 1vw);
+    margin-top: calc(15px + 0.5vw);
     letter-spacing: 2px;
     font-weight: 400;
   }
@@ -27,9 +83,8 @@
     //color: #555555;
     //color: #572D87;
     font-size: calc(12px + 0.1vw);
-    margin-top: 10%;
+    margin-top: 30%;
     letter-spacing: 2px;
-    font-weight: 400;
   }
   
   .pli-text{

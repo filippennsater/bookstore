@@ -9,6 +9,9 @@ function PodcastListSection() {
     return (
 
         <div className='podcastList-container'>
+
+            <div className='podcastList-header'>Podcasts</div>
+
             {podcasts.map(podcast => (
                 <PodcastListItem 
                     key={podcast.id} 
