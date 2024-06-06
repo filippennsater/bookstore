@@ -5,6 +5,7 @@ import StaticCard from '../../components/StaticCard/StaticCard';
 import '../../components/StaticCard/StaticCard.scss';
 import RoundedButton from '../../components/RoundedButton/RoundedButton';
 import '../../components/RoundedButton/RoundedButton.scss';
+import { podcasts } from '../../components/StaticCard/Podcasts';
 
 
 function EndSection() {
@@ -12,12 +13,12 @@ function EndSection() {
 
     return (
 
-    <div className='wrap-end-container'>
+        <div className='wrap-end-container'>
 
             <div className='end-container'>
 
                 <div className='ec-container'>
-                    <div className='ec-line'/>
+                    <div className='ec-line' />
                     <div className='ec-hb-container'>
 
                         <div className='ec-hb-header-wrap'>
@@ -26,11 +27,11 @@ function EndSection() {
 
                         <div className='ec-hb-button-wrap'>
                             <RoundedButton
-                            text='See more'
-                            color='black'
-                            colorAfter='white'
-                            backAfter='black'
-                            path='/podcastList'
+                                text='See more'
+                                color='black'
+                                colorAfter='white'
+                                backAfter='black'
+                                path='/podcastList'
                             />
                         </div>
 
@@ -38,34 +39,22 @@ function EndSection() {
 
                     <div className='static-cards-container'>
 
-                        <StaticCard 
-                            src='images/pod(1).jpg' 
-                            header='The Literary Voyage: #35'
-                            text="William Torstensson" 
-                            path='/' 
-                        />
+                        {podcasts.slice(0,3).map(podcast => (
+                            <StaticCard
+                                src={podcast.image} 
+                                header={podcast.title} 
+                                text={podcast.guest} 
+                                path='/'
+                            />
+                        ))}
 
-                        <StaticCard 
-                            src='images/pod(2).jpg' 
-                            header="The Literary Voyage: #34" 
-                            text='Sofia Ullman' 
-                            path='/' 
-                        />
-
-                        <StaticCard 
-                            src='images/pod(3).jpg' 
-                            header='The Literary Voyage: #33'
-                            text="Karl Hoffmann" 
-                            path='/' 
-                        />
-                    
                     </div>
-                    
+
                 </div>
-            
+
             </div>
-            
-    </div>
+
+        </div>
 
     )
 }
