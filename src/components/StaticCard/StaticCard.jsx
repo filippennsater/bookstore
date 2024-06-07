@@ -5,7 +5,7 @@ import "./StaticCard.scss";
 function StaticCard(props) {
     return (
         <>
-            <Link className="static-card" to={props.path}>
+            <Link className="static-card" to={`/podcast/${props.id}`}>
 
                 <div className="static-card-image-wrap">
                     <img

@@ -44,7 +44,7 @@ function EndSection() {
                                 src={podcast.image} 
                                 header={podcast.title} 
                                 text={podcast.guest} 
-                                path='/'
+                                id={podcast.id}
                             />
                         ))}
 

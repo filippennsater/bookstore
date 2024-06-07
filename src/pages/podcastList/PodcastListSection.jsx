@@ -20,7 +20,7 @@ function PodcastListSection() {
                     title={podcast.title} 
                     guest={podcast.guest}
                     description={podcast.description}
-                    path={`/podcast/${podcast.id}`} // Dynamic link
+                    //path={`/podcast/${podcast.id}`} // Dynamic link
                 />
             ))}
 

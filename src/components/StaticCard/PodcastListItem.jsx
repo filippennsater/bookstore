@@ -31,9 +31,9 @@ function PodcastListItem(props) {
                     <div className="pli-text">
                         {props.description}
                     </div>
-                    <div className='pli-button-container'>
-                        <div className="pli-button">Listen to this podcast&nbsp;&nbsp;<i class="fa-solid fa-play"/></div>
-                    </div>
+                        <Link className='pli-button-container' to={`/podcast/${props.id}`}>
+                            <div className="pli-button">Listen to this podcast&nbsp;&nbsp;<i class="fa-solid fa-play" /></div>
+                        </Link>
                 </div>
 
             </div>
