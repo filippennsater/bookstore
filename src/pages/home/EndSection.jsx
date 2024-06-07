@@ -45,6 +45,7 @@ function EndSection() {
                                 header={podcast.title} 
                                 text={podcast.guest} 
                                 id={podcast.id}
+                                key={podcast.id}
                             />
                         ))}
 

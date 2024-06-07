@@ -47,7 +47,7 @@ function App({ current }) {
           <Route path="/product/:id" element={current ? <SingleItem /> : <Navigate to="/shop" />}/>
 
           <Route path="/podcastList" exact Component={PodcastList} />
-          <Route path="/podcast:id" exact Component={Podcast} />
+          <Route path="/podcast/:id" exact Component={Podcast} />
         </Routes>
       </Router>
     </>
