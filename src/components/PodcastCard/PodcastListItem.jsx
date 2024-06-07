@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
 import './PodcastListItem.scss';
-import "./StaticCard.scss";
 import { Link } from "react-router-dom";
 
 
@@ -32,7 +31,7 @@ function PodcastListItem(props) {
                         {props.description}
                     </div>
                         <Link className='pli-button-container' to={`/podcast/${props.id}`}>
-                            <div className="pli-button">Listen to this podcast&nbsp;&nbsp;<i class="fa-solid fa-play" /></div>
+                            <div className="pli-button">Listen to this podcast&nbsp;&nbsp;<i className="fa-solid fa-play" /></div>
                         </Link>
                 </div>
 

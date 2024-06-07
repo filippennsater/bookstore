@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../App.css';
 import './EndSection.scss';
-import StaticCard from '../../components/StaticCard/StaticCard';
-import '../../components/StaticCard/StaticCard.scss';
+import PodcastCard from '../../components/PodcastCard/PodcastCard';
+import '../../components/PodcastCard/PodcastCard.scss';
 import RoundedButton from '../../components/RoundedButton/RoundedButton';
 import '../../components/RoundedButton/RoundedButton.scss';
-import { podcasts } from '../../components/StaticCard/Podcasts';
+import { podcasts } from '../../components/PodcastCard/Podcasts';
 
 
 function EndSection() {
@@ -37,10 +37,10 @@ function EndSection() {
 
                     </div>
 
-                    <div className='static-cards-container'>
+                    <div className='podcast-cards-container'>
 
                         {podcasts.slice(0,3).map(podcast => (
-                            <StaticCard
+                            <PodcastCard
                                 src={podcast.image} 
                                 header={podcast.title} 
                                 text={podcast.guest} 

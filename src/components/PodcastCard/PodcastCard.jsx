@@ -1,25 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./StaticCard.scss";
+import "./PodcastCard.scss";
 
-function StaticCard(props) {
+function PodcastCard(props) {
     return (
         <>
-            <Link className="static-card" to={`/podcast/${props.id}`}>
+            <Link className="podcast-card" to={`/podcast/${props.id}`}>
 
-                <div className="static-card-image-wrap">
+                <div className="podcast-card-image-wrap">
                     <img
                         src={props.src}
                         alt="smallWboi"
-                        className="static-card-image"
+                        className="podcast-card-image"
                     />
                 </div>
 
-                <div className="static-card-header">
+                <div className="podcast-card-header">
                     {props.header}
                 </div>
 
-                <div className="static-card-text">
+                <div className="podcast-card-text">
                     {props.text}
                 </div>
                 
@@ -28,4 +28,4 @@ function StaticCard(props) {
     );
 }
 
-export default StaticCard;
+export default PodcastCard;

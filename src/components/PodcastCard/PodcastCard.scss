@@ -1,5 +1,5 @@
 
-.static-cards-container {
+.podcast-cards-container {
     background-color: none;
     display: flex;
     flex-flow: row;
@@ -10,7 +10,7 @@
     margin-top: 5%;
   }
   
-  .static-card{
+  .podcast-card{
     background-color: none;
     width: 40%;
     height: flex;
@@ -19,17 +19,17 @@
     padding: 1%;
   }
   
-  .static-card:hover {
+  .podcast-card:hover {
   background-color: #9FCE9A;
   }
   
-  .static-card-image-wrap{
+  .podcast-card-image-wrap{
     background-color: none;
     height: 80%;
     //margin: 3%;
   }
   
-  .static-card-image{
+  .podcast-card-image{
     background-color: green;
     top: 0;
     right: 0;
@@ -44,7 +44,7 @@
     transition: all 0.2s linear;
   }
   
-  .static-card-header{
+  .podcast-card-header{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #000000;
   font-size: calc(6px + 0.75vw);
@@ -53,7 +53,7 @@
   height: flex;
   }
   
-  .static-card-text{
+  .podcast-card-text{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #000000;
     font-size: calc(6px + 0.75vw);

@@ -3,7 +3,7 @@ import '../../App.css';
 import './PodcastSection.scss';
 
 import { useParams } from 'react-router-dom';
-import { podcasts } from '../../components/StaticCard/Podcasts';
+import { podcasts } from '../../components/PodcastCard/Podcasts';
 
 function PodcastSection() {
     const { id } = useParams();
