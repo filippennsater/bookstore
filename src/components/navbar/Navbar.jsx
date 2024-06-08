@@ -93,10 +93,15 @@ const Navbar = ({ cart }) => {
 
                         <li className='nav-item'>
                             <Link to='/shop' className='nav-links' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
-                                Books & more
+                                Store
                             </Link>
                         </li>
 
+                        <li className='nav-item'>
+                            <Link to='/podcastList' className='nav-links' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>
+                                Podcasts
+                            </Link>
+                        </li>
 
                         <li className='nav-item'>
                             <Link to='/contact' className='nav-links' onClick={() => { closeMobileMenu(); closeProfMenu(); }}>

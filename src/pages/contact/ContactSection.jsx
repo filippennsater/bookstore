@@ -31,7 +31,7 @@ function ContactSection() {
                     </div>
 
                     <div className='p30'>
-                        000-XXX XX XX<br />
+                        000-000 00 00<br />
                         Our phone hours are between 9:00 AM and 5:00 PM, Monday through Friday.
                     </div>
 
