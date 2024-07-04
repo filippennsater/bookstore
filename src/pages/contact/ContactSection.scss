@@ -1,5 +1,5 @@
 .contact-container {
-    background-color: #ffffff;
+    background-color: #c0a14b;
     width: 100%;
     height: calc(1100px + 3vw);
     display: flex;
@@ -73,11 +73,12 @@
     font-family: "Old Standard TT";
     //color: #555555;
     //color: #572D87;
-    font-size: 15px;
+    font-size: calc(15px + 0.08vw);
     font-weight: 200;
-    margin-top: calc(15px + 0.5vw);;
+    margin-top: calc(15px + 0.5vw);
     line-height: 35px;
     text-decoration: inherit;
+    font-weight: bold;
 }
 
 .input-competition{
